@@ -1,0 +1,54 @@
+2024-03-13 00:11:52,046:INFO:logging in using static token
+2024-03-13 00:11:52,657:INFO:Shard ID None has connected to Gateway (Session ID: c92dd083b6f02ae3b42919baa0325754).
+2024-03-13 00:11:57,407:ERROR:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/zachary-gonzalez/python discord/myenv/Bot.py", line 49, in on_message
+    raise discord.DiscordException
+discord.errors.DiscordException
+2024-03-13 00:12:15,480:ERROR:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/zachary-gonzalez/python discord/myenv/Bot.py", line 49, in on_message
+    raise discord.DiscordException
+discord.errors.DiscordException
+2024-03-13 00:35:59,811:INFO:logging in using static token
+2024-03-13 00:36:00,490:INFO:Shard ID None has connected to Gateway (Session ID: 9189421a9645bca062d78ef3ad9c553d).
+2024-03-13 00:36:15,684:ERROR:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/zachary-gonzalez/python discord/myenv/Bot.py", line 66, in on_message
+    for event in response:
+  File "/home/zachary-gonzalez/python discord/myenv/ChatBot.py", line 39, in generate_response
+    response = co.chat(
+               ^^^^^^^^
+TypeError: Client.chat() got an unexpected keyword argument 'notice'
+2024-03-13 00:39:49,377:INFO:logging in using static token
+2024-03-13 00:39:50,023:INFO:Shard ID None has connected to Gateway (Session ID: dc6bf6678351d47650b966fb49a4cb5e).
+2024-03-13 00:45:45,827:ERROR:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/zachary-gonzalez/python discord/myenv/Bot.py", line 95, in on_message
+    await message.channel.send(citation_response)
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+2024-03-13 00:46:12,347:ERROR:Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/zachary-gonzalez/python discord/myenv/Bot.py", line 95, in on_message
+    await message.channel.send(citation_response)
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zachary-gonzalez/python discord/myenv/lib/python3.11/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message

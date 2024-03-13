@@ -1,0 +1,16 @@
+discord.py
+python-dotenv
+cohere
+hnswlib
+unstructured
+pypdf
+uuid
+langchain
+langchain-community
+langchainhub
+langchain-openai
+chromadb
+bs4
+docx2txt
+python-pptx
+google-api-python-client
