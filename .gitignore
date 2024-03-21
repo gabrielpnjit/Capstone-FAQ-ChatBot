@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 __pycache__
+node_modules
