@@ -1,4 +1,4 @@
-Langchain RAG-Pinecone Setup
+# Langchain RAG-Pinecone Setup
 ## pip install:
 - `$ pip install --upgrade langchain langchain-cli langchain-pinecone langchain-openai`
 ## Set Environment Variables
