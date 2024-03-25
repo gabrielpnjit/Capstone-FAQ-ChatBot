@@ -1,6 +1,8 @@
 # Langchain RAG-Pinecone Setup
 ## pip install:
 - `$ pip install --upgrade langchain langchain-cli langchain-pinecone langchain-openai`
+## Add rag-pinecone Template as App
+- `langchain app new my-app --package rag-pinecone`
 ## Set Environment Variables
 - The following commands are used in a Linux/Unix Shell
 - Replace `[KEY HERE]` with your actual API keys.
