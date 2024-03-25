@@ -5,11 +5,14 @@
 - `langchain app new my-app --package rag-pinecone`
 ## Set Environment Variables
 - The following commands are used in a Linux/Unix Shell
-- Replace `[KEY HERE]` with your actual API keys.
 - `$ export OPENAI_API_KEY=[KEY HERE]`
 	- [OpenAI API Key](https://platform.openai.com/api-keys)
 - `$ export PINECONE_API_KEY=[KEY HERE]`
 	- [Pinecone API Key](https://docs.pinecone.io/guides/getting-started/authentication)
+- `$ export PINECONE_ENVIRONMENT=[PINECONE ENVIRONMENT HERE]`
+	- Your Pinecone environment, found in the [Pinecone console](https://app.pinecone.io/), e.g. us-west1-gcp, us-east-1-aws, etc.
+- `$ export PINECONE_INDEX=[PINECONE INDEX NAME HERE]`
+	- [Indexes Tab](https://app.pinecone.io/)
 ## Pinecone documents:
 - Go to packages\\rag-pinecone\\rag_pinecone\\chain.py
 ```python
