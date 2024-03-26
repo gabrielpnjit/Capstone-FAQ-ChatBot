@@ -26,5 +26,5 @@ docs = loader.load()
 - Adjust these lines to load the documents into the pinecone database that you want to use. Make sure to use the appropriate document loader. 
 - Don't run this code for the same document multiple times because it will create duplicate entries into the pinecone database, as well as use up OpenAI tokens because of the embedding.
 ## 4. Start Langserve
-- in root directory: `$ langchain serve`
+- In rag-app directory: `$ langchain serve`
 - Playground: http://localhost:8000/rag-pinecone/playground/
