@@ -12,6 +12,7 @@ The following commands are used in a Linux/Unix Shell:
 	- Your Pinecone environment, found in the [Pinecone console](https://app.pinecone.io/), e.g. us-west1-gcp, us-east-1-aws, etc.
 - `$ export PINECONE_INDEX=[PINECONE INDEX NAME HERE]`
 	- [Indexes Tab](https://app.pinecone.io/)
+
 If using Microsoft PowerShell:
 ```powershell
 $Env:OPENAI_API_KEY = '[KEY HERE]'
