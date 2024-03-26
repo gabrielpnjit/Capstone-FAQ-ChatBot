@@ -12,7 +12,7 @@ module.exports = {
 	async execute(interaction) {
 		interaction.deferReply()
 		const question = interaction.options.getString('question')
-		// localhost changed to 127.0.0.1 because for some reason it refuses to connect without localhost
+		// localhost changed to 127.0.0.1 because for some reason it refuses to connect with localhost
 		fetch('http://127.0.0.1:8000/rag-pinecone/invoke', {
 		    method: 'POST',
 		    headers: {
