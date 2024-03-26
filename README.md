@@ -11,8 +11,8 @@ The following commands are used in a Linux/Unix Shell
 	- Your Pinecone environment, found in the [Pinecone console](https://app.pinecone.io/), e.g. us-west1-gcp, us-east-1-aws, etc.
 - `$ export PINECONE_INDEX=[PINECONE INDEX NAME HERE]`
 	- [Indexes Tab](https://app.pinecone.io/)
-## 3. Pinecone documents:
-- Go to packages\\rag-pinecone\\rag_pinecone\\chain.py
+## 3. Pinecone Documents:
+- Go to rag-app\\packages\\rag-pinecone\\rag_pinecone\\chain.py
 ```python
 from langchain_community.document_loaders.csv_loader import CSVLoader
 # from langchain_community.document_loaders import Docx2txtLoader
