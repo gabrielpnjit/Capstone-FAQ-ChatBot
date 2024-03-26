@@ -1,6 +1,7 @@
 # Langchain RAG-Pinecone Setup
 ## 1. pip install:
 - `$ pip install --upgrade langchain langchain-cli langchain-pinecone langchain-openai`
+- Navigate to "rag-app" directory and execute `$ pip install .`
 ## 2. Set Environment Variables
 The following commands are used in a Linux/Unix Shell
 - `$ export OPENAI_API_KEY=[KEY HERE]`
