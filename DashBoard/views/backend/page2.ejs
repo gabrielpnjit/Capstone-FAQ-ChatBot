@@ -1,0 +1,23 @@
+<!-- views/backend/page2.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Data</title>
+</head>
+<body>
+    <h1>Data from MongoDB Collection</h1>
+    <ul>
+        <% files.forEach(file => { %><!--this is an embedding needed for mongodb-->
+            <li>
+                <strong>Filename:</strong> <%= file.filename %><br>
+                <strong>Path:</strong> <%= file.path %><br>
+                <strong>Size:</strong> <%= file.size %> bytes<br>
+               <!-- <strong>Content:</strong> <%= file.content %>-->
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
