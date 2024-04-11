@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { Auth0Provider } from '@auth0/auth0-react';
 import App from "./App";
 import Record from "./components/Record";
 import RecordList from "./components/RecordList";
@@ -31,6 +32,16 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: "/login",
+    element: <App />,
+    children: [
+      {
+        path: "/login",
+        element: <Record />,
+      },
+    ],
+  },
+  {
     path: "/edit/:id",
     element: <App />,
     children: [
@@ -44,6 +55,13 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Auth0Provider
+      domain="https://dev-hox5qzwcq2d1c7c5.us.auth0.com"
+      clientId="wzVkLKweercBH98F6OBlPKhWWONVSwgX"
+      authorizationParams={{
+        redirect_uri: window.location.origin
+      }}>
+      <RouterProvider router={router} />
+    </Auth0Provider>
   </React.StrictMode>
 );
