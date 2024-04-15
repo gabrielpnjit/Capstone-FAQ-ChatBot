@@ -1,0 +1,1488 @@
+]\
+
+
+
+
+YWCC
+CAPSTONE
+About
+Capstone is a project-based learning experience where students work in
+multi-disciplinary teams to address a real world problem faced by a business,
+government agency or non-profit. Since launching in 2002, NJIT students have
+completed more than 1,200 projects supporting more than 700 organizations.
+
+The student teams work directly with a contact at a company or student-led startup
+to learn about the issues they are trying to resolve and develop an actionable
+solution.
+
+Through the program students gain real-world work experience, problems solving
+skills and valuable team experience. The company mentor or sponsor meets with the
+students throughout the semester to monitor progress and answer questions.
+
+This program is a perfect way to use the ecosystem of a research university, a cohort
+of bright undergraduate and graduate students to augment a company’s resources
+and maintain a lead over their competition.
+
+This digital handbook is an additional resource for students that is intended to
+provide all necessary information relating to the course. Please refer to Canvas or the
+course Discord server for updates.
+
+
+
+
+                                                                                          1
+]\
+
+
+
+TABLE OF CONTENTS
+
+About.......................................................................................................................................1
+TABLE OF CONTENTS........................................................................................................2
+Getting Started...................................................................................................................4
+   1. First Week To-Do List....................................................................................................................... 4
+   2. Review this Tour First...................................................................................................................... 4
+   3. Pass the Tour Test.............................................................................................................................. 4
+   4. Apply to a Project Category/Option...................................................................................... 5
+Course Schedule.................................................................................................................5
+   General Timeline......................................................................................................................................5
+   Deadlines...................................................................................................................................................... 5
+   Application Approval Timelines.................................................................................................... 6
+Capstone Communication..............................................................................................7
+   Course Webex............................................................................................................................................7
+Capstone Project Options.............................................................................................. 8
+Capstone Key Events....................................................................................................... 11
+   OPEN HOUSE............................................................................................................................................11
+   DELIVERABLES TRAINING..............................................................................................................14
+   MIDTERM PRESENTATIONS...........................................................................................................17
+   CAPSTONE SHOWCASE................................................................................................................... 18
+Capstone Deliverables and Submissions................................................................. 21
+   CAPSTONE NON-DISCLOSURE AGREEMENT (NDA)....................................................21
+   OPEN HOUSE FEEDBACK FORM...............................................................................................21
+   SCOPE AND TIME MANAGEMENT............................................................................................22
+   PROGRESS REPORTS........................................................................................................................ 25
+   MIDTERM VIDEO PRESENTATION............................................................................................25
+   FINAL SHOWCASE & FINAL REPORT..................................................................................... 26
+Track Evaluations.............................................................................................................27
+   INDUSTRY PROJECTS SCORECARD........................................................................................27
+   STUDENT STARTUPS SCORECARD.......................................................................................... 27
+   CISCO PROJECT & ACADEMY SCORECARD...................................................................... 28
+   RWC COACHES SCORECARD......................................................................................................28
+   OPERATIONS TEAM SCORECARD............................................................................................ 29
+
+                                                                                                                                                                  2
+]\
+
+Project Manager Resources..........................................................................................31
+   PROJECT MANAGERS EXPECTATIONS SUMMARY........................................................ 31
+   PM INTERVIEW FORM - what to expect...............................................................................32
+   PROJECT MANAGERS TRAINING...............................................................................................33
+Honors and Graduate Students.................................................................................. 35
+   HONOR STUDENTS............................................................................................................................. 35
+   GRADUATE STUDENTS..................................................................................................................... 35
+Capstone Support and Add-ons.................................................................................36
+   CAPSTONE OPEN UNIVERSITY...................................................................................................36
+   CAPSTONE AWS ACADEMY.......................................................................................................... 36
+   CAPSTONE JOB OPPORTUNITIES............................................................................................ 36
+Accomplishments and Recognition......................................................................... 37
+   CAPSTONE IN THE NEWS...............................................................................................................37
+   CAPSTONE SOCIAL MEDIA............................................................................................................37
+
+
+
+
+                                                                                                                                               3
+]\
+
+
+
+Getting Started
+Mandatory Self-Guided Tour
+
+
+1.    First Week To-Do List
+         a. Carefully review the Capstone Self-Guided tour and Canvas
+         b. Attend the first week virtual class during your class time at
+            https://njit.webex.com/meet/oe2
+         c. Pass the Individual Tour Test
+         d. Join Capstone Discord as soon as possible and change your
+            DISCORD name on this server to your FULL REAL NAME to be
+            verified and receive communication.
+         e. Apply to a project category/option
+
+
+
+
+2.    Review this Tour First
+This tour will prepare you to take the test to be eligible to apply to a project.
+
+      Capstone Self-Guided Tour-2.pptx
+
+
+
+
+3.    Pass the Tour Test
+This test is based on the Self-Guided Tour PPT and Canvas information. The
+minimum passing score is 70%.
+
+
+Please refer to Canvas for the link and play this Kahoot using your FULL REAL
+NAME.
+
+
+
+
+                                                                                    4
+]\
+
+
+
+4.      Apply to a Project Category/Option
+This application is due the first Sunday of the semester at 12 AM. You cannot
+apply unless you have successfully completed the Tour Test with a minimum
+score of 70%. If you failed to apply by the deadline, you will lose 1% and you will
+be limited to industry/start-up projects at the Open House itself automatically
+
+
+Apply here: https://fs7.formsite.com/eljabiri2/4pubewo4pi/index.html
+
+
+
+
+Course Schedule
+ General Timeline
+ Please refer to the following document for a general timeline Capstone
+ Timeline.pptx.
+
+
+ Be sure to check the Course Calendar on Canvas for deliverable and Progress
+ Report deadlines.
+
+
+
+
+ Deadlines
+     1. Joining Capstone Discord Server (and change name to your FULL
+        NAME) : [DATE]
+     2. Complete Capstone Tour Test: [DATE]
+     3. Submit your application to a project option: [DATE]
+     4. Submit Capstone NDA prior to Open House: [DATE]
+
+
+
+
+                                                                                  5
+]\
+
+
+
+ Application Approval Timelines
+The following teams will be announced in the Announcements channel in
+Discord.
+     1.   Enterprise Teams
+             a. Capstone Operations Team
+             b. Capstone Media & Communications Team
+             c. Capstone Media & Communications Support Team
+             d. Capstone Data Organization Team
+             e. Capstone Software Automation Team
+     2. Industry Project Managers
+     3. Startup Founders
+     4. RWC Coaches
+     5. Cisco Coaches
+     6. Software Engineering Coaches
+     7. CISCO students
+
+
+Startup members and Industry team members will be approved at the Open
+House.
+
+
+
+
+                                                                        6
+]\
+
+
+
+Capstone Communication
+ Course Webex
+       The following Webex link is for Dr. Eljabiri’s virtual office and it is the
+ training environment for all virtual classes and general or project manager
+ training meetings
+
+         https://njit.webex.com/meet/oe2
+
+Course Discord
+       Discord is the main communication system of our capstone program
+
+ across all capstone activities throughout the semester.
+
+
+       Please join our Discord server no later than the specified date by
+ midnight and change your nickname on the server to your FULL OFFICIAL
+ NAME as soon as you join. You will not be verified until you make this
+ change.
+
+
+Regular Classes & Events
+     1. First Week: Introduction to Capstone (Virtual on Webex)
+     2. Capstone Open House [DATE]
+     3. Post Open House Week: Capstone Deliverables Training (In Class)
+     4. Capstone Showcase Final Presentations [DATE] 12-6 PM
+
+
+
+
+                                                                                     7
+]\
+
+
+
+Capstone Project Options
+     A. Software Engineering Track
+       Under this project-based track, you have two options:
+               a. Industry-Sponsored Projects
+                 A list of all industry project proposals will be available after [DATE]
+
+                       Software Engineering Projects.pptx
+
+                 This is the link to view industry-sponsored proposed projects:
+
+                       Industry-Sponsored Projects Folder
+
+               b. Student Startup Projects
+                 Students’ startup/entrepreneurial projects are significant
+                 components of the YWCC Capstone program. We need as many
+                 startup projects as possible this semester due to the substantial
+                 increase in course enrollment. If you have an innovative idea that
+                 has potential to solve a real-world problem and become a
+                 proof-of-concept for a new business, do not hesitate to propose it
+                 and lead it as a STUDENT STARTUP CAPSTONE PROJECT
+                 FOUNDER.
+
+
+       The criteria to approve a startup project proposal is:
+          I.     Competitive Advantage: The proposal has a unique problem or
+                 an innovative approach to solving an existing problem. It must
+                 have the potential to be marketable.
+         II.     Sufficient Background: The proposal is driven by the founder's
+                 experience, knowledge, and passion in the project domain.
+        III.     Clarity and Persuasiveness: The proposal is clear, convincing,
+                 carefully thought out, and logical.
+
+
+
+                                                                                       8
+]\
+
+        IV.     Feasibility: The proposal has a feasible project that aims to
+                produce at least the proof-of-concept of the new product or
+                solution within the semester-long time frame.
+        V.      Rewarding Learning Experience: The proposal is inspiring and
+                relevant to YWCC students' curriculum and training as it provides
+                a valuable learning experience equivalent to other capstone
+                projects.
+     B. Network Engineering Track
+              a. CISCO Academy + CISCO Project
+                Please refer to the following documents for more information.
+                CISCO Track.pptx
+                CISCO_SPRING_2023 - UPDATED JAN 31.xlsx
+
+
+     C. Capstone Enterprise Track
+              a. Operations Team
+              b. Media & Communications Team
+              c. Automation Team
+     D. Capstone Teaching/Coaching Track
+              a. Software Engineering Coaching Project
+              b. Network Engineering Coaching Project
+              c. RWC Coaching at NJIT: Saturday program for middle/high
+                school students
+                   i.   RWC Coaches Orientation
+                  ii.   RWC Brochure
+                 iii.   Articles about RWC
+                 iv.    RWC YouTube Videos
+                            1.   https://youtu.be/LdfH614kYCg
+                            2.   https://youtu.be/hIS8CV1IfUw
+                            3.   https://youtu.be/E2PXd98c6BM
+                            4.   https://www.youtube.com/watch?v=tGfreQFAtOc
+                            5.   https://www.youtube.com/watch?v=LcJPqsoD2vU
+
+
+
+                                                                                9
+]\
+
+                 6. https://www.youtube.com/watch?v=k5sR0oDsgaw
+         v.    RWC Schedule: TBD
+
+     d. RWC International Traveling Coaches
+          i.   South America/Colombia Brochure
+         ii.   RWC YouTube Video: Our First Trip to South
+               America/Colombia 2015
+        iii.   Articles about the Program
+        iv.    Support Website
+
+
+
+
+                                                                  10
+]\
+
+
+
+Capstone Key Events
+OPEN HOUSE
+You are officially invited to our mandatory Capstone Projects Open House.
+Details about Open House location, date and time will be announced at the
+start of the semester.
+Dress code: Business casual
+
+
+Before the Open House:
+     ● Students will receive all project proposals with sponsors' contact
+        information.
+     ● Sponsors will receive all students' names, contact information, and
+        background information.
+     ● Communication or approvals between students and sponsors are only
+        allowed once the open house starts.
+
+
+Agenda:
+     ● Sponsors make brief 2-MINUTE introductions about their organizations,
+        projects, and skills sets expectations.
+     ● Students approach sponsor tables to present themselves and ask
+        questions based on the proposed projects.
+     ● Students register their names with sponsors they are interested in
+        working with using F-T-F communication and corresponding sponsor's
+        Discord channels. Sponsor interviews them during the same open
+        house, approves them, and then has an initial meeting with them to
+        exchange contact information and agrees on the first formal meeting.
+
+
+
+
+                                                                               11
+]\
+
+At the Open House:
+     ● During the Open House, all sponsors must interview their applicants
+        and approve their best 4-5 people team using an online form that will
+        be shared with all sponsors. All approvals MUST be received during the
+        Open House, using the provided online link.
+     ● Sponsors/students must decide on their projects/teams/PMs by 4:30 PM
+        and complete the online team selection form you will be provided with.
+        If there are still some vacancies, we will work with the sponsors and the
+        students to fill all available spots in the next few days.
+     ● Sponsors' decisions will be available instantly
+     ● Student confirmations will be required & available at the DISCORD
+        STUDENTS CONFIRMATION channel.
+     ● It is required that the student needs to confirm their acceptance of the
+        sponsor project placement/approval on the same day of approval (by
+        midnight) on the DISCORD CONFIRMATION CHANNEL. In that case, the
+        student's approval will be automatically canceled, and their spot will be
+        available for other students.
+
+
+
+
+                                                                                 12
+]\
+
+
+
+
+     Open House outline diagram
+
+
+
+
+                                  13
+]\
+
+
+
+
+DELIVERABLES TRAINING
+All Capstone students are required to attend a Deliverables Training lecture.
+
+
+Presentation Material
+Viral Video: https://my.visme.co/v/rxmm63no-3nn8e1
+Presentation Slides: https://prezi.com/view/kphxDgyAJIaj60ACYtIf/
+
+
+Judges Evaluation Rubric
+
+ Criteria                                                        Weight
+
+ 1- Ability to breakdown complex problems into                      5
+    manageable pieces (using WBS and Gantt).
+
+ 2- Ability to identify project risks and suggest                   5
+   strategies to minimize them.
+
+ 3- Ability to define project stakeholders, scope &                 10
+   requirements (including the use of FDD).
+
+ 4- Ability to visualize the design of the proposed                 5
+   solution identifying key components and their
+   relationships (examples: class diagram, ERM,
+   network diagram, system architecture, etc.)
+
+ 5- Ability to implement the solution successfully                  30
+   using software and/or hardware technologies or
+   other project-related tools (via prototypes).
+
+ 6- Ability to test (validate and verify) the quality of            5
+   the executed solution using user feedback and other
+   testing techniques.
+
+ 7- Presentation skills (communication): ability to                 5
+   explain, convince, engage and impress.
+
+ 8- Presentation skills (organization): ability to                  5
+   organize the presentation in a meaningful way from
+   start to end.
+
+
+                                                                                14
+]\
+
+ 9- Presentation skills (personal skills): knowledge,                5
+   confidence, enthusiasm, tone of voice, eye contact,
+   humor, body movement, posture, use of time and
+   avoiding the use of empty words.
+
+ 10- Presentation skills (collaboration): equal                      15
+   workload & time, clarity of individual
+   contributions, unification and coordination
+   (including smooth transitions).
+
+ 11- Presentation skills (Tools effectiveness): PPT                  5
+    (introductions, summaries, text, color, images,
+    white space, transitions, works cited, spelling,
+    grammar, etc.), Camtasia, demos and other creative
+    techniques.
+
+ 12- Team professionalism and appearance.                            5
+
+ Total                                                               100
+
+
+
+
+Scope Document Template
+
+ Project Name:                          Sponsor:
+ Password Rotation for shared           United Parcel Service, UPS
+ application accounts
+
+ Business Unit Project Director:        Business Unit Project Leader:
+ John Doe                               Jane Doe
+
+ IT Project Director:                   Project Manager:
+ John Doe                               Paige Turner
+
+ Requested Start Date:                  Requested End Date:
+ February 4, 2015                       May 6, 2015
+
+ Projected Start Date:                  Projected End Date:
+ February 19, 2015                      May 6, 2015
+
+ Objective:
+
+ The goal of this project is to provide automation of password retrieval and
+ rotation for shared application accounts.
+
+
+                                                                               15
+]\
+
+ Narrative:
+
+ Password rotation is required for all applications and shared user accounts
+ for auditing purposes and transaction history stored. Shared user accounts
+ need to be provided with a way to retrieve passwords and document
+ requests by only authorized individuals within a definite period of time. The
+ password retrieval is restricted for each account based on previous
+ authorization to avoid unauthorized password retrieval and provide
+ individual password expiration. The retrieval transaction will be logged, and
+ reports will be available for auditing purposes.
+
+
+ Risks:
+
+ Security leaks due to outdated passwords, compromised password retrieval,
+ and people inputting information incorrectly.
+
+ Dependencies:
+
+ The members of the project will be using .NET MVC 5, .NET WCF Interface,
+ provided mock data.
+
+ Boundaries: (In Scope / Out of Scope)
+
+ This project focuses on developing a web face for password retrieval,
+ rotation, and other administration activities regarding user accounts.
+
+ Project Deliverables:
+
+ The system will provide a web platform for password rotation, retrieval, and
+ other admin purposes.
+
+ Users will be authenticated according to their given role and can request
+ password retrievals that must be approved beforehand.
+
+ Passwords will be rotated every 24 hours as a minimum.
+
+ Project Assumptions:
+
+ UPS IT standards will be followed.
+
+ Application must function on both mobile and desktop environments.
+
+ There will be adequate time and resources allocated for the project.
+
+
+
+                                                                                 16
+]\
+
+ Estimated Budget:
+ The project will take 10 weeks to be completed.
+
+                                 Signatures
+
+ Sponsor                  Date         Project Manager          Date
+
+
+
+
+MIDTERM PRESENTATIONS
+     ❖ Date/Time: [To Be Announced]
+     ❖ Location: Video submission on Canvas (one submission per team by
+       PM)
+     ❖ Judges: Operations Team
+          ➢ Rubric: See above
+     ❖ Time Limit: 10 minutes maximum per presentation
+     ❖ Requirements:
+          ➢ All team members must participate
+          ➢ All team members must use video and audio
+     ❖ Samples and good examples:
+          ➢ https://drive.google.com/drive/folders/1WHimVqBlLlVNTH5equbP
+             bvXPrGArpVCL?usp=sharing
+     ❖ Common mistakes you should avoid:
+          ➢ Remember to include a live demo of your solution/product
+             prototype. Snapshots are NOT accepted.
+          ➢ Don't forget to explain all MDDDE ingredients (Manage, Define,
+             Design, Develop and Evaluate)
+          ➢ Don't forget to explain how your team implemented the SCRUM
+             method
+
+
+                                                                             17
+]\
+
+          ➢ Don't exclude any team member from participating in the
+             presentation.
+          ➢ Remember to introduce all your team members (photo/video and
+             audio).
+          ➢ Stay within your 10-minute time limit for your presentation.
+          ➢ Don't confuse the required FDD (Feature Driven Diagram) with
+             functional decomposition (NOT needed)
+
+
+
+
+CAPSTONE SHOWCASE
+Showcase Orientation Meeting:
+     ❖ Date and Time: Please consult the course calendar
+     ❖ Webex: https://njit.webex.com/meet/oe2
+     ❖ Mandatory for PMs and optional with 2% extra credit for all other
+       students
+
+
+Resources from Orientation Meeting:
+     ❖ Showcase orientation recording (Spring 2023):
+       https://njit.webex.com/meet/oe2
+
+
+Final Presentation Information:
+     ❖ Date and Time: Please consult the course calendar
+     ❖ Location: To be announced
+     ❖ Judging: Panels of Industry Judges
+          ➢ Tip: The focus will be on the product instead of the process. NO
+             MDDDE will be required beyond the poster.
+          ➢ Rubric:
+
+
+
+
+                                                                               18
+]\
+
+
+
+
+     19
+]\
+
+     ❖ Time Limit: 8 minutes maximum per presentation
+     ❖ Requirements:
+          ➢ Dress code: Business casual
+          ➢ Everyone must stay for all presentations in their respective room
+     ❖ Schedule: To be announced
+     ❖ Example Recording: FINAL PRESENTATIONS - Summer 2020
+          ➢ Password: capstoneFALL2020
+
+
+
+
+                                                                            20
+]\
+
+
+
+Capstone Deliverables and
+Submissions
+CAPSTONE NON-DISCLOSURE AGREEMENT (NDA)
+Submit the Capstone NDA on Canvas if you are doing an industry or capstone
+enterprise project. This document will be your admission ticket to the Open
+House.
+Please Note:
+     1) This NDA is only for students joining industry projects AND the
+        enterprise team members. It is not required from RWC coaches, CISCO
+        students, or startup teams (in general).
+     2) You need to submit this NDA online in response to this assignment.
+        Electronic signatures are perfectly fine. You can complete, print,
+        sign/date, scan, and upload, or do the process online.
+     3) You need to complete the first page by adding your name and your
+        address and the last by signing and dating.
+
+
+SCOPE AND TIME MANAGEMENT
+Each team must submit a signed Scope document and Time Management
+document. The due dates of these documents will be announced at the start
+of the semester.
+     ❖ Scope Document Example: See template above
+     ❖ Time Management Example:
+
+
+
+
+                                                                              21
+]\
+
+
+
+
+     22
+]\
+
+
+
+
+     23
+]\
+
+
+
+
+For time management diagrams, you can use any techniques or software
+tools of your choice, including but not limited to: Gantt Charts, Trello, Jira,
+Excel, and/or MS project. etc., as long you have the following in your
+chart/diagram:
+
+
+     ● WBS
+     ● List of project activities
+     ● Estimates of durations (including starting and ending times)
+     ● Independencies
+     ● Milestones (such as phases, sprints. etc.)
+     ● Buffer
+     ● Total duration (as opposed to deadline)
+     ● Initial assignment of tasks to team members
+
+
+                                                                                  24
+]\
+
+And YES, the time management chart/diagram can be updated, upgraded,
+and fine-tuned (progressive elaboration)
+
+
+
+
+PROGRESS REPORTS
+Progress reports are required to be submitted by the team’s Project Manager
+weekly, according to the course calendar deadlines.
+
+
+MIDTERM VIDEO PRESENTATION
+     ❖ Date and Time: Consult the course calendar
+          ➢ Late submissions will be subject to a 5% daily penalty for up to 5
+             days. After that date, no submissions will be accepted.
+     ❖ Location:
+          ➢ Video submissions on Canvas (one submission per team by PM)
+     ❖ Judging: Executive Team
+          ➢ Rubric: Consult the judging rubric above
+     ❖ Time Limit: 10 minutes maximum per presentation
+     ❖ Requirements:
+          ➢ All team members must participate
+          ➢ All team members must use video and audio
+     ❖ Samples and good examples are at:
+          ➢ https://drive.google.com/drive/folders/1WHimVqBlLlVNTH5equbP
+             bvXPrGArpVCL?usp=sharing
+     ❖ Common mistakes you should avoid:
+          ➢ Remember to include a live demo of your solution/product
+             prototype. Snapshots are NOT accepted.
+          ➢ Don't forget to explain all MDDDE ingredients (Manage, Define,
+             Design, Develop and Evaluate)
+
+
+
+                                                                                 25
+]\
+
+          ➢ Don't forget to explain how your team implemented the SCRUM
+                method
+          ➢ Don't exclude any team member from participating in the
+                presentation.
+          ➢ Remember to introduce all your team members (photo/video and
+                audio).
+          ➢ Stay within your 10-minute time limit for your presentation.
+          ➢ Don't confuse the required FDD (Feature Driven Diagram) with
+                functional decomposition (NOT needed)
+
+
+
+
+FINAL SHOWCASE & FINAL REPORT
+(See Final Presentation information under “Key Events”)
+
+
+Final Report Information:
+     ❖ Deadline will be announced
+     ❖ Every Project Team (Industry and E-Teams) needs to produce a typed
+       final formal report. This report is due on the date scheduled on the
+       syllabus. Submit to Canvas by PM only and include the names of all
+       “contributing” team members in the title page. The final report is worth
+       100 points (10%) towards your final grade this semester.
+
+     ❖ Undergraduate Requirements (exclude Honors):
+
+         REPORT REQUIREMENTS
+
+            ●    Each chapter of the report must have one (1) single author. Team
+                 members cannot collaborate on chapters.
+            ●    Each chapter should average 3 pages. A full report should include all
+                 chapters but there is no minimum number of pages and there is no
+                 maximum. This will vary depending on the number of chapters.
+                 However, we are more concerned about the quality rather than
+                 quantity in your deliverables.
+            ●    Author of each chapter should be explicitly stated in the footer of
+                 every page.
+
+
+
+                                                                                         26
+]\
+
+        ●   Only members of your team not exempt from the report will
+            complete the report. This is uncommon.
+
+     REPORT OUTLINE
+
+        ●   Title Page: Title, Sponsor, Team Members (indicate excused from
+            report or not), Course Name & Section, Instructor, Date
+        ●   Chapters 1-6, as included (see below).
+        ●   References (as applicable)
+
+     FINAL REPORT CHAPTERS
+
+     The report consists of multiple chapters. Teams will complete the
+     chapters as follows. For teams with less than four (4) students
+     completing the report, if there are N non-excused team members
+     completing the report, the report must consist of N+1 chapters.
+     Chapters 1 to 4 are mandatory for 3-people teams. Chapters 1 to 3 are
+     mandatory for 2-people teams For teams with four (4) people
+     completing the report, all first four chapters and chapter 6 are
+     mandatory. Teams of 5 people are required to do all 6 chapters
+
+     CHAPTER 1: INTRODUCTION
+
+     Project Background, Problem Definition, Glossary of terms used, Iteration or
+     Revision Updates
+
+     CHAPTER 2: PROJECT MANAGEMENT
+
+     Task Analysis, Roles, WBS/Gantt, Risk Identification and Management
+
+     CHAPTER 3: DEFINE
+
+     Stakeholders, Requirements Gathering, Project Scope
+     Extra Credit: FDD Requirement Grouping and Use Case Diagrams
+
+     CHAPTER 4: DESIGN
+
+     ER, Class, Network Diagrams. Implementation Details.
+     Extra Credit: Survey of at least three (3) alternative solutions and a
+     comparison between them
+
+     CHAPTER 5: DEVELOPMENT
+
+     Outputs / Screenshots and description of your Solution. No source code.
+
+
+
+                                                                                27
+]\
+
+         Extra Credit: Develop a brief User Manual for the intended user of your
+         solution
+
+         CHAPTER 6: EVALUATION AND CONCLUSION
+
+         Solution Testing, Verification, Validation. Team conclusions: What did you
+         learn, what would you do differently, were you successful?
+
+         GRADING OF REPORTS
+
+         Reports are graded according to the following criteria:
+             ● Adherence to assigned format.
+             ● Completeness. Do not leave out important details.
+             ● Presentation, Formatting, Spelling and Grammar. You will lose points
+                 for poor form.
+             ● Detail in analysis. Do not give a superficial report. Give sufficient
+                 technical detail, while remaining at the project level.
+             ● Mastery. Your report should indicate that your team understands in
+                 detail the project, the problems it solves, and the process you used to
+                 do it.
+         If your team has been productive during the semester, this report should
+         be straightforward.
+
+         ACADEMIC INTEGRITY NOTICE
+
+         This assignment is subject to the NJIT Honor Code. All outside materials
+         used in the construction of this report must be properly cited using an
+         accepted citation format (MLA/APA preferred). Plagiarism will not be
+         tolerated and will be reported to the Dean of Students.
+
+         Include a Works Cited or Bibliography as needed.
+
+
+     ❖ Honors and Graduate Requirements:
+
+         REPORT REQUIREMENTS
+
+            ●   12pt Times New Roman Single Spaced
+            ●   Each chapter of the report must have one (1) single author. Team
+                members cannot collaborate on chapters.
+            ●   Each chapter should consist of 5 pages. A full report should average
+                25 pages. This will vary depending on the number of chapters based
+                on the size of the team.
+
+
+
+
+                                                                                       28
+]\
+
+        ●   Author of each chapter should be explicitly stated in the footer of
+            every page.
+        ●   Only members of your team not exempt from the report will
+            complete the report.
+
+     REPORT OUTLINE
+
+        ●   Title Page: Title, Sponsor, Team Members (indicate excused from
+            report or not), Course Name & Section, Instructor, Date
+        ●   Chapters 1-6, as included (see below).
+        ●   References (as applicable)
+
+     FINAL REPORT CHAPTERS
+
+     The report consists of multiple chapters. Teams will complete the
+     chapters as follows. For teams with less than four (4) students
+     completing the report, if there are N non-excused team members
+     completing the report, the report must consist of N+1 chapters.
+     Chapters 1 to 4 are mandatory for 3-people teams. Chapters 1 to 3 are
+     mandatory for 2-people teams For teams with four (4) people
+     completing the report, all first four chapters and chapter 6 are
+     mandatory. Teams of 5 people are required to do all 6 chapters
+
+     CHAPTER 1: INTRODUCTION
+
+     Project Background, Problem Definition, Glossary of terms used, Iteration or
+     Revision Updates.
+
+     This is similar to a paper abstract. Your introduction should tell the viewer
+     what the project is about without assuming specific knowledge and
+     without adding any particular material that might obscure the summary. It
+     should anticipate and combine key elements described in more detail in
+     the rest of the project report. Also, importantly, it should motivate the
+     viewer about the project, to encourage them to read the whole report.
+
+     Usually it should include such things as:
+        ● The objectives of the project;
+        ● the intended audience of the completed project;
+        ● the scope of the project;
+        ● the approach used in carrying out the project;
+        ● Assumptions on which the project is based; and a broad overview of
+           key outcomes.
+
+
+
+                                                                                  29
+]\
+
+     CHAPTER 2: PROJECT MANAGEMENT
+
+     Task Analysis, Roles, WBS/Gantt, Risk Identification and Management
+
+     In this chapter, you must do a thorough analysis of:
+         1) Time management including your breakdown structure and Gantt
+             chart with full analysis of your charts, the basis of your estimations
+             and all conclusions. You should make the case how your plan
+             allowed you to finish the project on time, what obstacles you have
+             encountered and how you tackled them.
+         2) Software development life cycles strategies comparing traditional
+             methods with Agile and Scrum and analyzing Scrum in the light of
+             your project and how it was implemented. You should evaluate
+             SCRUM and propose a future approach for similar projects.
+         3) Risk analysis including potential risks, how did you measure them
+             and prioritize them and what strategies you tool to minimize their
+             impact on your project including a Cybersecurity section.
+         4) Discuss briefly human resources and communication management
+             in your project.
+
+     CHAPTER 3: DEFINE
+
+     Stakeholders, Requirements Gathering, Project Scope
+
+     In this chapter, you must:
+         1) Identify thoroughly each one of your stakeholders, their influence,
+             and their interest and how you analyze each one of them and what
+             approach you took to engage them.
+         2) Define your project scope beyond the scope document as well as the
+             functional and non-functional requirements of your project in terms
+             of requirements definition and specifications.
+         3) Describe your AS-IS system using use case diagrams and/or data flow
+             diagrams.
+         4) Describe thoroughly at least three requirements gathering
+             techniques you have used to determine user requirements of the
+             project.
+         5) Write the project user stories of your project following the SCRUM
+             format.
+     Extra Credit: FDD Requirement Grouping and Use Case Diagrams
+
+     CHAPTER 4: DESIGN
+
+
+
+
+                                                                                      30
+]\
+
+     Discuss the implications of constraints on your solution and different
+     design choices, and then give reasons for making the choices you did. You
+     must develop a “literature review” and create an evaluation matrix to
+     quantitatively evaluate potential solutions to the problem prior to the
+     selection of your final design. This should include:
+          ● Existing solutions relevant to the problem area, and why these are
+             unsuitable or insufficient in this particular case;
+          ● Methods and tools that your solution may be based on or use to
+             solve the problem; and so on.
+     It is expected that you make extensive use of diagrams, such as
+     entity-relationship diagrams, UML diagrams, state charts and/or other
+     relevant techniques
+
+     ER, Class, Network Diagrams. Implementation Details.
+
+     Extra Credit: Survey of at least three (3) alternative solutions and a
+     comparison between them
+
+     CHAPTER 5: DEVELOPMENT
+
+     This is the implementation section which explains your solution at a finer
+     level of detail, all the way to the code level.
+     It can also depict any problems or challenges that you encountered during
+     development and how you tackled them.
+
+     Please do not even attempt to describe all the code in the system, and
+     never include large pieces of code in this chapter. Instead select and
+     explain just the pieces of code which, for example:
+        ● are especially critical to the operation of the system;
+        ● you feel might be of particular interest to the reader for some reason;
+        ● Illustrate a non-standard or innovative way of implementing an
+            algorithm, data structure, etc..
+
+     You should also mention any unforeseen problems you encountered when
+     implementing the system and how and to what extent you overcame
+     them. Common problems are:
+        ● difficulties involving existing software, because of, e.g., its complexity,
+           lack of documentation; lack of suitable supporting software;
+        ● Over-ambitious project aims.
+
+     Outputs / Screenshots and description of your Solution. No source code.
+
+
+
+
+                                                                                    31
+]\
+
+     Extra Credit: Develop a brief User Manual for the intended user of your
+     solution.
+
+     CHAPTER 6: EVALUATION AND CONCLUSION
+
+     Solution Testing, Verification, Validation and quality assurance. Team
+     conclusions: What did you learn, what would you do differently, were you
+     successful?
+
+     You should describe how you demonstrated that the system works as
+     intended (or not, as the case may be). Include summaries of the results of
+     all major tests that took place. This is also the place to describe the
+     reasoning behind the tests to evaluate your results, what tests to execute,
+     what the results show and why to execute these tests.
+
+     You must also critically evaluate your results in the light of these tests,
+     describing its strengths and weaknesses. Ideas for improving it can be
+     carried over into a necessary Future Work section. The real world has
+     taught us that no project is perfect, and even a project that has failed to
+     deliver what was intended can achieve a good grade, if it is obvious that
+     you have learned from the mistakes, challenges and difficulties.
+
+     This chapter also gives you an opportunity to present a critical assessment
+     of the project as a whole. This could include, for example, whether the
+     methodology you have selected and the programming language used
+     were adequate.
+
+     GRADING OF REPORTS
+
+     Reports are graded according to the following criteria:
+         ● Adherence to assigned format.
+         ● Completeness. Do not leave out important details.
+         ● Presentation, Formatting, Spelling and Grammar. You will lose
+            points for poor form.
+         ● Detail in analysis. Do not give a superficial report. Give
+            sufficient technical detail, while remaining at the project level.
+         ● Mastery. Your report should indicate that your team
+            understands in detail the project, the problems it solves, and
+            the process you used to do it.
+     If your team has been productive during the semester, this report
+     should be straightforward.
+
+
+
+                                                                                   32
+]\
+
+         ACADEMIC INTEGRITY NOTICE
+
+         This assignment is subject to the NJIT Honor Code. All outside materials
+         used in the construction of this report must be properly cited using an
+         accepted citation format (MLA/APA preferred). Plagiarism will not be
+         tolerated and will be reported to the Dean of Students.
+
+         Include a Works Cited or Bibliography as needed.
+
+
+
+
+Sponsor Evaluation Form (up to 35% of Final Grade):
+     ❖ Deadline and Form Link will be announced
+
+
+
+
+                                                                                    33
+]\
+
+
+
+Track Evaluations
+INDUSTRY PROJECTS SCORECARD
+
+                        Quantity       Per Item   Total
+
+ Attendance                                       By deduction
+
+ Scope and Gantt        1              50         50
+
+ Progress Reports       8              20         160
+
+ Midterm presentation   1              140        140
+
+ Final Presentation     1              250        250
+
+ Sponsor Evaluation     1              300        300
+
+ Final Report           1              100        100
+
+                                       Total      1000
+
+                        Extra Credit Max          100
+
+                        Maximum Points            1100
+
+
+
+
+STUDENT STARTUPS SCORECARD
+
+                        Quantity       Per Item   Total
+
+ Attendance &           4              50         200
+ Participation
+
+ Scope and Gantt        1              50         50
+
+ Progress Reports       8              20         160
+
+ Midterm presentation   1              100        100
+
+
+                                                                 34
+]\
+
+ Final Presentation      1              350        350
+
+ Sponsor Evaluation                                0
+
+ Final Report            1              140        140
+
+                                        Total      1000
+
+                         Extra Credit Max          100
+
+                         Maximum Points            1100
+
+
+
+
+CISCO PROJECT & ACADEMY SCORECARD
+
+                         Quantity       Per Item   Total
+
+ Scope and Gantt Chart   1              20         20
+
+ Progress Reports        8              20         160
+
+ CISCO ACADEMY           1              500        500
+
+ Midterm presentation    1              70         70
+
+ Final Presentation      1              150        150
+
+ Final Report            1              100        100
+
+                                        Total      1000
+
+                         Extra Credit Max          100
+
+                         Maximum Points            1100
+
+
+
+
+                                                           35
+]\
+
+
+
+RWC COACHES SCORECARD
+
+                                  Quantity     Per Item     Total
+
+ Pre/Post Program Deliverables    5            20           100
+
+ Attendance & Participation       12           40           480
+
+ Midterm Presentation             1            20           20
+
+ Final Presentation               1            100          100
+
+ RWC students evaluation          1            100          100
+
+ Final Report                     1            100          100
+
+ Overall RWC Director             1            100          100
+ Assessment
+
+                                               Total        1000
+
+                                  Extra Credit Max          100
+
+                                  Maximum Points            1100
+
+
+
+
+OPERATIONS TEAM SCORECARD
+
+                                 Points   Explanation
+
+ Attendance (overall + w/         100     team meetings and capstone
+ team)                                    meetings
+
+ Weekly progress reports          100     10 each for 1%
+
+ Job performance in ROLE          300     HR, CRM, MIS, and logistics
+
+ Job performance in               150     Open house, assessment of
+ SHARED responsibilities                  teams deliverables, midterm
+                                          and showcase, etc.
+
+ Students Evaluation              100     Via an online form at the end of
+
+
+                                                                             36
+]\
+
+                                     the semester
+
+ Instructor Overall           150    Professionalism, attitude,
+ evaluation                          communication, leadership,
+                                     creativity, passion, etc.
+
+ Team PM Overall evaluation   100    Commitment, collaboration and
+                                     performance
+
+                              1000   Total Score
+
+
+
+
+                                                                  37
+]\
+
+
+
+Project Manager Resources
+PROJECT MANAGERS EXPECTATIONS SUMMARY
+Hard working & successful project managers will receive substantial extra
+credit and special certificates and recommendation letters as we have high
+expectations from them due to their instrumental roles.
+
+
+Project managers who do not take their responsibilities seriously are subject
+to job termination and replacement.
+
+
+Key responsibilities include but are not limited to:
+     1) Project managers are supposed to be role models (i.e.: first who attend
+        classes, first who attend their team meetings and first who respond and
+        submit their deliverables on time).
+     2) Project managers should give specific project deliverables instructions
+        to their team members and make sure that all individual
+        responsibilities are crystal clear for each team member.
+     3) Project managers should be able to motivate their team members.
+        They should create synergy and energy in their teams and create value
+        from the diversity of members’ capabilities and backgrounds.
+     4) Project managers should be excellent communicators all the time. They
+        should also be organized and keep a record of members attendance,
+        participation and report to class instructor regular progress reports as
+        instructed. They should also eliminate free riding if a team member is
+        insisting on not acting responsibly after all help, orientation and two
+        internal warnings.
+     5) Project managers should create an online collaboration system that
+        documents all team activities, strategies, deliverables and resources for
+        every class and every presentation.
+     6) Project managers should be democratic, collaborative, resourceful and
+        respectful to their team members. They should discuss with their team
+        members the various strategies that the team should consider to tackle
+        the challenges presented in the project.
+
+
+
+                                                                               38
+]\
+
+     7) Project managers should work collaboratively with the executive team –
+        including team mentors, attend project managers training and
+        participate in F-T-F and virtual project managers meetings that take
+        place during class time
+     8) Project managers should always have a positive attitude despite all
+        challenges. They should not see failure as an option and fight for the
+        success for their teams, projects, sponsors and the capstone program.
+
+
+
+
+PM INTERVIEW FORM - what to expect
+
+                       Project Manager Evaluation Form
+
+ Name of Project Manager:                Name of Evaluator:
+
+
+ Code       Scale
+
+ 5          The Absolute Best Project Manager that we have knowledge of
+            and experience with anywhere. Very Exceptional and Far Superior
+            to others. Value added to the project / Achieved on almost always /
+
+ 4          Above Average -- Noticeably competent / capable / proficient /
+            adept / knowledgeable / skilled / High Quality / Achieved on a
+            consistent basis /
+
+ 3          Average: (satisfactory / acceptable / suitable / reasonable / no
+            major problems / potential is there / dependable / meets the
+            stands of the job
+
+ 2          Marginal (Fair: improvement is necessary / deficient in certain
+            area, but potential may be there)
+
+ 1          Below Average (Needs significant or substantial improvement /
+            really lacking / unsatisfactory)
+
+ 0          Not observed or applicable
+
+ Project Manager’s Rating
+
+ ___ Ability to manage Team/Project      __ Dependability (can be counted on,
+                                         return calls/email)
+
+ __ Ability to motivate/ empower/        __ Ability to anticipate and analyze
+
+
+                                                                                39
+]\
+
+ influence others                      problems
+
+ __ Professionalism                    __ Timelines (attendance, punctuality,
+                                       fulfillment of obligations)
+
+ __ Ability to achieve project goals   __ Ability to locate & utilize resources
+                                       effectively
+
+ __ Written communications ability     __ Ability to work with others (attitude
+                                       toward team members)
+
+ __ Oral communications ability        __ Ability to present options and/or
+                                       reach decisions
+
+ OVERALL PROJECT PERFORMANCE OR END PRODUCT
+
+ __ Tolerance and Adaptability         __ Awareness / Adherence to Schedule
+
+ __ Attitude toward sponsor /          __ Focus on high quality results
+ stakeholders
+
+
+ Circle One:
+ Definitely recommend                  Recommend
+
+ Somehow recommend under               Not recommended
+ some conditions
+
+ Please note any specific comments here or on a separate sheet (weak points
+ needing improvement, strong points, instances of going the extra mile.)
+
+
+
+
+PROJECT MANAGERS TRAINING
+See Canvas for the Project Managers Training slides.
+
+
+
+
+                                                                                  40
+]\
+
+
+
+Honors and Graduate
+Students
+HONOR STUDENTS
+Earning Honors credit requires taking additional responsibility
+To earn honors credit, students must choose any one of the following tracks:
+   1) Found a Startup Team
+     2) Lead a sponsored project as a Project Manager
+     3) Lead a CISCO project as a Project Manager
+     4) Develop & Coach a K-12 curriculum for RWC
+     5) Join the Capstone enterprise teams
+     6) Complete a full, highly detailed, graduate-level, and very rigorous final
+        report
+Honors Students are Highly Encouraged to take Leadership Positions. The
+report option can be extremely demanding at the end of the semester.
+Project Manager, Startup Founder, Capstone enterprise teams
+
+
+
+
+GRADUATE STUDENTS
+Graduate students can only join industry-project teams as members or PMs.
+They work on the same projects as undergraduate students and are subject
+to the same evaluation system, except for the requirement to do a graduate
+version of the final report.
+
+
+
+
+                                                                                    41
+]\
+
+
+
+Capstone Support and
+Add-ons
+CAPSTONE OPEN UNIVERSITY
+Tech talks by students, for students
+Capstone students have an opportunity to share their expertise with other
+students.
+
+Guest speakers from alumni, industry and community
+
+Learn the subjects your professor doesn’t teach
+Topics cover many student interests, including mobile development, software
+design patterns, blockchain, cybersecurity, and even learning to make a viral
+video.
+
+1% Extra Credit for each full active attendance
+
+
+
+
+CAPSTONE AWS ACADEMY
+As part of the Capstone Open University, students are able to optionally join a
+self-paced AWS Academy Cloud Foundations course on Canvas. Details on
+this course will be announced at the start of the semester
+
+
+
+
+                                                                             42
+]\
+
+
+
+Accomplishments and
+Recognition
+CAPSTONE IN THE NEWS
+Computing Students Provide Real-World Solutions for Bank of America in
+Capstone Project
+
+
+Entire Computing Capstone Project Team Hired by Corporate Sponsor
+
+
+Capstone Digital Flyer
+
+
+
+
+CAPSTONE SOCIAL MEDIA
+Website: https://ywcccapstone.com/
+LinkedIn: https://www.linkedin.com/company/74773402
+
+
+
+
+                                                                         43
+
