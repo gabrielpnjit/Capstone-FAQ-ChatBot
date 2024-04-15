@@ -1,3 +1,5 @@
+// this file is to test code for express backend with mock data without needing to make requests to the backend
+
 import { pc, pcIndex } from "./db/connection-pinecone.js";
 import { Pinecone } from "@pinecone-database/pinecone";
 import { Document } from "@langchain/core/documents";
