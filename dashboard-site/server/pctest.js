@@ -5,21 +5,39 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 import { PineconeStore } from "@langchain/pinecone";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { PDFLoader } from "langchain/document_loaders/fs/pdf";
+import { CSVLoader } from "langchain/document_loaders/fs/csv";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-const pinecone = new Pinecone();
+import path from 'path';
 
-const pineconeIndex = pinecone.Index(process.env.PINECONE_INDEX);
-// try {
-//     await pcIndex.namespace('').deleteAll();
-//     console.log("Successful");
-//   } catch (err) {
-//     console.error(err);
-//     console.log("Error");
-//   }
+// pinecone db connection and index
+const pinecone = pc;
+const pineconeIndex = pcIndex;
 
 // load documents
-const loader = new PDFLoader("test_docs/Capstone-Handbook.pdf");
-const docs = await loader.load();
+// only handling one file at a time of types pdf, txt, csv
+const filePath = "test_docs/Capstone-Handbook.pdf"
+const extension = path.extname(filePath);
+let loader;
+let docs;
+switch (extension) {
+    case '.pdf':
+        console.log("Processing pdf...");
+        loader = new PDFLoader(filePath);
+        docs = await loader.load();
+        break;
+    case '.txt':
+        console.log("Processing txt...");
+        loader = new TextLoader(filePath);
+        docs = await loader.load();
+        break;
+    case '.csv':
+        console.log("Processing csv...");
+        loader = new CSVLoader(filePath);
+        docs = await loader.load();
+        break;
+    default:
+        console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
+}
 // const pages = await loader.loadAndSplit() // i don't think this is needed
 
 // split
