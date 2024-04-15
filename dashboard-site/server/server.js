@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import records from "./routes/record.js";
+import documents from "./routes/document.js";
 import { auth } from 'express-openid-connect';
 
 const config = {
@@ -19,6 +20,8 @@ app.use(cors());
 app.use(express.json());
 app.use(auth(config));
 // app.use("/record", records);
+app.use("/document", documents);
+
 
 // start the Express server
 app.listen(PORT, () => {
