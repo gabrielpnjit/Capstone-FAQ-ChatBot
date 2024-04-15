@@ -9,6 +9,7 @@ import App from "./App";
 import Record from "./components/Record";
 import RecordList from "./components/RecordList";
 import "./index.css";
+import LoginButton from "./components/LoginButton";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/login",
-        element: <Record />,
+        element: <LoginButton />,
       },
     ],
   },

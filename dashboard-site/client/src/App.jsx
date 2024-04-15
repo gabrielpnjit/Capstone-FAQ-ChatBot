@@ -9,14 +9,14 @@ const App = () => {
   return (
     <div className="w-full p-6">
       <Navbar />
-      {isAuthenticated ? (
+      {/* {isAuthenticated ? (
         <Routes>
           <Route path="/" element={<Outlet />} />
         </Routes>
       ) : (
         <LoginButton />
-      )}
-      {/* <Outlet /> */}
+      )} */}
+      <Outlet />
     </div>
   );
 };
