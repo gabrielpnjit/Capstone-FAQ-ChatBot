@@ -1,16 +1,20 @@
 import express from "express";
 
+import multer from "multer";
+import { Blob } from 'buffer';
 import { pc, pcIndex } from "../db/connection-pinecone.js";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { PineconeStore } from "@langchain/pinecone";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { PDFLoader } from "langchain/document_loaders/fs/pdf";
 import { CSVLoader } from "langchain/document_loaders/fs/csv";
+import { BufferLoader } from "langchain/document_loaders/fs/buffer";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import path from 'path';
-import { ObjectId } from "mongodb";
 
 const router = express.Router();
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
 
 // Placeholder that returns pinecone index data
 router.get("/", async (req, res) => {
@@ -33,7 +37,11 @@ router.get("/test", async (req, res) => {
 });
 
 // Upload document to pinecone db
-router.post("/", async (req, res) => {
+router.post("/", upload.single('file'), async (req, res) => {
+  if (!req.file) {
+      return res.status(400).send("No file uploaded");
+  }
+
   try {
     // pinecone db connection and index
     const pinecone = pc;
@@ -41,24 +49,25 @@ router.post("/", async (req, res) => {
 
     // load documents
     // only handling one file at a time of types pdf, txt, csv
-    const filePath = "test_docs/Capstone-Handbook.pdf"
-    const extension = path.extname(filePath);
+    const buffer = req.file.buffer;
+    const blob = new Blob([buffer]);
+    const extension = path.extname(req.file.originalname).toLowerCase();
     let loader;
     let docs;
     switch (extension) {
         case '.pdf':
             console.log("Processing pdf...");
-            loader = new PDFLoader(filePath);
+            loader = new PDFLoader(blob);
             docs = await loader.load();
             break;
         case '.txt':
             console.log("Processing txt...");
-            loader = new TextLoader(filePath);
+            loader = new TextLoader(blob);
             docs = await loader.load();
             break;
         case '.csv':
             console.log("Processing csv...");
-            loader = new CSVLoader(filePath);
+            loader = new CSVLoader(blob);
             docs = await loader.load();
             break;
         default:
