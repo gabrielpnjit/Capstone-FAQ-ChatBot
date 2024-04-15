@@ -54,4 +54,9 @@ const allSplits = await textSplitter.splitDocuments(docs)
 await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(), {
     pineconeIndex,
     maxConcurrency: 5, // Maximum number of batch requests to allow at once. Each batch is 1000 vectors.
-  });
+  }).then(res => {
+    console.log("Successfully Uploaded to Pinecone DB!")
+  }).catch(err => {
+    console.log("Error uploading to pinecone DB!")
+    console.log(err)
+  })

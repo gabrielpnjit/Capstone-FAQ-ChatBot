@@ -50,7 +50,7 @@ router.post("/", upload.single('file'), async (req, res) => {
     // load documents
     // only handling one file at a time of types pdf, txt, csv
     const buffer = req.file.buffer;
-    const blob = new Blob([buffer]);
+    const blob = new Blob([buffer]); // loaders can only handle blobs, not buffers
     const extension = path.extname(req.file.originalname).toLowerCase();
     let loader;
     let docs;
@@ -87,7 +87,13 @@ router.post("/", upload.single('file'), async (req, res) => {
     let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(), {
       pineconeIndex,
       maxConcurrency: 5, // Maximum number of batch requests to allow at once. Each batch is 1000 vectors.
-    });
+    }).then(res => {
+      console.log("Successfully Uploaded to Pinecone DB!")
+    }).catch(err => {
+      console.log("Error uploading to pinecone DB!")
+      console.log(err)
+    })
+
     res.send(result).status(204);
   } catch (err) {
     console.error(err);
