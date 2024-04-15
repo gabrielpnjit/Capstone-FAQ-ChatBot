@@ -21,11 +21,31 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/create",
+    path: "/upload",
     element: <App />,
     children: [
       {
-        path: "/create",
+        path: "/upload",
+        element: <Record />,
+      },
+    ],
+  },
+  {
+    path: "/about",
+    element: <App />,
+    children: [
+      {
+        path: "/about",
+        element: <Record />,
+      },
+    ],
+  },
+  {
+    path: "/checklogs",
+    element: <App />,
+    children: [
+      {
+        path: "/checklogs",
         element: <Record />,
       },
     ],
