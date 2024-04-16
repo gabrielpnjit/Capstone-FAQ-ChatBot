@@ -50,7 +50,8 @@ router.post("/", upload.single('file'), async (req, res) => {
     // load documents
     // only handling one file at a time of types pdf, txt, csv
     const buffer = req.file.buffer;
-    const blob = new Blob([buffer]); // loaders can only handle blobs, not buffers
+    console.log(req.file)
+    const blob = new Blob([buffer], { source: req.file.originalname }); // loaders can only handle blobs, not buffers
     const extension = path.extname(req.file.originalname).toLowerCase();
     let loader;
     let docs;
@@ -74,14 +75,17 @@ router.post("/", upload.single('file'), async (req, res) => {
             console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
     }
     // const pages = await loader.loadAndSplit() // i don't think this is needed
-
+    for (let i = 0; i < docs.length; i++) {
+        docs[i].metadata.source = req.file.originalname;
+    }
+    console.log(docs)
     // split
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkOverlap: 200,
         chunkSize: 500
     });
 
-    const allSplits = await textSplitter.splitDocuments(docs)
+    const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname })
 
     // add to pinecone vector db
     let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(), {
