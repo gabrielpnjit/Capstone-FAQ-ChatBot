@@ -1,0 +1,427 @@
+ Question,Answer,Context,Intent,Entities,Difficulty,Volatility Level,Comments
+Hello. I see the Cisco project is open now. Are we allowed to apply right now?,Yes,Project applications,Application inquiry,Live Schedule,2,2,2 for dificulty because I'm not sure about how we're handling dates/deadlines rn
+When will the Cisco Track.pptx be unlocked?,Let me fix that. I did not notice it was locked.,Course resources,Resource request,"students, projects",3,2,No idea
+"I went to the Capstone Showcase last year December 2nd, would I still be eligible for extra credit? Also would we have to show any proof of going to the showcase?",What is the rate of students getting into Cisco project+Cisco Academy?,Capstone showcase,Extra credit request,"Capstone showcase, extra credit",2,1,
+"The RWC interviews today are at 6-8, yeah?","All interviews will take place tonight as agreed, 6-8 PM and 9-10 PM.",Track Interview,Event Participation,"RWC, interview",2,2,
+are the 6-8PM interviews for RWC saturday or for wednesday/sunday?,For everyone who applied and was listed,Track Interview,Schedule Inquiry,"RWC, interview",2,2,
+"Via my updated status, should show up tonight for CISCO?",Yes,Track Event,Event Participation,Cisco,2,2,Grab user role and compare to live schedule
+There is no Thursday class today correct?,[Capstone General Schedule],Class Schedule,Schedule Inquiry,Live Schedule,2,3,Situational deadline? Even looking at the live schedule wont help if the professor makes a canvas announcement
+How do I go about committing now that I’m on the sheets.,[Link to Cisco commitment channel],Approval Process,Project Commit,Commitment,1,1,
+"Students who applied for the industry sponsored project don't need to attend tonight's session, right?","No, of course.",Track Exclusion,Event Participation,Industry,2,1,
+So if our name doesn’t appear on the capstone google sheet do we just show up to the virtual open house on Saturday and find a project?,Correct. Industry projects are the default options for everyone,Open House,Event Participation,"Google sheets,Open House",2,2,
+How will the interview process work for the industry track?,"## Open House Agenda:
+
+<:ec2:1031781180632203275> Sponsors make brief 2-MINUTE introductions about their organizations, projects, and skills sets expectations.
+<:ec2:1031781180632203275> Students present themselves optionally and ask questions based on the proposed projects.
+<:ec2:1031781180632203275> To sign up for a sponsor to work with, students communicate face-to-face and join the sponsor's Discord channel to register their names. During the same open house, the sponsor conducts interviews with the prospective individuals, approves them, and then arranges an initial meeting to exchange contact information and agree on the details of the first formal meeting.
+
+## Before the open house:
+
+-    ☑️      Students will receive all project proposals with sponsors' contact information.
+
+-    ☑️      Sponsors will receive all students' names, contact information, and background information.
+
+-     ☑️ Communication or approvals between students and sponsors are only allowed once the open house starts.
+
+## At the Open House:
+
+🔹 During the Open House time,  all sponsors must interview their applicants and approve their best 4-5 people team using an online form to share with all sponsors at the Open House. They send all approvals by 4:30 PM on the open house day, using the provided online link.
+
+🔹 Sponsors/students must decide on their projects/teams/PMs by 4:30 PM and complete the online team selection form you will be provided with. If there are still some vacancies, we will work with the sponsors and the students to fill all available spots in the next few days.
+
+☑️ Sponsors' decisions will be available instantly at (  )
+
+☑️ Student confirmations will be required & available at the DISCORD STUDENTS CONFIRMATION channel.
+
+☑️ Once a sponsor project placement/approval is granted, the student must confirm their acceptance by midnight on the same day via the DISCORD CONFIRMATION CHANNEL. Failure to do so will result in automatic cancellation of the approval, and the spot will become available for other students. This information is under fine-tuning and it will be part of the Canvas system shortly and the FTF training next week. Needless to say, all students who were approved and made a commitment to non-industry projects CANNOT CHANGE THEIR PROJECTS under any circumstances.
+
+Only operations and media should  attend the industry open houses because of their responsibilities among all who have been approved for non industry projects
+ ",Track Interview,Interview Process,"Indursty, Interview",1,1,Document
+"Regarding the startup open house today, is there a limit to the number of startups that members can apply to?","There is no limit to who can apply, but there is a limit to the team size. Each startup team can have up to four members, including the founder.",Project Applications,Team Limit,"Open House, Startup, Members",1,1,Document
+"I see, thank you for the quick response! So does that mean if I get accepted by a startup founder, I don’t need to continue interviewing with other startup founders?","Since you can only be in one project, the answer is definitely yes.",Project Applications,Application Inquiry,"Startup, Interview, Founders",1,1,
+Thank you. How many projects can we apply for?,You can only apply to one primary project and one backup project.,Project Applications,Application limits,Projects,1,1,
+What if we didn’t get chosen for any of the projects we applied for?,Additional applications will be allowed and we will work with you until a project assignment is secured. If there are no open assignments we will create one from scratch.,Project Applications,Denied Application,Projects,1,1,"i want to say this is a 1 difficulty, but we have no data saying ""As long as you communicate, we will find you a project"""
+"Should I attend the student startup open house tonight if I signed up for ""INDUSTRY-SPONSORED PROJECT (as a team member)""",Switching between startups and industry options is allowed.,Open House,Event Participation,"Industry, Projects, Open House",2,2,
+Oh. I do not want to do that and want to participate in the industry option. Should I show up to the open house tonight?,It is only an option.,Open House,Event Participation,"Open House, Industry",2,2,
+Only those wanting to startup projects (either signed up for it or wanting to switch from industry projects) should attend the open house today right? Other non industry (like operations or media) are not needed today?,"Operations are always needed all the time. They already know that. 
+
+Media and communications will start soon and they will also be involved in most events. Today is not required.
+
+Students either signed up for  startup or wanted to switch from industry projects) should attend the open house today",Open House,Event Participation,"Indursty, Open House, Operations, Media, Projects",2,2,what is that answer?
+"I applied for cisco but I don’t see my name on the list, are the approvals still happening or is the list finalized? Do i need to attend open house today?","I understand that your application was not approved due to the fact that you have completed only two network engineering courses and you are not officially part of the required concentration. 
+
+If you are interested in doing a startup project with one of the existing founders, I recommend that you attend the startup open house.",Approval Process,Event Participation,"Csco, Live Approvals, Open House, Attendance",3,2,Conditional Answer & a deadline
+Is there an alternative if I am unable to attend today.,I didn't say today was the only option. Check the schedule for industry open houses.,Open House,Attendance Alternative,"Open House, Attendance",3,1,bot woul have to know that he is allowed to go to another industry open house
+"I have been listed as a conditional approval for the Startup track, is there more needed on my end? I saw that you asked for commits but saw no option to do so while I am a conditional approval. I am attending the startup open house later on but I just want to make sure I come prepared with anything else I may need",We'll allow you to present and recruit a team today if you resubmit your proposal after making the necessary changes similar to what your colleagues have done before within 72 hours.,Project Status,Conditional Approval,"Conditional Approval, Startup, Commitment, Live Approval",2,3,Conditional Answer
+Hey proffesor was my application not approved I don’t see my name on Cisco? Does that mean I will have to attend startup house today?,I didn't say today was the only option. Check the schedule for industry open houses.,Approval Process,Event Participation,"Live Approval, Startup, Open House",3,3,Conditional Answer
+Can I switch to industry-sponsored project as team member?I am not approved to anything so do I need to submit another application?,You don't need to apply. Just come to your corresponding industry open house.,Project Applications,Project Switch,"Projects, Live Approvals",1,1,
+"I would like to know if there is still avalibilty to join the RWC?
+thank you.","Since you were not approved for Media, the answer is YES",Project Applications,Position Availability,"RWC, Slots",3,3,Conditional Answer
+I didn’t get approved for Cisco which means I am automatically put for industry project correct?,Yes!,Project Applications,Denied Application,"Cisco, Industry, Project",1,1,Documents state Industry as the default fallback
+Proffesor this WebEx is also industry project too correct,Check the schedule and go on the day you are registered,Track Exclusion,Webex Inquiry,Webex,1,2,LiveSchedule
+whats NDA thats due on sunday?,A non-disclosure agreement that the industry and enterprise would have to sign,Track Exclusion,Project Requirements,NDA,2,3,could be a 1 difficulty ?
+For the meeting for today at 2 pm could i join with my phone I’m going to be at work however I don’t have a computer there that i could use! I already told my work to give me a break around the meeting time,"yes, as long as you can join the Webex the device you use doesn't matter , i do not think the CISCO meeting will last more than 2 hours max.",Meeting Logistics,Meeting requirements,Meeting,1,1,
+What does FTF mean,Face to Face/in-person,Meeting Logistics,Event Details,FTF,1,1,
+are we allowed to apply to 2 or 3 projects? the discord announcements all say 2 but the brochure today says up to 3,only 2!,Project Applications,Application inquiry,"Projects, Approvals",1,1,
+For projectless students would we apply to the same sponsors or two different ones?,"If they still have a spot you can, if no you should apply somewhere else. But keep in mind you can have only 2 submissions.",Project Applications,Application inquiry,"Projects, Sponsors",1,1,
+"If we don't have an industry project yet, can we apply to join an startup project today?",yes the startup founders will be there also recruiting tonight,Project Applications,Application inquiry,"Industry, Projects, Startup",1,1,
+I have a 6-9 today and won’t be able to make it. What can I do?,"if you are able to make it from 4-6 that would be appreciated if not, we will have a backup open house if needed",Open House,Attendance Atlernative,"Open House, Attendance",2,1,
+does it start at 4 or 5,[Tuesday Open House Brochure],Open House,Schedule Inquiry,Open House,2,2,
+"Hello, just need some clarification. Is the open house for Tuesday class will be held today online or in person?",in person in atrium,Open House,Event Details,"Open House, Tuesday Class",2,2,
+Is there a sponsor approval form available? To view which projects have been filled up?,[Sponsor Approval Form],Project Applications,Position Availability,"Live Approvals, Projects",1,2,
+When is the backup open house?,this saturday,Open House,Event Details,Open House,2,3,
+"Instead of Gantt charts, can we just utilize a Kanban board? And separate each sprint with a backlog of tasks?",Of course. I stated that numerous times,Course Details,Sprint Details,"Gantt Chart, Kanban Board, Sprints",1,1,
+How do I apply to a project?,[Sponsor Approval Form],Project Applications,Application Inquiry,"Projects, Approvals",1,1,
+"It seems like they’re full, pls are we going to be able to get a project??","If a company is marked in “red”, that company will not be offering a project this semester",Project Applications,Position Availability,"Projects, Approvals",2,1,
+"I have applied as a Project Manager for project sponsor Sankofa African American 3-D museum and have put a commitment on Discord in the Commitment after approval section in industry-pm section, although I have yet to be included in a team or have members on my team. Would I need to submit my resume to Sankofa?",Operations will be doing matching by resumes,Approval Process,Resume Inquiry,"Project Manager, Sponsor, Commitment, Discord, Live Approvals",,1,
+"If I can’t get into a project after tomorrow’s open house, what should I do?",There are enough openings for every projectless person to be assigned somewhere,Project Application,Position Availability,"Project, Open House",2,1,
+By operations do you mean the open house tomorrow?,"The sponsors are not going to be there so operations members will place you in your team, We will be doing an asynchronous open house",Open House,Event Details,"Operations, Open House",3,3,Conditional Answer
+Okay will I still be able to get a project? I’ve been communicating,"Yes you will, Thank you for staying in touch with us :)",Project Application,Project Approvals ,Project,1,1,
+"Wait, is there still an open house today?",there isn't any open house today! the live schedule shows it as virtual but the operations team is matching the projectless students now,Open House,Schedule Inquiry,Open House,2,2,
+Where can I find the live approvals sheet?,[Live Approval Schedule],Course Resources,Project Approvals ,Live Approvals,1,1,
+I'm confused where do I see what projects I'm approved for?,on live approvals in resources,Course Resources,Project Approvals ,Live Approvals,1,1,
+"right now my name is in the bubbles team on the industry live approvals, does that mean I was approved for that project or do I need to do something to get approved?",Just need to commit in <#1198274904085233714>,Approval Process,Project Commit,"Live Approvals, Commitment, Industry, Projects",1,1,
+Is there a limited number of applications before the deadline? I am unable to access the application form on Canvas,"Please note that the FIFO method is used for all options except for industry and startup membership applications, which have a set capacity.",Project Applications,Application Limits,"Students, Project, Applicants",1,1,
+How will we know the role we have been assigned for Cisco?,At the CISCO OPEN HOUSE. Only two roles exist (CISCO TEAM MEMBER) and (CISCO PM).,Open House,Role Inquiry,"Students, Project, Role, Industry",1,1,
+"if we didn't get accepted to the enterprise operations team, are we allowed to apply to a different project?",Yes,Project Applications,Denied Application,"Students, Project, Applicants, Denied",1,1,
+"If our start-up was approved conditionally, I know you said we will be approved after some minor changes, but do we have to submit a second time by tonight with these changes or just have them in time for the open house?",Yes you must resubmit. Please do it no later than Tuesday,Startups Applications,Startup Conditionally Approved Inquiry,"Conditional Startup, Open House",1,2,Question asks about deadlines
+If i had to change some information on the application do I just resubmit it?,"Honestly, it is too late now, unless it is a major error or mistake.",Project Applications,Application Edit,Application,1,1,
+I just put in the wrong email address(not the school email),Not a big deal,Project Applications,Application Edit,,1,1,
+Can I join an existing startup?,You need to attend the startup virtual open house next Saturday,Startup Applicaitons,Startup Inquiry,Existing Startup,1,1,
+"I also saw two students on that list with personal emails so, I think you're fine (but idk)",Absolutely fine. This is not a big deal,Project Applications,Application Inquiry,Students,1,1,
+I applied for RWC but do not see myself on the approved list. what do I do now?,but it is.,RWC Applications ,RWC Application Approval,"Live Approvals, RWC, Approval List",1,3,Answer used attached image in entities
+we need to do the commitment in the discord channel after we see our name in the approvals sheet right? or does everyone need to a interview (as far as I can tell not everyone is supposed to?) I am in media and communication list,"Only the ones that say ""candidates"" need an interview. Otherwise, you must commit ASAP since you are approved.",Project Applications,Project Commitment,"Commitment, Discord Channel, Approvals Sheet, Interview, Media and Communication",1,1,
+When will we get access to Cisco Academy and will be allowed to start working on that?,Yes. I plan to have the Cisco coach ready it before your first class meetings with him (virtually) through his Webex,Cisco Track,Cisco Academy Inquiry,"Live Schedule, Cisco Academy",2,3,Not sure if this info is on live schedule
+"For those that aren't approve for any project, you said will be doing industry projects. Do we find out more about that in the nxt tues/thurs class on what the nxt steps are ? I'm just trying to understand.",The industry projects will be released after January 26th. You will automatically be switched to industry projects if you are not in any non-industry project by Sunday or if you have applied to industry projects as your first choice.,Project Applications,Industry Application Process Inquiry,"Project, Industry Project, Tuesday, Thursday, Class",2,3,Has schedule questions
+Will we see our names under a project or we will have to choose one when the projects are release,"Not for industry projects until you attend the industry projects open house.
+
+For non-industry projects, yes.",Project Applications,Industry Application Process Inquiry,"Live Approvals, Project",1,1,
+"Can u elaborate a little more..are u saying for industry, we'll find out whichever project we'll be doing when the list is released on the 26th and then we'll know more when we attend the open house which is on Feb 3rd according to the live schedule shared?","## Open House Agenda:
+
+<:ec2:1031781180632203275> Sponsors make brief 2-MINUTE introductions about their organizations, projects, and skills sets expectations.
+<:ec2:1031781180632203275> Students present themselves optionally and ask questions based on the proposed projects.
+<:ec2:1031781180632203275> To sign up for a sponsor to work with, students communicate face-to-face and join the sponsor's Discord channel to register their names. During the same open house, the sponsor conducts interviews with the prospective individuals, approves them, and then arranges an initial meeting to exchange contact information and agree on the details of the first formal meeting.
+
+## Before the open house:
+
+-    ☑️      Students will receive all project proposals with sponsors' contact information.
+
+-    ☑️      Sponsors will receive all students' names, contact information, and background information.
+
+-     ☑️ Communication or approvals between students and sponsors are only allowed once the open house starts.
+
+## At the Open House:
+
+🔹 During the Open House time,  all sponsors must interview their applicants and approve their best 4-5 people team using an online form to share with all sponsors at the Open House. They send all approvals by 4:30 PM on the open house day, using the provided online link.
+
+🔹 Sponsors/students must decide on their projects/teams/PMs by 4:30 PM and complete the online team selection form you will be provided with. If there are still some vacancies, we will work with the sponsors and the students to fill all available spots in the next few days.
+
+☑️ Sponsors' decisions will be available instantly at (  )
+
+☑️ Student confirmations will be required & available at the DISCORD STUDENTS CONFIRMATION channel.
+
+☑️ Once a sponsor project placement/approval is granted, the student must confirm their acceptance by midnight on the same day via the DISCORD CONFIRMATION CHANNEL. Failure to do so will result in automatic cancellation of the approval, and the spot will become available for other students. This information is under fine-tuning and it will be part of the Canvas system shortly and the FTF training next week. Needless to say, all students who were approved and made a commitment to non-industry projects CANNOT CHANGE THEIR PROJECTS under any circumstances.
+
+Only operations and media should  attend the industry open houses because of their responsibilities among all who have been approved for non industry projects
+ ",Industry Project Applications,Industry Application Process Inquiry,Open House Process PDF,2,3,Has schedule questions
+"for RWC candidates, do the interviews happen at the open house event?",Please see the live schedule. They will happen this week Tuesday and Thursday virtually. Depending on your registration,RWC Applications ,RWC Candidate Interview Inquiry,"RWC, RWC Candidate, Interviews, Open House",2,3,
+When are the CISCO approvals going to be official by?,Did you look at the live approvals Google  sheet?,Cisco Track,Cisco approval inquiry,"Live Approvals, CISCO Approvals",2,3,
+Hey once your accepted and type out your commitment are you locked into the route you chose? Is there anything else that I would need to do?,"Yes. Your locked in and out.
+
+Just wait for futther instructions",Track Commitment,Track Commitment Inquiry,Commitment,1,1,
+"on the candidate sheet, the wrong email is listed to my name. Do i send you the correct email ?",It is usually exported from the application. I will be happy to edit it is though.,Project Applications,Project Applications Edit,Candidate Sheet,1,1,
+I am one of the industry sponsored students for the Thursday section. Both of the Open Houses for the Thursday section land on Saturdays which I usually work 10+ hours at my job since nobody wants to work Saturdays. Would I be able to attend the Tuesday February 6th Industry Open House?,"I will work with Operations to address any exceptional cases based on proof of conflict in schedule. 
+
+The good news is that Tuesday Feb 6th is much larger space  which would allow more flexibility than Feb 3rd",Personal Schedule Conflict,Schedule Conflict Resolution Request,"Industry Sponsored Students, Thursday Section, Open House",1,1,
+Same here. I work on Tuesday evenings and all day Saturdays. What happens if my job conflicts with all the open house times??,"Operations Please take note of the special cases above. With a documented conflict, we will find a solution to adapt to your special case, including facilitating remote interview and/or project assignment. No problem cannot be solved.",Personal Schedule Conflict,Schedule Conflict Resolution Request,"Job, Conflicts, Open House",1,1,
+"Okay, who do I  send the schedule conflict to and when ?",Feel free to send it to me via Discord any time before next week,Personal Schedule Conflict,Schedule Conflict Resolution Inquiry,Schedule Conflict,1,1,
+"If I didn't get into software automation I'm automatically in the industry track, right?",Correct!,Project Applications,Project Application Rejected,"Software Automation, Industry Track",1,1,
+"I have been approved for automation, but I still want to do an industry project. Should I just not commit and attend the open house?","I will remove you now from automation. The industry is the default option before commitment. There is no way back, though. You have been removed.",Project Applications,Projet Applicatinos Change Request,"Software Automation, Industry Project, Open House",1,1,
+"Hello. I’m a bit confused about the industry sponsored projects. Just to confirm my understanding, are we supposed to wait until our sections open house and go to that and kind of interview for a position? I saw the live list on canvas for the non-industry projects so it confused me a little","## Open House Agenda:
+
+<:ec2:1031781180632203275> Sponsors make brief 2-MINUTE introductions about their organizations, projects, and skills sets expectations.
+<:ec2:1031781180632203275> Students present themselves optionally and ask questions based on the proposed projects.
+<:ec2:1031781180632203275> To sign up for a sponsor to work with, students communicate face-to-face and join the sponsor's Discord channel to register their names. During the same open house, the sponsor conducts interviews with the prospective individuals, approves them, and then arranges an initial meeting to exchange contact information and agree on the details of the first formal meeting.
+
+## Before the open house:
+
+-    ☑️      Students will receive all project proposals with sponsors' contact information.
+
+-    ☑️      Sponsors will receive all students' names, contact information, and background information.
+
+-     ☑️ Communication or approvals between students and sponsors are only allowed once the open house starts.
+
+## At the Open House:
+
+🔹 During the Open House time,  all sponsors must interview their applicants and approve their best 4-5 people team using an online form to share with all sponsors at the Open House. They send all approvals by 4:30 PM on the open house day, using the provided online link.
+
+🔹 Sponsors/students must decide on their projects/teams/PMs by 4:30 PM and complete the online team selection form you will be provided with. If there are still some vacancies, we will work with the sponsors and the students to fill all available spots in the next few days.
+
+☑️ Sponsors' decisions will be available instantly at (  )
+
+☑️ Student confirmations will be required & available at the DISCORD STUDENTS CONFIRMATION channel.
+
+☑️ Once a sponsor project placement/approval is granted, the student must confirm their acceptance by midnight on the same day via the DISCORD CONFIRMATION CHANNEL. Failure to do so will result in automatic cancellation of the approval, and the spot will become available for other students. This information is under fine-tuning and it will be part of the Canvas system shortly and the FTF training next week. Needless to say, all students who were approved and made a commitment to non-industry projects CANNOT CHANGE THEIR PROJECTS under any circumstances.
+
+Only Operations and media should  attend the industry open houses because of their responsibilities among all who have been approved for non industry projects
+ You need to wait until the LIVE FTF industry opens house meetings. Only Industry Sponsors can approve you for any particular project they have proposed.",Open House,Open House Process Inquiry,"Open House Process PDF, Industry Sponsored Project, Open House",1,1,
+Is there a physical class today? Or is it completely online?,Please see the LIVE SCHEDULE and the announcement/REMINDER I just made,Class Schedule,Class Schedule Inquiry,"Live Schedule, Physical Class, Today, Online",2,3,
+is the meeting for CISCO only for approved candidates or should everyone who applied show up? I just want to know since I haven’t been approved (yet hopefully),It was clearly stated that it was only for approved CISCO students. No one else is allowed.,Cisco Track,Cisco Meeting Inquiry,"Live Schedule, CISCO, Meeting, Approved Candidate",1,2,
+It looks like there are still slots left? Do we know when the rest will be approved?,"There is no possible consideration if you are NOT in Network and Info Security concentration in the IT program. Otherwise, I am still working on expanding the class beyond the norms but this may take a week. We have already exceeded normal capacity",Cisco Track,Cisco Application Slots Inquiry,Slots,3,3,We don't know info about remaining slots for tracks
+"Regarding enterprise/ more specially software automation is there a timeline for seeing more information on the projects because on the schedule I only really see dates for ""Independent Team Work"". Would that information be talked about during those capstone training days? (Jan 30 and Feb 1)",I will meet separately with all approved software automation members next week to finalize the projects that match our needs and your interests + skill sets.,Software Automations Track,Software Automations Inquiry,"Enterprise, Software Automation, Capstone Training Days",2,2,
+"just a quick question: After being finalized, will the enterprise teams (specially media) have more information before the open house or would it be only the capstone training? Media is needed to do to the open house I believe. Is it only the industry open house and will we need to be there for them in person? (Saturday, February 3; Tuesday, February 6; and Saturday, February 10) I just wanted to know what I should prepare.","Media will be involved in a series of projects, including but not limited to the open houses and showcase. Please see details on CANVAS
+
+The ""CAPSTONE TRAINING"" concerns the required capstone deliverables that ALL teams must submit.
+
+Next week, we will discuss the expectations specific to each enterprise team separately. For this week, our focus is on confirming commitments, assigning approved members to channels, and initiating in-channel communication with each team about their own project.",Media Track,Media Track Inquiry,"Enterprise Team, Media, Open House, Capstone Training",2,3,
+"For students designing a K12 curriculum in RWC, are we given the choice to either come to the open house today or thursday? Or must we attend depending on what class we are in?","You normally do not have that choice. But because of some constraints, I prefer that most do Thursday. If you are in  Thursday, you CANNOT do Tuesday, though.",RWC Applications ,RWC Open House Inquiry,"K12 Curriculum, RWC, Open House",2,3,
+Do RWC candidates need to bring anything to the interview on Thursday?,Not at this point,RWC Applications ,RWC Open House Inquiry,RWC Candidate,1,2,
+How do we know if we’re verified on discord?,That you can access this channel and your color is green,Discord Server,Discord Server Access Inquiry,Discord,2,3,
+do in person attendees submit their resumes too?,Yes,Limited Open House,Open House Process Inquiry,In-Person Attendees,1,1,
+"Will the sponsors understand the circumstances of the Tuesday section people, since it is not out of our control, and they can't control it too?","Of course they will, we've made the reasons for this change and model clear to them as soon as we made this decision",Limited Open House,Open House Concern,"Sponsors, Tuesday Section",2,1,
+When should graduate students attend,Graduate students can also attend tomorrow,Limited Open House,Open House Inquiry,Graduate Students,2,3,
+In-person right,Remote,Limited Open House,Open House Inquiry For Graduate Students Specifically,In-Person,3,3,Limited Open houses information is very volatile
+what room is it at?,the open house will be in gitc 3700,Limited Open House,Open House Inquiry,Room,1,3,
+"How will I connect with the sponsor of my choice, please help",drop your name and resume in the channels of the 2 sponsors you are interested in,Limited Open House,Industry Open House Application Process Inquiry,Sponsor,1,3,Open house application process may change with open house streamlining team project
+"I’m still confused by the announcement, what do I need to fill out for the 2 companies I want to interview with for tomorrow? 
+
+I’m in the Thursday section and will be attending in person tomorrow but I’m unsure what the new announcement is referring to",drop your name and resume in the channels of the 2 sponsors you are interested in,Limited Open House,Industry Open House Application Process Inquiry,Thursday Section,1,3,
+"are all the industry projects gonna be at the limited open house tomorrow? if not, do we know which ones aren't attending","A large majority of them will be there, waiting on the finalize list to send y'all",Limited Open House,Industry Open House Application Process Inquiry,"Industry Project, Open House",2,3,"We may not have the list of industry projects.
+List may be constantly updated as well"
+what should we expect during interviews with the sponsors?,Treat it like a job interview. They shouldn’t be too long but style and length can vary by sponsor so it’s difficult to give an objective answer of what to expect,Limited Open House,Industry Open House Application Process Inquiry,Sponsor,1,1,
+"How can grad students register for tomorrow, please provide details","By attending the virtual open house version and apply through the channels.
+You can apply to maximum of two projects by sending your resume in the respective channel under “open house”. 
+To attend the open house virtually, you can join the WebEx session. Please find the link under events in this server.",Limited Open House,Virtual Open House Application Process Inquiry,Graduate Students,2,3,Discord channels might change. Aagains open house applicaion process may change
+"If we are unable to attend the Saturday open house due to schedule conflict, do we still give resume and names to sponsors or just meet them at a later open house?","That is definitely a possibility to consider. It's important to keep in mind that although a few sponsors may attend both open houses, and some will attend only the second, the majority will only attend the first one. This is why we have made the first open house available for both in-person attendance for Thursday sections and virtual attendance for Tuesday sections, to ensure that everyone has the opportunity to attend and engage.",Limited Open House,Open House Schedule Conflict Inquiry,"Saturday, Open House, Sponsor",2,2,
+"So, as a student who cannot attend tomorrow’s open house in-person nor virtually, should I still give my name and resume in two projects channels? Or should I wait until the Tuesday open house to meet them in person?","You can give them now, but you won't be able to have an interview anyway, so it may happen naturally.",Limited Open House,Open House Schedule Conflict Inquiry,Open House,2,2,
+Where can I find the company proposals?,"On Canvas
+Under STUDENTS RESOURCES on Discord",Limited Open House,Open House Resource Request,,1,2,Canvas structure may change
+"For virtual students, will there be break out rooms For the interviews?",Yes,Limited Open House,Virtual Open House Application Process Inquiry,Virtual Students,1,1,
+And we have the opportunity to be interviewed again by the same companies in person on Tuesday?,"That is possible if you did not get the interview today, was not yet approved, the sponsor has a vacancy, and/or the sponsor is coming on the other day. it all depends on each project and each situation.",Limited Open House,Open House Schedule Conflict Inquiry,,2,3,Project Sponsor availability is volatile
+Should we bring a device like a laptop if we are in person tommorow ?,It's not necessary as long as you have your smartphone. But you can if you wish.,Limited Open House,Industry Open House Application Process Inquiry,,1,1,
+Do we have to wear a suit to the open house and should we bring physical copies of our resume?,You can wear business casual attire. Resumes have been shared and can be re-submitted when applying to the Discord channel.,Limited Open House,Industry Open House Application Process Inquiry,Open House,1,1,
+Is there no order to the interviews ? We just approach their table as long as we chose them in the discord channel ?,"The sponsors should create a schedule for their interviews and if you are selected, you may pick a time slot that works for you",Limited Open House,Industry Open House Application Process Inquiry,Discord Channel,1,1,
+"So hypothetically, if we interview and are selected before 5pm, can we leave or are we required to stay the whole duration?","If you completed your interviews and are selected for one of them, you may leave.",Limited Open House,Industry Open House Application Process Inquiry,,1,1,
+"Just asking for some reiterating/solidifying:
+
+If we're a Tuesday student and are attending it online, how exactly do we schedule meeting with and interviewing with the sponsors? I know there's the Webex meeting call but are we on standby waiting to be called or do is there some time sheet in which we can reach out and ""schedule"" a time?","As explained, you should submit your resume to two projects in the respective channels and they will reach out to you if they are interested in interviewing you. From there you may schedule a time with them.",Limited Open House,Industry Open House Application Process Inquiry,Tuesday Section,1,1,
+will we receive like an email from then within the hours of the open house? or can we get it between today’s open house and the tuesday open house?,"You may receive a message from the sponsor during the open house, but they may also reach out in the hours after.",Limited Open House,Industry Open House Application Process Inquiry,Open House,1,1,
+"So if we don’t get scheduled to  do an interview, we shouldn’t be in the Webex then?","Sponsors may reach out throughout the Open House, so you should still attend",Limited Open House,Industry Open House Application Process Inquiry,Webex,1,1,
+"just to confirm, if we are virtual and a sponsor chooses us for an interview, are they going to reach out to us?","Yes, they should be reaching out in the Discord channel that you applied",Limited Open House,Industry Open House Application Process Inquiry,Sponsor,1,1,
+Operations what do you suggest I do if I am joining today's open house virtually?,"All interviews will be conducted in a hybrid manner, if you are chosen based on your resume you will have time to speak to a sponsor",Limited Open House,Virtual Open House Application Process Inquiry,"Operations, Dr. Ejabiri, Open House",1,1,
+So is it appropriate to just tell the sponsor I am joining online?,so if you are on the webex; after introductions that are happening right now - you will have an oportunity to join different breakout rooms to talk to sponsors; some sponsors are already on webex some will take time to join - as they are also watching the event,Limited Open House,Virtual Open House Application Process Inquiry,Sponsor,1,1,
+Can I choose a different company if I already sent my resume to two channels?,"Yes, but you must delete one of the prior submission as you are only allowed 2 submissions. Please do ASAP before Resume Considerations to be considered",Limited Open House,Industry Open House Application Process Inquiry,,1,1,
+Will Verizon be at the Open House today?,no,Limited Open House,Industry Open Sponsor Inquiry,"Verizon, Open House",2,3,Requires sponsor schedule
+What do I do if the sponsors I sent my resume to didn’t show up today?,they might be on webex unless theyare the sponsors that participate on tuesday,Limited Open House,Industry Open House Application Process Inquiry,Sponsors,2,3,
+"So wait, we can apply somewhere else today? It’s a little hard to hear on Webex.",you talk to the same sponsors that you sent your resume. you are allowed only 2 submissions,Limited Open House,Industry Open House Application Process Inquiry,Webex,2,2,
+"for Tuesday students, would it be an issue to apply to a sponsor who showed up today but wait till after Tuesdays open house to commit ( if approved ) as we haven't had a chance to speak to sponsors who didn't attend today?","You may wait if that’s what you want, but just be aware that there is the possibility that the team may be filled by students who commit before you",Limited Open House,Industry Open House Application Process Inquiry,"Tuesday Students, Open House, Sponsors",1,1,
+I have applied for the industry sponsored project. When is the timeline for approval?,"The industry membership option is approved automatically as a general option. Actual approvals for an industry project can only take place at the actual open house by the industry sponsor.
+
+INDUSTRY PM APPLICATIONS will have an interview. Only after passing that interview can we announce approved PMs.",Approval Process,Application Inquiry,"Live Schedule, Open House Process PDF",2,2,
+I applied to be a team member.  So I need to wait until the main industry open house on Tuesday February 6th or the limited one on Saturday February 3rd?,Either one.,Open House,Event Participation,"Live Schedule, Open House Process PDF",2,3,
+"For CISCO, whoever’s names are listed on the sheets, they are officially approved now ?",Yes but they have to make at the CISCO commitment at the commitment channel below,Project Applications,Project Approvals,Live Approvals,2,3,
+If we didn't see our name  yet for the CISCO..would you recommend applying for another project or at least wait until 2mrw which is the deadline to apply ?,"Yes, If you are a Network or Information Security student, then only can you apply for Cisco. Other students must apply for other companies in the industry track.",Approval Process,Application Inquiry,Live Approvals,1,1,
+where is the link for enterprise meeting? and do software automation applicants need to go to it?,There is no general meeting. I announced the candidates for operations and the rest will be announced starting Monday.,Meeting Logistics,Meeting Details,,2,2,
+I am a Network and Information Security student and I do not see my name on cisco sheet. Should I apply to another project?,You are approved. There was just a little delay in posting your name,Project Applications,Project Approvals,Live Approvals,2,3,
+How PMs will be chosen for the Cisco project?,There will be an interview process,Approval Process,Role Inquiry,Interview,1,1,
+"Also, what is the difference between Industry-standard PMs, and Cisco PMs?",Same responsibilities different types of projects,Project Applications,Role Inquiry,Class Slides,1,1,
+"If I have chosen on application to be a PM, do we still have a choice to switch to a team member?",We will simply dissaprove it which makes you automatically a team member,Approval Process,Role Inquiry,professor,1,1,
+Is there a link to join webex?,It’s not webex. It’s canvas+discord,Meeting Logistics,Webex Inquiry,,1,2,
+is there any way for me to register for more than one RWC coaching program?,No,Project Applications,Project Approvals,,1,1,
+"For Jan 27th Students startup projects, what is the format going to be exactly? I recall that there would be breakout sessions but will founders have some time in beginning to share screens to everyone and present their idea?",All founders will receive am email with full instructions as mentioned earlier by Tuesday after all applications have been received,Project Applications,Role Inquiry,Class Slides,2,3,
+and what would we need to come prepared with on that day as founders?,All founders will receive am email with full instructions as mentioned earlier by Tuesday after all applications have been received,Project Applications,Role Inquiry,Class Slides,2,3,
+"I applied for operations and since it is full now, should I apply for something else? Or is it that no more new applications are being processed and not all names are on the list yet?","At this point, operations is saturated. Yes, please apply to something else.",Project Applications,Project Approvals,Live Approvals,1,2,
+hey quick question how will i know if i was accpeted,[Live Approval Schedule],Project Applications,Project Approvals,Live Approvals,1,1,
+"we spoke last week about my approval for Cisco but I don't see my name on the list?  I sent you a DM, but does this mean I was rejected?","This is not the right channel for individual/personal communication, especially for special situations. Lets continue where we started.  You just need to be patient.",Project applications,Project Approvals,,1,1,
+"There has been claims that NJIT is canceling all classes at or after 6pm today. Given that our class is virtual today regardless, should we anticipate having class?",Usually such cancelation means switching to virtual,Class schedule,Schedule inquiry,Live Schedule,3,3,Very difficult for the bot to know about weather cancellations
+How do I set up the virtual interview for Operations?,I will be sending and email with available hours in the next hour,Meeting Logistics,Interview,,1,2,
+What happen if you're not selected for any projects.,"You can apply for another if you are not selected in your first choice. If non-industry options fail, you will be automatically switched to the industry option unless it was your first choice by default.
+
+No student who attends, communicates, applies, and responds will be left without a project by the end of industry open houses. It is our job to find you a project and place you in a team, but it may not be your first choice due to competitiveness, space, and expectations.",Project applications,Project Approvals,Live Approvals,1,1,
+if our name is in the software automation tab does that mean we are approved?,Yes,Project applications,Project Approvals,Live Approvals,1,1,
+"Since operations is full, and I have not been selected yet, Its ok for me to reapply today for something else right?",Yes today is fine,Approval Process,Project Approvals,Live Approvals,1,1,
+"If we applied to one of the capstone projects already, when will we know if we got accepted or rejected?","For non industry projects by the end of the weekend, except for RWC.
+Startup members at the startup open house. 
+Industry members at the industry open house.",Approval Process,Project Approvals,Live Approvals,2,1,
+How many capstone projects can we apply to??,Only one.,Project applications,Project Approvals,Live Approvals,1,1,
+There are only 4 students that were approved for media and communication so far. Will there be interviews for other candidates or are those the only candidates you want for that specialization?,"""Among all those who applied only four were approved. Please apply to other options.
+
+As announced, I may add a sub team to media based on the level of  expertise in film making and video editing.""",Project applications,Project Approvals,Live Approvals,1,1,
+What can I do if I only have interest in media and communication but was not part of the candidates selected?,"Among all those who applied only four were approved. Please apply to other options.
+
+As announced, I may add a sub team to media based on the level of  expertise in film making and video editing.",Project applications,Project Approvals,Live Approvals,1,1,
+"There is a ""Pre-Open House Application"" form that is open right now, and it allows you to apply for an industry-sponsored or startup project.  Does this act as a sort-of early bird form for those interested in partaking in an industry-sponsored or startup project, and is this meant to be filled out now if desired?  From my understanding from the early bird open house, I thought early approvals are only granted for startup ideas, CISCO academy/project applications, Capstone enterprise, and RWC.",The application process is open and the eadline is Friday. The Early bird (only applicable to last Saturday attendees) ended yesterday.,Project applications,Project Approvals,Live Approvals,3,2,
+"If I was approved for software automation, does that mean I was also approved for the particular option under automation that I chose (i.e I chose the faq bot so does being approved for software automation mean I was also approved for the faq bot)? thank you","The internal project distribution will occur at an upcoming meeting between operations, software automation members/PMs, and me next weekend. 
+
+The FAQ's project is a top priority, so most likely, it will be the case. I am just waiting for tonight's deadline to have a complete picture of all applicants and approvals for non-industry projects.",Enterprise Logistics,Project Approvals,Live Approvals,1,2,
+"Just to be sure, for the students who applied for industry projects, when will we know if we’ve been accepted? Or if we have been given a different thing","All industry project applicants are approved by default. 
+
+Please  see https://discord.com/channels/1192185220200411196/1192185223581024352/1198329657599217785  for more details.",Project applications,Project Approvals,Live Approvals,1,1,
+"What does ""announced subject to approval"" mean?",That means that you can be approved or deny from the interview,Project applications,Project Approvals,Interview,1,1,
+"If we applied for a startup idea, it says we will receive early bird approvals by Tuesday, Jan 16. Will we still recieve that by today or later (because of cancelled class)?",Yes. Tuesday ends at 12 midnight.,Approval Process,Project Approvals,Live Schedule,2,3,Highly volatile
+Where can you check to see if you are a RWC candidate?,[Live Approval Schedule],Project applications,Project Approvals,Live Approvals,1,1,
+"If we applied to RWC back in December for the spring session, when can we expect to hear back about that?",Next week as scheduled,Approval Process,Project Approvals,Live Approvals,1,2,
+What are the chances to get into the Cisco capstone?,"This is a hypothetical question that I do not think you should be concerned about now unless you are not in the network and information security concentration, then you cannot join.",Approval Process,Project Approvals,Live Approvals,2,2,Pretty unpredictable question
+I co founded a start up with a classmate and it was already approved. I am kind of confused as to what other (if any) forms I have to submit by tonight.,Send me a direct message confirming the full  names of the two founders,Approval Process,Project Approvals,Startup,1,3,
+"Let’s say that we are doing an “Outside CC” specialization but about 6 of 8 courses are from the net and infosec specialization, will we still be rejected?  If I ask my advisor to temporarily change my specialization to get in can I do that?  If I am rejected what is my next course of action?  Thank you.","Suppose the advisor can change the concentration title, that is accepted. Anyone who gets denied in their first application can apply for another option.",Approval Process,Project Approvals,"Live Approvals, Outside CC Specialization",3,2,
+"Hello proffesor, I have applied for automations but I want to do the industry projects. Should I wait for a response to my first application to submit again?","If your name is not in the approval list for Automation, you are switched automatically to industry.",Approval Process,Project Approvals,"Live Approvals, Automation",1,1,
+"Hey professor, you mentioned in the announcements that for RWC applications after 12PM will not be accepted, did you mean 12 am by any chance? Because I applied later today after 12pm thinking the deadline was 11:59pm tonight, will my application still be considered?",You are correct. It is midnight tonight. I apologize for mistyping the hour.,Project applications,Application Logistics,,1,3,
+Do we need to submit anything for the capstone applications on canvas? it listed as an assignment so i just want to make sure,"no, it is just there to be on your calendar when it is due.",Project applications,Application Logistics,Canvas,1,1,
+"If a startup proposal is approved conditionally and the comment says to clarify something, where would we add this additional information?","You should re-submit
+
+I have also added a save and return functionality to allow future users to edit after submission.",Startup Proposal,Project Approvals,Startup,1,1,
+Is there a way to share some of our work in regards to videography when applying to the media and communications path in order to prove our case?https://discord.com/channels/1192185220200411196/1192185223581024351/1198670341451550761,Please send me a direct message with all your samples. It is an important option this semester,Approval Process,Project Approvals,Media,1,2,
+"From my understanding there is different tracks we can take: is there limited space for each of them?
+As for the team building are we assigned team members or can we choose?","It all depends on which track and your qualifications.
+
+Teams are formed by individual approval not in advance",Course tracks,Track inquiry,Course tracks,2,2,
+I applied for an industry sponsored project. What happened if we don't get in any industry project?,This is approved by default like I said frequently above.,Project applications,Project Approvals,Live Approvals,1,1,
+What if none of the interview goes well and we don't  get approved by the different sponsors ?,"When this problem happens, it is our responsibility to match you with an industry project or to find an alternative project for you.",Approval Process,Project Approvals,Interview,1,1,
+"The pdf for media and communications track is empty and locked
+Where can we view the information?","It is the same information as the guided tour, but  I unblocked it now. 
+Focus more on the Excel sheet that describes the scope.",Track information,Resource Inquiry,"Media and communications, Canvas resources",2,1,
+I think i might have missed it when he went over it does anyone know if getting the certificate is a requirement for the cisco route?,"No certificate is required for CISCO, just the IT concentration in network and information security.",Approval Process,Project Approvals,"Cisco route, certificate",1,1,
+"So, the Industry-sponsored projects application asks this question referring to an ""Above list"". But there is no list above it. Where is the list or what do we put here",I have simplified that question to only ask about your dream project,Project applications,Application inquiry,"Industry-sponsored, applications",2,1,
+Will those that are interested in the media and communications track do an interview?,Yes,Approval Process,Project Approvals,"Interview, Media and Communications ",,,
+"For the extra credit opportunities, the professor mentioned one about building a computer. Around when would we hear about everything involved in that, as well as other chances for points.
+Is it all just as the semester goes on?",We will let you know about everything early enough before it happens.,Extra credit,Extra credit inquiry,"PC Build competition, Extra Credit",,,
+Will there be a recording of the Thursday class for those students who had the Tuesday class cancelled and couldn't make it to today's session?,Yes. As soon as I receive it tonight or tomorrow morning,Course Logistics,Class inquiry,Class schedule,2,3,
+So... After I see this can I assume that my application process is done and that I havent missed anything? I applied to Software engineering track: Industry-sponsored projects as a team member,Yes,Project applications,Project Approvals,"Industry-sponsored, applications",1,1,
+Are there any ways to edit a submitted application for CISCO?,"Unfortunately not, You can resubmit and we will delete the old version as long as you do it by Sunday.",Project applications,Application logistics,"Applications, Cisco",1,1,
+Does a business analyst role fall under the Operations Team?,The operations team can certainly use business analysis skills but operation team members must have many more skills that are suitable for their tasks.,Operations logistics,Operations inquiry,"Operations, business analyst",1,1,
+"When is the industry-sponsored project application due?
+Is it due tonight at midnight?",Application Deadline is January 21st. For all deadlines please refer to the schedule. https://discord.com/channels/1192185220200411196/1192185223581024351/1196806791447711784,Project applications,Project Approvals,Live Approvals,1,2,
+How can we make sure that our application has been submitted successfully? I remember completing my industry sponsored application the other day but not sure if I got the confirmation screen.,you'll get a copy of the survey and your answers via the email you submitted,Project applications,Project Approvals,"Applications, Industry-sponsored",1,1,
+"just to confirm I understand everything correctly and not missing out on anything, I applied to the industry sponsored projects.
+
+1: I do not need to attend tomorrow's ""Enterprise + Early Bird Approvals"" since its only for enterprise and early birds correct?
+
+2: do I need to attend Tuesday, January 23 or Thursday, January 25 class? correct me if I am wrong, I assume not because it will be just for RWC Coaches.
+
+3: If I am selected to attend in the limited industry open house (I assume we get an email from you or something to tell us if we are selected or not) , that I attend and if not then I attend the Tuesday February 6th one: ""Main Industry Open House..."" and /or ""Backup Industry Open House"" on Saturday February 10th.
+
+so basically since i am applying to industry sponsored projects, i dont have to attend any of the listed events except ""CAPSTONE TRAINING"" and ""Limited Industry Open House"" (If I am selected), ""Main Industry Open House..."" or ""Backup Industry Open House"" correct?",Correct,"Class attendance, Open house",Project Approvals,"Applications, Industry-sponsored",2,3,
+"Hey, I wish to apply to the RWC program. As far as I can tell, there's no real application link besides the one in the pic related, which is some early bird link that's already passed (although I can still apply with it?). I can see in the big schedule that the open house for coaches is on the 25th (I assume for *me* it's the 25th, since I'm taking the thursday 491 class).
+
+Do I need to apply with the link I found right *now*, do I need to apply with a link I haven't found yet, or is the link not even available until after the coach open house?",The early bird gets the priority but the application is still open until Sunday for everyone else.,Project applications,Resource Inquiry,"Applications, RWC, early bird",2,3,
+"Hi, I am aware that we have to wait a little while, until we officially get accepted for a role. 
+
+As of right now, at this current moment, which meeting dates are mandatory for all capstone students to attend ?
+
+I just want to clear any confusion that I may have with the meeting dates ?","I have updated the LIVE SCHEDULE to answer this question for everyone adding a new column ""WHO SHOULD ATTEND""
+# https://docs.google.com/spreadsheets/d/15ZYmXEhfhjgD2QC-ai28GNkzoKpFjBhKRaY2bAG_h6s/edit?usp=sharing",Project applications,Project Approvals,"Live schedule, ",1,2,
+"For Cisco, when does the qualification exam take place?","The qualifying exam is only used when we have more applications than capacity among network and information security students.
+If you look under announcements https://discord.com/channels/1192185220200411196/1192185223581024351/1198257172182749224, you have already been approved.  You need to make a commitment here (along with your registration date Tuesday or Thursday): https://discord.com/channels/1192185220200411196/1198274422457507911",Project applications,Project Approvals,"Cisco, qualifying exams,",2,3,
+Do startup founders need to write a commitment in a text channel? I only see one for startup members,No they do not,Track Commitment,Project Commitment,,1,1,
+What URL should we submit for the Capstone Checklist assignment on Canvas due today?,It is already in the assignment description,Checklist Assignment,Submission Inquiry,,2,1,
+"For the question ""If you were approved for a non-industry project, have you committed to it through the appropriate channel?"", what do we put if it's not applicable?",Just put NO for statistical purposes.,Checklist Assignment,Submission Inquiry,Survey,1,1,
+"I see the link, but do we need to submit anything to Canvas or just fill out the survey?",Just fill the survey,Checklist Assignment,Submission Inquiry,Survey,1,1,
+"I already filled out the survey but I accidentally checked off ""yes"" for the last question even though I am a part of the industry track. Do I need to fill out the survey again?",No worries. It is fine,Checklist Assignment,Submission Inquiry,Survey,2,1,not sure how applicable this question is to everyone
+"I have applied for a couple of capstone projects, non - industry, and I don't think that I was accepted in any of them. Is there anything that I can do?","There are no specific industry projects that you could have applied for because you can only do this at the industry open house, which has yet to happen.  
+
+You are automatically switched to industry if you are not approved for a non-industry project.",Project applications,Project Approvals,"Applications, Industry-sponsored, Non-Industry",2,2,
+"For the question on the survey about attending orientation or the alternative assignment, was the kahoot the alternative assignment?",Yes.,Checklist Assignment,Attendance Alternative,"Survey, Kahoot",1,1,
+When is the industry open house? ,[Live Approval Schedule],Open House,Industry Open House,Live Schedule,1,2,
+Is there going to be a limit to how many students can attend the limited industry open house on February 3rd?,They must be Thursday students,Open House,Open House Inquiry,,1,2,
+Where can we find more information about the pc build competition? I was looking on canvas but didn't see anything at first,Extra credit activities will be announced at the beginning of February,Extra credit,Extra credit inquiry,"Canvas, Discord",1,2,
+What is a recognition board on this Discord server?,A recognition board based on accomplishments,,Discord inquiry,Discord,1,1,
+Are the students in the Tuesday section able to come as well or is it just for the Thursday section,Absolutely not,Open House,Open House Inquiry,,1,2,
+"Was there a canvas announcement mentioning that? Maybe I just didn’t see it, but if I didn’t ask, students in the Tuesday section would’ve attended the limited open house",It was in the live schedule,Open House,Open House Inquiry,Live Schedule,1,3,difficulty will remain low so long as canvas announcements can be fed to the bot
+for the survey for tonight i mistakenly submitted before inputting my full name at the bottom and it won't let me submit a new response. Is there anything I can do to fix it?,I have changed the settings to allow re-submissions and edits.,Checklist Assignment,Submission Inquiry,Survey,2,3,
+Hey I took the survey but do we have to submit something for canvas as well?,"no, just fill out and submit the survey.",Checklist Assignment,Submission Inquiry,"Survey, Canvas",1,1,
+Also we’re not meeting for class on Thursday right?,Not this week. Please trust what we have announced frequently and the live schedule.,Class Schedule,Attendance Inquiry,"Discord, Live Schedule",2,2,
+Should startup founders commit in the startup-member chat?,No,Track Commitment,Track Commitment Inquiry,,1,1,
+"Is there a specific date for the interview process for industry PM applicants? I see that it says before Feb 1st, but I am confused about the other details about this process","The operations team has scheduled a series of interviews from this weekend until next Thursday. These interviews will be conducted gradually, ensuring that each candidate is given adequate time and attention.
+
+ Please don't worry if you don't hear back right away, as the team will be conducting numerous interviews. Rest assured that every candidate will be given a fair chance to demonstrate their skills and qualifications.",Track Interview,Interview Process,Live Schedule,2,2,
+"I imagine the candidates posted for RWC shouldn't be committing quite yet, since we still need to do interviews and aren't fully approved yet. Am I correct with that?","Correct. Based on these applications, the likelihood of approval is relatively high.",Track Commitment,Track Commitment Inquiry,,2,2,
+what would happen in the case of time conflict with classes?,They will schedule an interview with you based on your convenience and availability. So that problem does not exist.,Track Interview,Interview Process,,1,1,
+One more quick question; are these face to face interviews or over discord?,It depends on the agreement between you and the operations team,Track Interview,Interview Process,,1,1,
+"The live schedules states that the limited industry open house on Saturday Feb 3rd is for thursday applicants only. Does this mean if I'm in the thursday section(104), I should only attend the open house on Feb 3rd and not attend the one on Tuesday Feb 6th?",Correct,Limited Open House,Open House Inquiry,Live Schedule,1,2,
+"So, do I need to commit to anything for Industry project Member by tomorrow or should I just idle until open house in February? I see none of these ""I commit"" messages in #industry-member <#1198274904085233714> so... I'm assuming I don't have to do anything for tomorrow's deadline...?",Correct. You don’t have to do anything for tomorrow’s deadline.,Track Commitment,Track Commitment Inquiry,,1,1,
+"To commit to Cisco I need to State That I am ""I hereby commit to Cisco, I am in Thursday's section."" on the Cisco Under The commitment After Approval? A little confused on how to commit",See how others did it. It is really straightforward,Track Commitment,Track Commitment Inquiry,Discord,1,1,
+Hello Professor was this email sent via canvas? I can’t seem to find it,Any Canvas email can also be found under Canvas announcements or assignments,Startup Information,Startup Founder Inquiry,Email,2,1,again with feeding announcements
+Are Cisco approvals completed or are applications still being reviewed? Just wanted to get an idea of what my status was (I am a Network and Information Security student),I believe the final list will be ready by Friday after final revision and adjustments.,Project Applications,Project Approvals,,2,2,
+"hi, I applied to be a startup member but I did not get a seperate email saying that I was approved should I still say that I commit to being a startup member in the chat?",Startup members are like industry members. They are generally approved for their selection but will not be finally approved unless they are approved by a certain founder to their teams at the Open House,Project Applications,Project Approvals,,1,1,
+"thank you for responding so quickly, so I should hold off on typing into the commitment chat then?",Your commitment there does not really mean too much until you are selected to a certain team,Track Commitment,Track Commitment Inquiry,,1,1,context is being a startup member but not sure if i should actually put that in context
+I applied for Cisco a long time ago but I do not see my name anywhere. Please assist.,You indicated that you are not part of the Network and Information Security concentration and provided only one related course. You are not eligible and you must attend the industry open house.,Project Applications,Project Approvals,Cisco,3,1,
+Proffesor why didn’t I get into Cisco I have my network and security specialization,"The people who applied earlier got priority. You applied on the last date (Jan 21st), so you have to wait until tomorrow so  I can add more seats if I can.",Project Applications,Project Approvals,Cisco,3,1,
+"Ok, where is class though? In Weston hall?","yes, in our scheduled class location: westin lecture hall 1",Class Meeting,Class location Inquiry,Weston Hall,2,3,Class meeting location is subject to change
+"I'm sorry if this was already asked : from what I understand
+The limited industry opening on feb 3rd is only for Thursday sections. And the main one will be  the following week. I am assuming all the different sponsors will be present at both of those sessions is that correct ?
+I just want to make sure we're not missing any opportunity if we're from the Tuesday session as we're only invited to the main open house","It is possible but not guaranteed.
+Perfection may not be attainable, but that should never stop us from pursuing it relentlessly. Let's keep striving until we achieve our goals.",Open House,Open House Inquiry,"Industry-sponsored, Open House",3,3,Question has to do with cancellation of class (which bot would likely not know how to answer
+"I saw you reply to Sarah Ibewuike below our conversation that she needed a documented conflict of schedule. I don’t know if that also applies to me but I figured I would cover my bases. 
+
+Here is the schedule that includes Saturday February 3rd with a conflict of schedule. I have to wait for the next schedule that contains Saturday February 10th to be finalized and printed but if you need it I will send it ASAP.",Noted! You can attend the open house on Tuesday 2/6.,Open House,Switching Classes to attend,Open House,2,3,
+What’s the difference between the Limited Industry Open House and Backup Industry Open House ?,Limited in space and backup if necessary,Open House,Open House Inquiry,"Open House, Industry",1,1,
+"Just to confirm, for the capstone trainings on tuesday and thursday. Does everyone need to attend both? Or tuesday section attends tuesday and Thursday section attends thursday?",[Capstone General Schedule],Capstone Training,Class Section Inquiry,"Capstone training, General Schedule",1,2,
+"My apologies if this was asked already:
+For the NDAs is it okay we print them out and them scan them back into PDFs after signing?","Yes, exactly",NDA Signing,NDA Inquiry,NDA,1,1,
+"If you take the industry route, are you pretty much guaranteed a spot with a company team? I'm curious, does that mean the companies will be different between the open houses on February 3 and February 6? Or is there a chance that there might be fewer spots available for the Tuesday class's open house on February 6?","It can be challenging to ensure that every student is assigned an industry project due to the large class size and intense competition. However, we guarantee that if a student communicates well and follows the instructions, they will receive a project assignment, whether industry or not. 
+
+I have launched a third campaign today to maximize the number of capstone industry participants. Some sponsors will attend both days of the event, while others will choose one day over the other. We will provide all the necessary information about this by Friday. 
+
+We understand that we live in an imperfect world, but we are committed to ensuring that no student is left behind.",Industry Route,Open House Inquiry,"Open House, Industry",2,2,
+Is there any arrangement for us to park ?  Or we have to pay for the parking,"We usually arrange parking for external guests such as industry sponsors.
+Saturday parking is usually free at the parking decks. Isn't it?",Open House,Parking Inquiry,"Open House, Parking",1,2,
+Where is westin lecture 1?,[Map of NJIT Campus],Open House,Class location Inquiry,"Open House, Weston Hall",1,1,
+Do grad students have to attend the capstone training sessions/ or have any action items yet ?,"Graduate students are recommended, but not required, to attend undergraduate training. It is important for them to review everything on Canvas carefully and attend their own graduate capstone classes with Professor Prabhat.",Capstone Training,Capstone training Inquiry,"Capstone training, Graduate Students",1,1,
+Out of topic question. Does Weston Hall Lecture 1 have power outlets in the seats? I just don’t remember,"I am not sure, but Hall 2 has a good amount.",Classroom,Classroom Inquiry,Weston Hall,2,1,
+are there other industry projects other than the ones in spring 2024 sponsors project proposals pdf from canvas? I guess my question is: what happens if I am not really interested in any of those projects? Would i have to choose the closest best interest project out of them anyways? or would there be other options to pursue? I am not trying to be picky/inconvenient but I would rather not force myself in a project that i don't have much interest in and prefer to do something I have passion for and go above and beyond with it.,"There will be more by Friday morning but only a few.
+I cannot provide hypothetical answers. You have to decide based on the available options.",Project Applications,Industry Inquiry,"Industry, Sponsors Project Proposal",1,2,
+I appreciate the update on the open house. I am assuming we will get more details on how it is conducted online later on this week ?,"Yes. of course. You will get the Saturday, Feb 3rd Webex link (for Tuesday industry students) and all other details by tomorrow morning.",Open House,Industry Inquiry,"Webex, Open House",1,1,
+Do Tuesday students have to attend both the online and in-person events?,"Tuesday students will be attending the open house this Saturday 2/3 **VIRTUALLY**
+
+The main open house one Tuesday be in person for students who **ARE NOT** commited to a project yet, where they will be placed on a team
+So if you get a team online during Saturday's event, you will not be allowed to attend the Main Open House",Open House,Open House Inquiry,"Open House, Class Section",2,2,
+"So, the NDA asks for an interval between two dates
+what should those dates be
+
+o wait..............
+should i just put my name after ""Between""?
+the NDA is between me...
+",You name goes after between.,NDA Signing,NDA Inquiry,NDA,1,2,
+Does this mean approvals for industry PMs will be made prior to the open house this Saturday ?,yes! working on that email as we speak ,Project Applications,Approval Inquiry,Industry,2,2,
+"For the tuesday section, this saturday's open house is online. If we haven't decided on which projects to apply during the first open house will we have an opportunity to apply to those projects at the next open house even though they aren't present?","we highly encourage everyone to apply to projects during Saturday's open house, assuming that you did not get approved you will be invited to the Main Open House on Tuesday... no guarantees on how many industry projects will still be open by then as the candidate pool is very large and competitive",Open House,Approval Process,"Open house, Industry",1,2,
+"I am an industry sponsored student in the Thursday section. The open house on February 3rd creates a scheduling conflict with my job. The event ends at 5pm, but I start my shift at 5pm. Would it be possible for me to attend the open house virtually or the FTF open house on February 6th?",I would suggest doing Saturday partially face to face in your case,Open House,Schedule inquiry,Open House,1,2,
+"Based on the announcement from 2 days ago, is it still possible to apply to a startup team before the deadline if I **didn't** attend the open house? I'm just a little confused is all and want to see what my options still are.","Hi! Yes, there are still many spots open on our start-up teams. Feel free to reach out to a founder if you are interested. They will decide whether or not you are approved/can commit as a startup member",Startup Information,Open House Inquiry,"Open house, Startup",1,1,
+I work Saturday and wont be able to make it to the open house this Saturday so i’ll have to automatically come to just the Tuesday one if thats ok ,could you send a proof of conflict please?,Open House,Schedule inquiry,"Open house, Proof of conflict",1,2,
+"I received an email from my financial aid advisor.
+
+I wanted to confirm that my verification of presence has been submitted so that I can receive aid.",I have verified it for all my students since last week.,Financial Aid,Financial Aid Inquiry,Verification of presence,3,2,
+What's the location for the FTF for Thurs class  today at 6pm,"West lect 1
+",Class Meeting,Class Location Inquiry,"Class Location, Live Schedule",1,2,
+Am I suppose to upload the NDA even tho I haven't sign on to a project as yet..I'm attending the open house Saturday... I see deadline to sign is today,"You have to do it before meeting with the industry sponsors
+
+Just one copy. They are alternatives",NDA Signing,NDA Inquiry,"NDA, Open House",1,1,
+Is the private channel for each team on discord with the TA is already created?,"CISCO private channels with the TAs were created yesterday. 
+The startup private channels will be created by the end of the day.",Project Logistics,Discord inquiry,"Discord, Cisco",2,3,
+I can’t locate Weston hall,[Map of NJIT Campus],Class Meeting,Class Location Inquiry,"Weston Hall, NJIT Map",1,1,
+It’s hard to find Weston Hall my gps took me to the Archie building,"correct
+Just enter that building and it’s two floors down",Class Meeting,Class Location Inquiry,Weston Hall,1,2,
+Operations is rde systems at the open house ? I am virtual and I don't think they presented.,They will be here on Tuesday,Open House,Open House Inquiry,,1,2,
+"I applied to college-success-coaches-website-and-content-creation, but they have not presented today. are they going to be on tuesday?",They will be here on Tuesday,Open House,Open House Inquiry,,1,2,
+What do we do if the 2 company’s we picked haven’t scheduled interviews for us or have already filled the role we were applying for? Could we pick a different company?,"If the company has already chosen other students, then you may delete that application and apply to another company",Track Interview,Project Approvals,,1,1,
+"if we are approved for one of the sponsors and we are virtual, and we commit in the #industry-team-commitment <#1192185224415690874> channel, last step: how do we take the picture since we are virtual?",New update: please send a photo of yourselves in front of a white wall and send it to #pictures channel,Virtual Approval,Virtual Approval Inquiry,"Photos, Discord",1,1,
+"so I am good to leave the openhouse correct? I got approved, and commited",You can leave the webex!,Open House,Open House Inquiry,Webex,1,1,
+Is case medical going to be at the open house on tuesday?,We unfortunately do not have any confirmation yet if Case Medical will be present on Tuesday.,Open House,Open House Inquiry,,2,3,
+Any update on verizon as well?,"Unfortunately, it is the same situation with Verizon. No confirmation on their presence on Tuesday yet.",Open House,Open House Inquiry,,2,3,
+"If the Tuesday Verizon group shows up, could I resubmit my application there? I was told to delete so I could interview with other sponsors","If you do not get approved to any project today, then you may send additional applications for the Tuesday open house. If you want to delete an application today and submit one for another project you may also do so",Project Applications,Application Inquiry,,1,2,
+Yeah like if we do two applications today does that mean we aren't allowed to continue applying on Tuesday?,"If you do not get approved to any project today, then you may send additional applications for the Tuesday open house. If you want to delete an application today and submit one for another project you may also do so",Project Applications,Application Inquiry,,1,1,
+"Operations may we have an updated list of all sponsors that will show up on tuesday. From my understanding some of them will not show up because they're full. This would help us a lot in re submitting application for certain project, as some of us we not able to be approved",yes we can get that to you after the open house,Industry Route,Industry Open Sponsor Inquiry,Sponsor List,2,3,
+Whats the difference with the two industry approval channels on discord? Theres one in the open house section called 'industry-team-commit' and another in the commitment after approval section called 'industry-member',"Please use the #industry-team-commit <#1192185224415690874> channel, but if you have already sent it to the other channel you do not need to change it",Capstone Discord,Project Commitment,Discord,1,1,
+Would you allow a co-PM in a team. I know I already asked in person but I just wanted written confirmation for my sponsor,"Yes. The PM, however, will be the primary person responsible (especially with progress reports), but the CO-PM must attend all PM meetings and share responsibilities.",,,,,,
+Are Thursday students who already committed to a project allowed to attend the second open house if the sponsors assign us to conduct technical interviews during that event,,,,,,,
+"Also, I saw that my commitment message was deleted that I sent after seeing my name in the approvals table.I just resent the commitment message. Is this acceptable? I suspect it's because I was approved extremely early (within 3 minutes of interviews beginning, at 3:02 PM), and sent the commitment immediately after",It has been updated. You can check it on the Live Approvals sheet.,Track Commitment,Project Commitment,Discord,1,1,
+So does this mean I have successfully committed? It looks the same and says that I am approved,Yes. It does say that you have committed to Jabil.,Track Commitment,Project Commitment,Discord,3,3,too specific in my opinion
+Do Thursday students show up to the Tuesday event virtually or the 10th FTF?,"Students without projects (Tues/Thurs sections) are invited to the Main Open House, in-person, at CC Atrium from 5-9PM",Project Applications,Open House Inquiry,,1,2,
+"For CISCO students what would be recommended to do, Trello, Jira, or GitHub? And I’m assuming the Google folder should be from the NJIT account?","Up to you. Trello just provides to do; with jira you can do kanban, see timelines, create backlog and sprints; grant charts do the same as jira pretty much.",Project Logistics,Project Inquiry,"Trello, Jira, Github",1,1,
+"If we have a project, do we have to show up to Tuesday’s class?","No class Tuesday, the main open house will be taking place in the atrium for students currently without a project",Class attendance,Attendance Inquiry,,2,2,need live data
+Do we only choose one of the 3 then?,"These are just most common and suggested. You can find your own as a PM, better if it is smth used in the industry. But before you make your choice, make sure to review Scope and time management example, and midterm. You will see what you will have to have for the submission.",Project Logistics,Project Inquiry,"Trello, Jira, Github",1,1,
+is there a list of sponsors that are going to attend the Tuesday Open House?,"TBA soon, still finalizing the lists. Hopefully we can share tomorrow but it'll be up Tuesday morning at the latest",Open House,Open House Inquiry,Brochure,2,3,
+Do Tuesday student who got approved for a project gotta attend the open house tomorrow for attendance?,"Nope, if you are committed to a project then you do not need to attend",Open House,Open House Inquiry,,1,1,
+Is there an open house brochure for tomorrow's open house?,"yes! Media & Communications is working on it atm, will share it in <#1192185221353840818> and post it to canvas as soon as it's ready",Open House,Open House Inquiry,"Canvas, Brochure",1,2,
+should we post our resumes in here for the open house tomorrow or just show them in person?,both,Open House,Open House Inquiry,Discord,1,1,
+What about the other sponsors that aren't on the open house brochure? Will they attend virtually or be assigned at a later date,"most of them came saturday and completed their teams. everyone who is listed on the seating chart will be there in person, connective care will be our only virtual sponsor",Open House,Open House Inquiry,Brochure,2,3,
+So what would happen to the no show projects? I.E Rutgers medical school and I think Case Medical,"Hi, honestly we haven't recieved any communication for what open house these sponsors wanted to RSVP in. There is a chance they may show up today or communicate later via email but your best bet would be to withdraw those applications and apply to companies that are surely coming to make sure you are matched in a timely manner and have a project.",Open House,Open House Inquiry,,2,3,
