@@ -65,14 +65,21 @@ Question: {question}
 prompt = ChatPromptTemplate.from_template(template)
 
 # RAG
+
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
+
 model = ChatOpenAI()
-chain = (
-    RunnableParallel({"context": retriever, "question": RunnablePassthrough()})
+chain_from_pinecone = (
+    RunnablePassthrough.assign(context=(lambda x: format_docs(x["context"])))
     | prompt
     | model
     | StrOutputParser()
 )
 
+chain = RunnableParallel(
+    {"context": retriever, "question": RunnablePassthrough()}
+).assign(answer=chain_from_pinecone, context=lambda x: x["context"])
 
 # Add typing for input
 class Question(BaseModel):
