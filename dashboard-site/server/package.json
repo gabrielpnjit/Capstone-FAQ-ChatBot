@@ -22,6 +22,7 @@
     "fetch-blob": "^4.0.0",
     "langchain": "^0.1.33",
     "mongodb": "^6.5.0",
+    "mongoose": "^8.3.2",
     "multer": "^1.4.5-lts.1",
     "nvm": "^0.0.4",
     "pdf-parse": "^1.1.1"

@@ -1,24 +1,22 @@
-import { MongoClient, ServerApiVersion } from "mongodb";
+// Import mongoose and create a connection
+import mongoose from 'mongoose';
 
-const URI = process.env.ATLAS_URI || "";
-const client = new MongoClient(URI, {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  },
+// Define the Mongoose Schema for the File model
+const fileSchema = new mongoose.Schema({
+  filename: String,
+  content: String
 });
 
-try {
-  // Connect the client to the server
-  await client.connect();
-  // Send a ping to confirm a successful connection
-  await client.db("admin").command({ ping: 1 });
-  console.log("Pinged your deployment. You successfully connected to MongoDB!");
-} catch (err) {
-  console.error(err);
-}
+// Define the File model
+const File = mongoose.model('File', fileSchema);
 
-let db = client.db("employees");
+// MongoDB connection URI
+const URI = process.env.ATLAS_URI;
 
-export default db;
+// Connect to the MongoDB database using Mongoose
+mongoose.connect(URI, {})
+  .then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.error('MongoDB connection error:', err));
+
+// Export the File model
+export default File;

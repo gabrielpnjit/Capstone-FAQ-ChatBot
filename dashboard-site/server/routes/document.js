@@ -11,6 +11,7 @@ import { CSVLoader } from "langchain/document_loaders/fs/csv";
 import { BufferLoader } from "langchain/document_loaders/fs/buffer";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import path from 'path';
+import  File  from '../db/connection.js';
 
 const router = express.Router();
 const storage = multer.memoryStorage();
@@ -36,7 +37,7 @@ router.get("/test", async (req, res) => {
   }
 });
 
-// Upload document to pinecone db
+// Upload document
 router.post("/", upload.single('file'), async (req, res) => {
   if (!req.file) {
       return res.status(400).send("No file uploaded");
@@ -74,6 +75,15 @@ router.post("/", upload.single('file'), async (req, res) => {
         default:
             console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
     }
+    // docs is an array and i cant upload that so we have to join
+    const mongotext = docs.map(doc => doc.pageContent).join('\n');
+    const newFile = new File({
+      filename: req.file.originalname,
+      content: mongotext
+     });
+    await newFile.save();
+    console.log("File saved to MongoDB:", newFile);
+
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
         docs[i].metadata.source = req.file.originalname;
