@@ -1,5 +1,4 @@
-const { SlashCommandBuilder, ActionRowBuilder, EmbedBuilder, ButtonBuilder, ButtonStyle, PermissionFlagsBits } = require('discord.js');
-
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 module.exports = {
     data: {
@@ -8,10 +7,7 @@ module.exports = {
     async execute(interaction) {
         await interaction.deferReply({ ephemeral: true });
         // TODO: Send feedback to database
-        const channelId = interaction.channel.id;
-        const messageId = interaction.message.id;
-        const channel = await interaction.client.channels.fetch(channelId);
-        const message = await channel.messages.fetch(messageId);
+        const message = interaction.message;
 
         const disabledButton = new ButtonBuilder()
             .setCustomId('disabled')
@@ -24,7 +20,7 @@ module.exports = {
 
         await message.edit({ components: [row] });
         await interaction.editReply({
-            content: 'Good Feedback sent!',
+            content: 'Feedback sent! Thank you!',
             ephemeral: true
         });
     },
