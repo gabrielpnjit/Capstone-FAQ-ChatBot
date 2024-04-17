@@ -21,8 +21,7 @@ const App = () => {
           INSERT GIF OF BOT IN ACTION HERE
         </div> {/* White panel with shadow */}
       </div>
-
-    </div>
+      </div>
   );
 };
 export default App;
