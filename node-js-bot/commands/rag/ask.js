@@ -5,13 +5,14 @@ const mongoose=require('mongoose');
 
 const logSchema = new mongoose.Schema({
 	question: String,
-	Answer: String
+	Answer: String,
+	feedback: Number
 })
 const Log = mongoose.model('Log', logSchema);
 
 const URI = process.env.ATLAS_URI;
 // Connect to the MongoDB database using Mongoose
-mongoose.connect('mongodb+srv://zg59:fluffybunny@datacluster.qqiaerz.mongodb.net/', {})
+mongoose.connect('mongodb+srv://zg59:fluffybunny@datacluster.qqiaerz.mongodb.net/', {}) //GOOD GOD THIS DOESNT WANT TO BE FIXED
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.error('MongoDB connection error:', err));
 
@@ -25,12 +26,7 @@ module.exports = {
 				.setDescription('Question to ask')
 				.setRequired(true)),
 	async execute(interaction) {
-<<<<<<< HEAD
-
-		interaction.deferReply()
-=======
 		await interaction.deferReply()
->>>>>>> origin/main
 		const question = interaction.options.getString('question')
 		console.log(question);
 
@@ -68,7 +64,6 @@ module.exports = {
 					}
 				}
 			}
-<<<<<<< HEAD
 
 			// Save question and reply to the database
 			const log = new Log({
@@ -77,7 +72,6 @@ module.exports = {
 			});
 			await log.save();
 			await interaction.editReply(`${data.output.answer}\n\nSources: ${sources}`);
-=======
 			const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
@@ -91,13 +85,25 @@ module.exports = {
 					.setEmoji('👎')
 					.setStyle(ButtonStyle.Danger),
 			);
-	
+			await log.save()
 			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sources}`, components: [row] });
->>>>>>> origin/main
-		})
+			})
 		.catch(async error => {
 		    console.error(error);
 			await interaction.editReply('Error generating answer!');
 		});
+
+			// Capture button click event
+			const filter = (interaction) => interaction.customId === 'goodFeedback' || interaction.customId === 'badFeedback';
+			const collector = interaction.channel.createMessageComponentCollector({ filter, time: 15000 }); // 15 seconds timeout
+			collector.on('collect', async (buttonInteraction) => {
+				let feedbackValue = 0; // Default value of Bad, should probs add a third option
+				if (buttonInteraction.customId === 'goodFeedback') {
+					feedbackValue = 1;
+				}
+
+				await Log.findOneAndUpdate({ question: question }, { feedback: feedbackValue });
+			});
+
 	},
 };

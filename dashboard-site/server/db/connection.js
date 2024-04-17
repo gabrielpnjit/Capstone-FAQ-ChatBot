@@ -6,7 +6,8 @@ const fileSchema = new mongoose.Schema({
 })
 const logSchema = new mongoose.Schema({
 	question: String,
-	Answer: String
+	Answer: String,
+  feedback: Number
 })
 
 const Logs = mongoose.model('logs', logSchema);

@@ -33,14 +33,14 @@ const MongoFiles = () => {
             <tr>
               <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">filename</th>
               <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">content</th>
+              <th className="px-6 py-3 bg-gray-50"></th> {/* Empty header for delete button */}
             </tr>
           </thead>
           <tbody>
             {mongoData.map((files, index) => (
               <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                 <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{files.filename}</td>
-                <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{files.content}</td>
-              </tr>
+                <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{files.content.slice(0, 400)}</td></tr>
             ))}
           </tbody>
         </table>
