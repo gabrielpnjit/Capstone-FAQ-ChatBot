@@ -43,6 +43,10 @@ export default function Navbar() {
       console.error('Error fetching data from MongoDB:', error);
     }
   };
+
+  const toggleFilesBox = () => {
+    setShowFilesBox(!showFilesBox);
+  };
   
   return (
     <div>
