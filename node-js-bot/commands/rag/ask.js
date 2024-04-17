@@ -28,8 +28,25 @@ module.exports = {
 		    }
 		})
 		.then(async data => {
-		    console.log(data);
-			await interaction.editReply(data.output.answer);
+			const sources_contexts = data.output.context;
+			// console.log(sources_contexts)
+			let sources = [];
+			// get unique sources
+			for (let i = 0; i < sources_contexts.length; i++) {
+				let curr_source = sources_contexts[i];
+				if (sources.length <= 0) {
+					sources.push(curr_source.metadata.source)
+					console.log(sources)
+				}
+				else {
+					for (let j = 0; j < sources.length; j++) {
+						if (curr_source.metadata.source != sources[j]) {
+							sources.push(curr_source.metadata.source)
+						}
+					}
+				}
+			}
+			await interaction.editReply(`${data.output.answer}\n\nSources: ${sources}`);
 		})
 		.catch(async error => {
 		    console.error(error);

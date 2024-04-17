@@ -79,7 +79,7 @@ chain_from_pinecone = (
 
 chain = RunnableParallel(
     {"context": retriever, "question": RunnablePassthrough()}
-).assign(answer=chain_from_pinecone)
+).assign(answer=chain_from_pinecone, context=lambda x: x["context"])
 
 # Add typing for input
 class Question(BaseModel):
