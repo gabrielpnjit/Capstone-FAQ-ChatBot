@@ -28,8 +28,8 @@ module.exports = {
 		    }
 		})
 		.then(async data => {
-		    // console.log(data.output);
-			await interaction.editReply(data.output);
+		    console.log(data);
+			await interaction.editReply(data.output.answer);
 		})
 		.catch(async error => {
 		    console.error(error);
