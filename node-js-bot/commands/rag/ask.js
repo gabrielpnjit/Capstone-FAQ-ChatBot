@@ -1,5 +1,19 @@
 const { SlashCommandBuilder } = require('discord.js');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const mongoose=require('mongoose');
+
+const logSchema = new mongoose.Schema({
+	question: String,
+	Answer: String
+})
+const Log = mongoose.model('Log', logSchema);
+
+const URI = process.env.ATLAS_URI;
+// Connect to the MongoDB database using Mongoose
+mongoose.connect('mongodb+srv://zg59:fluffybunny@datacluster.qqiaerz.mongodb.net/', {})
+.then(() => console.log('Connected to MongoDB'))
+.catch((err) => console.error('MongoDB connection error:', err));
+
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -10,8 +24,11 @@ module.exports = {
 				.setDescription('Question to ask')
 				.setRequired(true)),
 	async execute(interaction) {
+
 		interaction.deferReply()
 		const question = interaction.options.getString('question')
+		console.log(question);
+
 		// localhost changed to 127.0.0.1 because for some reason it refuses to connect with localhost
 		fetch('http://127.0.0.1:8000/rag-pinecone/invoke', {
 		    method: 'POST',
@@ -46,6 +63,13 @@ module.exports = {
 					}
 				}
 			}
+
+			// Save question and reply to the database
+			const log = new Log({
+			question: question,
+			Answer: data.output.answer
+			});
+			await log.save();
 			await interaction.editReply(`${data.output.answer}\n\nSources: ${sources}`);
 		})
 		.catch(async error => {

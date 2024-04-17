@@ -3,6 +3,7 @@ import express from "express";
 import multer from "multer";
 import { Blob } from 'buffer';
 import { pc, pcIndex } from "../db/connection-pinecone.js";
+import { File, Logs } from '../db/connection.js';
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { PineconeStore } from "@langchain/pinecone";
 import { TextLoader } from "langchain/document_loaders/fs/text";
@@ -11,7 +12,6 @@ import { CSVLoader } from "langchain/document_loaders/fs/csv";
 import { BufferLoader } from "langchain/document_loaders/fs/buffer";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import path from 'path';
-import  File  from '../db/connection.js';
 
 const router = express.Router();
 const storage = multer.memoryStorage();
@@ -41,6 +41,17 @@ router.get('/viewFiles', async(req,res)=>{
   try {
     const files= await File.find();
     res.send(files).status(200);
+  }
+  catch (err) {
+    console.error('Error fetching data from MongoDB:', err);
+    res.status(500).send('Internal Server Error');
+}
+})
+
+router.get('/viewLogs', async(req,res)=>{
+  try {
+    const logs= await Logs.find();
+    res.send(logs).status(200);
   }
   catch (err) {
     console.error('Error fetching data from MongoDB:', err);

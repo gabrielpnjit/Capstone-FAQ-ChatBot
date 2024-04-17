@@ -44,6 +44,23 @@ export default function Navbar() {
     }
   };
 
+  const fetchMongoDBLogs = async () => {
+    try {
+      const response = await fetch('http://localhost:5050/document/viewLogs', {
+        method: 'GET',
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to fetch data from MongoDB');
+      }
+      const logs = await response.json();
+      setMongoData(logs); // Setting the MongoDB logs
+      setShowFilesBox(true); // Show the files box
+    } catch (error) {
+      console.error('Error fetching data from MongoDB:', error);
+    }
+  };
+
   const toggleFilesBox = () => {
     setShowFilesBox(!showFilesBox);
   };
@@ -58,7 +75,7 @@ export default function Navbar() {
           <NavLink className="text-md text-white hover:text-gray-200 font-medium" to="/about">
             About
           </NavLink>
-          <button onClick={fetchMongoDBFiles} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
+          <button onClick={fetchMongoDBLogs} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
             Check logs
           </button>
           <button onClick={fetchMongoDBFiles} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
@@ -78,10 +95,14 @@ export default function Navbar() {
       {showFilesBox && (
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
           <div className="bg-white p-8 rounded-lg">
-            {/* Render our files, this showfiles box can be used for logs too but honestly i hate it*/}
-            {mongoData.map((file, index) => (
+            {/* Render our files or logs */}
+            {mongoData.map((data, index) => (
               <div key={index}>
-                <p>{file.filename}</p>
+                {/* Render files */}
+                {data.filename && <p>{data.filename}</p>}
+                {/* Render logs */}
+                {data.question && <p>Question: {data.question}</p>}
+                {data.Answer && <p>Answer: {data.Answer}</p>}
               </div>
             ))}
             {/* This will be the close button, rn on topright */}
@@ -96,4 +117,3 @@ export default function Navbar() {
     </div>
   );
 }
-
