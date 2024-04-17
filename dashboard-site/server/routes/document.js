@@ -51,7 +51,7 @@ router.post("/", upload.single('file'), async (req, res) => {
     // load documents
     // only handling one file at a time of types pdf, txt, csv
     const buffer = req.file.buffer;
-    console.log(req.file)
+    //console.log(req.file)
     const blob = new Blob([buffer], { source: req.file.originalname }); // loaders can only handle blobs, not buffers
     const extension = path.extname(req.file.originalname).toLowerCase();
     let loader;
@@ -88,7 +88,7 @@ router.post("/", upload.single('file'), async (req, res) => {
     for (let i = 0; i < docs.length; i++) {
         docs[i].metadata.source = req.file.originalname;
     }
-    console.log(docs)
+    //console.log(docs)
     // split
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkOverlap: 200,

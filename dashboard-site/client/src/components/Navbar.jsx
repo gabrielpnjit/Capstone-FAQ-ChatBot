@@ -34,7 +34,15 @@ export default function Navbar() {
   };
 
   const fetchMongoDBFiles = () => {
-    /* gonna need to handle collections */
+    //gonna have to get real data from the database
+    const sampleData = [
+      { filename: "file1.txt" },
+      { filename: "file2.pdf" },
+      { filename: "file3.docx" },
+    ];
+  
+    // Set the data up to be displayed
+    setMongoData(sampleData);
   };
 
   return (
@@ -48,9 +56,9 @@ export default function Navbar() {
           <NavLink className="text-md text-white hover:text-gray-200 font-medium" to="/about">
             About
           </NavLink>
-          <NavLink className="text-md text-white hover:text-gray-200 font-medium" to="/checklogs">
+          <button onClick={toggleFilesBox} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
             Check logs
-          </NavLink>
+          </button>
           <button onClick={toggleFilesBox} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
             View Files
           </button>
