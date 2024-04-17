@@ -1,4 +1,5 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const mongoose=require('mongoose');
 
@@ -24,8 +25,12 @@ module.exports = {
 				.setDescription('Question to ask')
 				.setRequired(true)),
 	async execute(interaction) {
+<<<<<<< HEAD
 
 		interaction.deferReply()
+=======
+		await interaction.deferReply()
+>>>>>>> origin/main
 		const question = interaction.options.getString('question')
 		console.log(question);
 
@@ -63,6 +68,7 @@ module.exports = {
 					}
 				}
 			}
+<<<<<<< HEAD
 
 			// Save question and reply to the database
 			const log = new Log({
@@ -71,6 +77,23 @@ module.exports = {
 			});
 			await log.save();
 			await interaction.editReply(`${data.output.answer}\n\nSources: ${sources}`);
+=======
+			const row = new ActionRowBuilder()
+			.addComponents(
+				new ButtonBuilder()
+					.setCustomId('goodFeedback')
+					.setLabel('Good!')
+					.setEmoji('👍')
+					.setStyle(ButtonStyle.Success),
+				new ButtonBuilder()
+					.setCustomId('badFeedback')
+					.setLabel('Bad!')
+					.setEmoji('👎')
+					.setStyle(ButtonStyle.Danger),
+			);
+	
+			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sources}`, components: [row] });
+>>>>>>> origin/main
 		})
 		.catch(async error => {
 		    console.error(error);
