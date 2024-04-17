@@ -37,6 +37,17 @@ router.get("/test", async (req, res) => {
   }
 });
 
+router.get('/viewFiles', async(req,res)=>{
+  try {
+    const files= await File.find();
+    res.send(files).status(200);
+  }
+  catch (err) {
+    console.error('Error fetching data from MongoDB:', err);
+    res.status(500).send('Internal Server Error');
+}
+})
+
 // Upload document
 router.post("/", upload.single('file'), async (req, res) => {
   if (!req.file) {

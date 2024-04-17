@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [showFilesBox, setShowFilesBox] = useState(false); // State to control visibility of files box
@@ -26,29 +26,31 @@ export default function Navbar() {
     fileInputRef.current.click();
   };
 
-  const toggleFilesBox = () => {
-    setShowFilesBox(prevState => !prevState); // Toggle files box visibility
-    if (!showFilesBox) {
-      fetchMongoDBFiles(); // Fetch MongoDB files when files box is opened, should be modular enough for logs to be  showen later 
+  const fetchMongoDBFiles = async () => {
+    try {
+      const response = await fetch('http://localhost:5050/document/viewFiles', {
+        method: 'GET',
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to fetch data from MongoDB');
+      }
+  
+      const files = await response.json();
+      setMongoData(files); // Setting the MongoDB files
+      setShowFilesBox(true); // Show the files box
+    } catch (error) {
+      console.error('Error fetching data from MongoDB:', error);
     }
   };
 
-  const fetchMongoDBFiles = () => {
-    //gonna have to get real data from the database
-    const sampleData = [
-      { filename: "file1.txt" },
-      { filename: "file2.pdf" },
-      { filename: "file3.docx" },
-    ];
-  
-    // Set the data up to be displayed
-    setMongoData(sampleData);
+  const toggleFilesBox = () => {
+    setShowFilesBox(!showFilesBox);
   };
-
+  
   return (
     <div>
       <nav className="p-6 rounded-md flex justify-between items-center mb-6 bg-blue-500 ">
-
         <NavLink to="/" className="text-xl text-white hover:text-gray-200 font-mono" >
           Capstone FAQ Bot Dashboard
         </NavLink>
@@ -56,10 +58,10 @@ export default function Navbar() {
           <NavLink className="text-md text-white hover:text-gray-200 font-medium" to="/about">
             About
           </NavLink>
-          <button onClick={toggleFilesBox} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
+          <button onClick={fetchMongoDBFiles} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
             Check logs
           </button>
-          <button onClick={toggleFilesBox} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
+          <button onClick={fetchMongoDBFiles} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
             View Files
           </button>
           <button onClick={triggerFileInput} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
@@ -76,7 +78,7 @@ export default function Navbar() {
       {showFilesBox && (
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
           <div className="bg-white p-8 rounded-lg">
-            {/* Render our files, this showfiles box can be used for logs too */}
+            {/* Render our files, this showfiles box can be used for logs too but honestly i hate it*/}
             {mongoData.map((file, index) => (
               <div key={index}>
                 <p>{file.filename}</p>
@@ -94,3 +96,4 @@ export default function Navbar() {
     </div>
   );
 }
+
