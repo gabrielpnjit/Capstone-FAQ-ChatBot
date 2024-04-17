@@ -38,3 +38,5 @@ docs = loader.load()
 ## 4. Start Langserve
 - In rag-app directory: `$ langchain serve`
 - Playground: http://localhost:8000/rag-pinecone/playground/
+## 5. Editing rag-pinecone package
+- Whenever you make changes in the rag-pinecone package, specifically to the chain.py file, you must run `$ pip install . --force-reinstall` to apply the changes.
