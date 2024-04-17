@@ -3,7 +3,13 @@ const path = require('node:path');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ 
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent,
+    ] 
+});
 
 client.commands = new Collection();
 const foldersPath = path.join(__dirname, 'commands');
@@ -35,5 +41,27 @@ for (const file of eventFiles) {
         client.on(event.name, (...args) => event.execute(...args));
     }
 }
+
+// button handling
+client.buttons = new Collection();
+const buttonsPath = path.join(__dirname, 'buttons');
+const buttonFiles = fs.readdirSync(buttonsPath).filter(file => file.endsWith('.js'));
+
+for (const file of buttonFiles) {
+    const filePath = path.join(buttonsPath, file);
+    const button = require(filePath);
+    client.buttons.set(button.data.name, button);
+}
+
+// discord api error handling
+process.on('unhandledRejection', async (err) => {
+    console.error('Unhandled Promise Rejection:\n', err);
+  });
+process.on('uncaughtException', async (err) => {
+    console.error('Uncaught Promise Exception:\n', err);
+  });
+process.on('uncaughtExceptionMonitor', async (err) => {
+    console.error('Uncaught Promise Exception (Monitor):\n', err);
+  });
 
 client.login(token);
