@@ -136,3 +136,5 @@ myenv
 
 __pycache__
 node_modules
+
+node-js-bot/config.json
