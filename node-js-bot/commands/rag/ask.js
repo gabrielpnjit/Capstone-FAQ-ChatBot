@@ -1,4 +1,5 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
 				.setDescription('Question to ask')
 				.setRequired(true)),
 	async execute(interaction) {
-		interaction.deferReply()
+		await interaction.deferReply()
 		const question = interaction.options.getString('question')
 		// localhost changed to 127.0.0.1 because for some reason it refuses to connect with localhost
 		fetch('http://127.0.0.1:8000/rag-pinecone/invoke', {
@@ -46,7 +47,21 @@ module.exports = {
 					}
 				}
 			}
-			await interaction.editReply(`${data.output.answer}\n\nSources: ${sources}`);
+			const row = new ActionRowBuilder()
+			.addComponents(
+				new ButtonBuilder()
+					.setCustomId('goodFeedback')
+					.setLabel('Good!')
+					.setEmoji('👍')
+					.setStyle(ButtonStyle.Success),
+				new ButtonBuilder()
+					.setCustomId('badFeedback')
+					.setLabel('Bad!')
+					.setEmoji('👎')
+					.setStyle(ButtonStyle.Danger),
+			);
+	
+			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sources}`, components: [row] });
 		})
 		.catch(async error => {
 		    console.error(error);
