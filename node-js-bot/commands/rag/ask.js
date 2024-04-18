@@ -7,7 +7,8 @@ const logSchema = new mongoose.Schema({
 	questionId: mongoose.Schema.Types.ObjectId, // Change to ObjectId type
 	question: String,
 	Answer: String,
-	feedback: String
+	feedback: String,
+	timestamp: String
 });
 
 const Log = mongoose.model('Log', logSchema);
@@ -63,10 +64,12 @@ module.exports = {
 			}
 
 			// Save question and reply to the database
+			time = new Date().toString()
 			const log = new Log({
 				questionId: new mongoose.Types.ObjectId(), // Generate a unique ID
 				question: question,
 				Answer: data.output.answer,
+				timestamp:time
 			});
 			
 			await log.save();
