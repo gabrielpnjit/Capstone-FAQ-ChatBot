@@ -12,6 +12,7 @@ import { CSVLoader } from "langchain/document_loaders/fs/csv";
 import { BufferLoader } from "langchain/document_loaders/fs/buffer";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import path from 'path';
+import mongoose from "mongoose";
 
 const router = express.Router();
 const storage = multer.memoryStorage();
@@ -97,14 +98,16 @@ router.post("/", upload.single('file'), async (req, res) => {
         default:
             console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
     }
+   const SharingID= new mongoose.Types.ObjectId();// Generate a unique ID
     // docs is an array and i cant upload that so we have to join
     const mongotext = docs.map(doc => doc.pageContent).join('\n');
     const newFile = new File({
+      SharedID: SharingID,
       filename: req.file.originalname,
       content: mongotext
      });
     await newFile.save();
-    console.log("File saved to MongoDB:", newFile);
+    console.log("File saved to MongoDB:");
 
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
@@ -117,7 +120,7 @@ router.post("/", upload.single('file'), async (req, res) => {
         chunkSize: 500
     });
 
-    const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname })
+    const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname})
 
     // add to pinecone vector db
     let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(), {

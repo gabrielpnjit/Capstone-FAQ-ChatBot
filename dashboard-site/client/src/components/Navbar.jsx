@@ -3,7 +3,6 @@ import React, { useRef, useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [showFilesBox, setShowFilesBox] = useState(false); // State to control visibility of files box
-  const [mongoData, setMongoData] = useState([]); // State to store MongoDB files data
   const fileInputRef = useRef(null);
 
   const handleFileSelect = (event) => {
