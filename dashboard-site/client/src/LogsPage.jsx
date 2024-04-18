@@ -49,6 +49,9 @@ const LOGS = () => {
                     {log.question}
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
+                    {log._id}
+                  </td>
+                  <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
                     {log.Answer}
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
