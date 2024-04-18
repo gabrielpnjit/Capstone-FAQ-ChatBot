@@ -26,7 +26,7 @@ const MongoFiles = () => {
 
   const deleteAllFiles = () => {
     // Function to handle deletion logic
-    console.log("delete files"); // Placeholder for actual delete logic
+    console.log("delete"); // Placeholder for actual delete logic
   };
 
   return (
