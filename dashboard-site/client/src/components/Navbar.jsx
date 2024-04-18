@@ -26,28 +26,6 @@ export default function Navbar() {
     fileInputRef.current.click();
   };
 
-  const fetchMongoDBFiles = async () => {
-    try {
-      const response = await fetch('http://localhost:5050/document/viewFiles', {
-        method: 'GET',
-      });
-  
-      if (!response.ok) {
-        throw new Error('Failed to fetch data from MongoDB');
-      }
-  
-      const files = await response.json();
-      setMongoData(files); // Setting the MongoDB files
-      setShowFilesBox(true); // Show the files box
-    } catch (error) {
-      console.error('Error fetching data from MongoDB:', error);
-    }
-  };
-
-  const toggleFilesBox = () => {
-    setShowFilesBox(!showFilesBox);
-  };
-  
   return (
     <div>
       <nav className="p-6 rounded-md flex justify-between items-center mb-6 bg-blue-500 ">
@@ -58,12 +36,16 @@ export default function Navbar() {
           <NavLink className="text-md text-white hover:text-gray-200 font-medium" to="/about">
             About
           </NavLink>
-          <button onClick={fetchMongoDBFiles} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
-            Check logs
+          <NavLink to="/checklogs">
+            <button className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
+            View Logs
           </button>
-          <button onClick={fetchMongoDBFiles} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
-            View Files
+        </NavLink>
+        <NavLink to="/checkfiles">
+          <button className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
+            File Manager
           </button>
+        </NavLink>
           <button onClick={triggerFileInput} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
             Upload files
           </button>
@@ -75,25 +57,6 @@ export default function Navbar() {
           />
         </div>
       </nav>
-      {showFilesBox && (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
-          <div className="bg-white p-8 rounded-lg">
-            {/* Render our files, this showfiles box can be used for logs too but honestly i hate it*/}
-            {mongoData.map((file, index) => (
-              <div key={index}>
-                <p>{file.filename}</p>
-              </div>
-            ))}
-            {/* This will be the close button, rn on topright */}
-            <button className="absolute top-4 right-4" onClick={toggleFilesBox}>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
-

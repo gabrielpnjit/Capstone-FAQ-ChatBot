@@ -1,6 +1,21 @@
 const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const mongoose=require('mongoose');
+
+const logSchema = new mongoose.Schema({
+	question: String,
+	Answer: String,
+	feedback: Number
+})
+const Log = mongoose.model('Log', logSchema);
+
+const URI = process.env.ATLAS_URI;
+// Connect to the MongoDB database using Mongoose
+mongoose.connect('mongodb+srv://zg59:fluffybunny@datacluster.qqiaerz.mongodb.net/', {}) //GOOD GOD THIS DOESNT WANT TO BE FIXED
+.then(() => console.log('Connected to MongoDB'))
+.catch((err) => console.error('MongoDB connection error:', err));
+
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -13,6 +28,8 @@ module.exports = {
 	async execute(interaction) {
 		await interaction.deferReply()
 		const question = interaction.options.getString('question')
+		console.log(question);
+
 		// localhost changed to 127.0.0.1 because for some reason it refuses to connect with localhost
 		fetch('http://127.0.0.1:8000/rag-pinecone/invoke', {
 		    method: 'POST',
@@ -47,6 +64,14 @@ module.exports = {
 					}
 				}
 			}
+
+			// Save question and reply to the database
+			const log = new Log({
+			question: question,
+			Answer: data.output.answer
+			});
+			await log.save();
+			await interaction.editReply(`${data.output.answer}\n\nSources: ${sources}`);
 			const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
@@ -60,12 +85,25 @@ module.exports = {
 					.setEmoji('👎')
 					.setStyle(ButtonStyle.Danger),
 			);
-	
+			await log.save()
 			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sources}`, components: [row] });
-		})
+			})
 		.catch(async error => {
 		    console.error(error);
 			await interaction.editReply('Error generating answer!');
 		});
+
+			// Capture button click event
+			const filter = (interaction) => interaction.customId === 'goodFeedback' || interaction.customId === 'badFeedback';
+			const collector = interaction.channel.createMessageComponentCollector({ filter, time: 15000 }); // 15 seconds timeout
+			collector.on('collect', async (buttonInteraction) => {
+				let feedbackValue = 0; // Default value of Bad, should probs add a third option
+				if (buttonInteraction.customId === 'goodFeedback') {
+					feedbackValue = 1;
+				}
+
+				await Log.findOneAndUpdate({ question: question }, { feedback: feedbackValue });
+			});
+
 	},
 };
