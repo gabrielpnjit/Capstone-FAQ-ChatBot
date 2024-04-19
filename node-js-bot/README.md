@@ -34,9 +34,16 @@
     "ATLAS_URI": "ATLAS_URI_HERE"
 }
 ```
-- Edit the values appropriately
-- `"clientId"`: Refer to Step 1
+- Edit the values
+- `"clientId"`: Refer to step 1
 - `"guildId"`: Right Click on Desired Server Icon > Click Copy Server ID
 - `"token"`: Refer to step 1
-- "`ATLAS_URI"`: Go to [Database Deployments](https://cloud.mongodb.com/v2),
+- `"ATLAS_URI"`: Go to [Database Deployments](https://cloud.mongodb.com/v2),
+  - Click "Connect" on the desired cluster
+  - Click "Drivers"
+  - Copy the URI strin at the bottom, and replace <username> and <password> with your username and password
 ![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/e6e09cf5-ac6d-4ffa-b732-ab113f6938e4)
+## 4. Deploy Commands
+- Run `$ node deploy-commands.js` to deploy all the commands to the bot
+## 5. Run The Bot
+- You can now run the bot with `$ node index.js`
