@@ -3,7 +3,6 @@
 - Login to [Discord Developer Website](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications)
 - Click "New Application" button on the top right and name and create your bot
 - Note down "APPICATION ID" this will be the `"clientId"` in the `config.json` file
-![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/ea2f0d01-2479-4724-a7b9-6e09f3b50282)
 - Go to the "Bot" page in the navigation bar
 - Under "Privileged Gateway Intents" enable all intents and save changes
     - PRESENCE INTENT
