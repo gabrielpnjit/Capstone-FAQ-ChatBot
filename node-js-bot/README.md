@@ -45,6 +45,7 @@
   - Copy the URI strin at the bottom, and replace <username> and <password> with your username and password
 ![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/e6e09cf5-ac6d-4ffa-b732-ab113f6938e4)
 ## 4. Deploy Commands
+- Install the necessary node modules with `$ npm install`
 - Run `$ node deploy-commands.js` to deploy all the commands to the bot
 ## 5. Run The Bot
 - You can now run the bot with `$ node index.js`
