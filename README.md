@@ -8,6 +8,11 @@ This repo contains all components of the Capstone FAQ Discord Bot:
 The goal of the Capstone FAQ Discord Bot is to answer various questions related to NJIT's CS491 Capstone Course. with the ability for the bot to "learn" by adjusting its knowledge base.
 
 The bot utilizes retrieval-augmental generation (RAG) and OpenAI's Gpt-3.5 LLM to generate responses.
+
+The bot in action!:
+
+![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/9856ea32-9376-46b3-9779-7417e5b28841)
+
 # Setup
 Below is how to setup the entire project
 ## Langchain RAG-Pinecone Setup
