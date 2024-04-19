@@ -23,6 +23,7 @@ const LOGS = () => {
     } catch (error) {
       console.error('Error fetching data from MongoDB:', error);
     }
+    setTimeout(() => fetchMongoDBLogs(), 10000);        //SETTIMEOUT FUNCTION HERE FOR AUTO FETCHING LOGS
   };
 
   const isBadFeedback = (feedback) => {
@@ -40,6 +41,11 @@ const LOGS = () => {
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Question</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Answer</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Feedback</th>
+                <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Time</th>
+                <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Sources</th>
+                <button onClick={fetchMongoDBLogs} className="text-white bg-red-500 hover:bg-red-700 font-medium py-1 px-0.5 rounded inline-flex items-center">
+                  Refresh Logs
+                </button>
               </tr>
             </thead>
             <tbody>
@@ -49,13 +55,16 @@ const LOGS = () => {
                     {log.question}
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
-                    {log._id}
-                  </td>
-                  <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
                     {log.Answer}
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
                     {log.feedback}
+                  </td>
+                  <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
+                    {log.timestamp}
+                  </td>
+                  <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
+                    {log.sources}
                   </td>
                 </tr>
               ))}

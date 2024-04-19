@@ -1,29 +1,6 @@
 import { NavLink } from "react-router-dom";
-import React, { useRef, useState, useEffect } from 'react';
 
 export default function Navbar() {
-  const [showFilesBox, setShowFilesBox] = useState(false); // State to control visibility of files box
-  const fileInputRef = useRef(null);
-
-  const handleFileSelect = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      const formData = new FormData();
-      formData.append('file', file);
-
-      fetch('http://localhost:5050/document', {  // Replace '/your-upload-endpoint' with your actual upload endpoint
-        method: 'POST',
-        body: formData,
-      })
-      .then(response => response.json())
-      .then(data => console.log('Success:', data))
-      .catch(error => console.error('Error:', error));
-    }
-  };
-
-  const triggerFileInput = () => {
-    fileInputRef.current.click();
-  };
 
   return (
     <div>
@@ -45,15 +22,11 @@ export default function Navbar() {
             File Manager
           </button>
         </NavLink>
-          <button onClick={triggerFileInput} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
-            Upload files
+        <NavLink to="/upload">
+          <button className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
+            Upload File
           </button>
-          <input
-            ref={fileInputRef}
-            type="file"
-            hidden
-            onChange={handleFileSelect}
-          />
+        </NavLink>
         </div>
       </nav>
     </div>

@@ -8,7 +8,9 @@ const fileSchema = new mongoose.Schema({
 const logSchema = new mongoose.Schema({
 	question: String,
 	Answer: String,
-  feedback: String
+  feedback: String,
+  timestamp: String,
+  sources:[String]
 })
 
 const Logs = mongoose.model('logs', logSchema);
