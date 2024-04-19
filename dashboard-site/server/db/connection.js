@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const fileSchema = new mongoose.Schema({
   SharedID: mongoose.Schema.Types.ObjectId, // Change to ObjectId type
   filename: String,
-  content: String
+  content: String,
 })
 const logSchema = new mongoose.Schema({
 	question: String,
