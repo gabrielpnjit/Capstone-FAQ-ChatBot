@@ -4,6 +4,7 @@ This repo contains all components of the Capstone FAQ Discord Bot:
 - RAG Langchain Endpoint
 - Discord Bot
 - Dashboard Website
+
 The goal of the Capstone FAQ Discord bot is to answer various questions related to NJIT's CS491 Capstone Course, with the ability for the bot to "learn" by adjusting its knowledge base.
 # Setup
 Below is how to setup the entire project
