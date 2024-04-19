@@ -11,7 +11,7 @@ The bot utilizes retrieval-augmental generation (RAG) and OpenAI's Gpt-3.5 LLM t
 
 The bot in action!:
 
-![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/9856ea32-9376-46b3-9779-7417e5b28841)
+![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/acc61a67-e7da-48cf-965e-9c0faf6792d1)
 
 # Setup
 Below is how to setup the entire project
