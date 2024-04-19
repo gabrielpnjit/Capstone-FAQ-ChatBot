@@ -3,13 +3,14 @@
 - Login to [Discord Developer Website](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications)
 - Click "New Application" button on the top right and name and create your bot
 - Note down "APPICATION ID" this will be the `"clientId"` in the `config.json` file
+![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/ea2f0d01-2479-4724-a7b9-6e09f3b50282)
 - Go to the "Bot" page in the navigation bar
 - Under "Privileged Gateway Intents" enable all intents and save changes
     - PRESENCE INTENT
     - SERVER MEMBERS INTENT
     - MESSAGE CONTENT INTENT
 - Under the "Bot" page, click the "Reset Token" button and copy the newly generated token. This will be the `"token"` in the `config.json` file
-![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/4b0393c8-119c-4f10-a4ad-6b2d4f128032)\
+![image](https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot/assets/90277223/4b0393c8-119c-4f10-a4ad-6b2d4f128032)
 ## 2. Invite Bot to Server
 - Go to the "Installation" page in the navigation bar on the left
 - Under "Authorization Methods", ensure only "Guild Install" is checked.
