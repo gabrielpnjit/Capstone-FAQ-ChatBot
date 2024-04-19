@@ -1,4 +1,4 @@
-# Capstone FAQ Discord Bot
+# 🤖Capstone FAQ Discord Bot❔
 ## About
 This repo contains all components of the Capstone FAQ Discord Bot:
 - RAG Langchain Endpoint
