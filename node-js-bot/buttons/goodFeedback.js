@@ -7,7 +7,6 @@ module.exports = {
     },
     async execute(interaction) {
         await interaction.deferReply({ ephemeral: true });
-        console.log(interaction)
         const message = interaction.message;
 
         // creating disabled buttons
