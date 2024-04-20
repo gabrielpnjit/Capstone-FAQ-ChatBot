@@ -11,6 +11,7 @@ const logSchema = new mongoose.Schema({
   answer: String,
   feedback: String,
   timestamp: String,
+  messageLink: String,
   sources: [String]
 });
 

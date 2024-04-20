@@ -66,12 +66,14 @@ module.exports = {
 			.then(async message => {
 				// Save question and reply to the database
 				const time = new Date().toString()
+				const messageLinkUrl = `https://discord.com/channels/${interaction.guildId}/${interaction.channelId}/${message.id}`
 				const log = new Logs({
 					questionId: message.id,
 					question: question,
 					answer: data.output.answer,
 					feedback: "None Given",
 					timestamp: time,
+					messageLink: messageLinkUrl,
 					sources: sources
 				});
 				await log.save();

@@ -7,9 +7,9 @@ module.exports = {
     },
     async execute(interaction) {
         await interaction.deferReply({ ephemeral: true });
-        // TODO: Send feedback to database
         const message = interaction.message;
 
+        // creating disabled buttons
         const disabledButton = new ButtonBuilder()
             .setCustomId('disabled')
             .setLabel('Feedback Sent!')
@@ -21,6 +21,8 @@ module.exports = {
 
         const feedbackValue = 'Bad'
         const questionId = message.id;
+
+        // update bot log with feedback based on questionId
         await Logs.findOneAndUpdate({ questionId: questionId }, { feedback: feedbackValue })
             .then(async res => {
                 console.log('Successfully sent bad feedback!')
