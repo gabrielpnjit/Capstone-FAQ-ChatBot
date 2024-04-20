@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <style>
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Dashboard container styles */
+        .dashboard-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        /* Title styles */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Tab styles */
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #0056b3;
+        }
+
+        /* Content area styles */
+        #content {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Placeholder content styles */
+        .placeholder-content {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to My Dashboard</h1>
+        <div class="tab-container">
+            <div class="tab" onclick="navigateTo('page1')">Upload Data</div>
+            <div class="tab" onclick="navigateTo('page2')">View Data</div>
+            <div class="tab" onclick="navigateTo('page3')">Delete Data</div>
+        </div>
+
+        <div id="content" class="placeholder-content">Select an option to get started.</div>
+    </div>
+
+    <script>
+        // Function to handle navigation
+        function navigateTo(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    // Update the content div with the loaded page content
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading page:', error));
+        }
+    </script>
+</body>
+</html>
