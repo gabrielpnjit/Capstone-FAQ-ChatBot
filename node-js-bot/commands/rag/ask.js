@@ -1,27 +1,11 @@
 const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { ATLAS_URI } = require('../../config.json');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const mongoose=require('mongoose');
-
-const logSchema = new mongoose.Schema({
-	questionId: mongoose.Schema.Types.ObjectId, // Change to ObjectId type
-	question: String,
-	Answer: String,
-	feedback: String,
-	timestamp: String,
-	sources: [String]
-});
-
-const Log = mongoose.model('Log', logSchema);
-
-// Connect to the MongoDB database using Mongoose
-mongoose.connect(ATLAS_URI, {}) 
-	.then(() => console.log('Connected to MongoDB'))
-	.catch((err) => console.error('MongoDB connection error:', err));
+const { Logs } = require('../../db/connection.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('help')
+		.setName('ask')
 		.setDescription('Ask a question about the Capstone Course!')
 		.addStringOption(option =>
 			option.setName('question')
@@ -30,7 +14,6 @@ module.exports = {
 	async execute(interaction) {
 		await interaction.deferReply()
 		const question = interaction.options.getString('question')
-		console.log(question);
 
 		// localhost changed to 127.0.0.1 because for some reason it refuses to connect with localhost
 		fetch('http://127.0.0.1:8000/rag-pinecone/invoke', {
@@ -63,37 +46,38 @@ module.exports = {
 					}
 				}
 			}
-
-			// Save question and reply to the database
-			time = new Date().toString()
-			const log = new Log({
-				questionId: new mongoose.Types.ObjectId(), // Generate a unique ID
-				question: question,
-				Answer: data.output.answer,
-				timestamp:time,
-				sources: sources
-			});
 			
-			await log.save();
-			await interaction.editReply(`${data.output.answer}\n\nSources: ${sources}`);
-
 			// Build the button row
 			const row = new ActionRowBuilder()
 				.addComponents(
 					new ButtonBuilder()
-						.setCustomId(`goodFeedback_${log.questionId}`) //Include the question ID
+						.setCustomId(`goodFeedback`)
 						.setLabel('Good!')
 						.setEmoji('👍')
 						.setStyle(ButtonStyle.Success),
 					new ButtonBuilder()
-						.setCustomId(`badFeedback_${log.questionId}`)
+						.setCustomId(`badFeedback`)
 						.setLabel('Bad!')
 						.setEmoji('👎')
 						.setStyle(ButtonStyle.Danger),
 				);
 
-			// Edit the reply with the button row
-			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sources}`, components: [row] });
+			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sources}`, components: [row] })
+			.then(async message => {
+				// Save question and reply to the database
+				const time = new Date().toString()
+				const messageLinkUrl = `https://discord.com/channels/${interaction.guildId}/${interaction.channelId}/${message.id}`
+				const log = new Logs({
+					questionId: message.id,
+					question: question,
+					answer: data.output.answer,
+					feedback: "None Given",
+					timestamp: time,
+					messageLink: messageLinkUrl,
+					sources: sources
+				});
+				await log.save();
+			});
 		})
 		.catch(async error => {
 			console.error(error);
@@ -101,13 +85,13 @@ module.exports = {
 		});
 
 		// Capture button click event and update feedback for specific question.
-		const collector = interaction.channel.createMessageComponentCollector({ time: null });
-		collector.on('collect', async (buttonInteraction) => {
-			const feedbackValue = buttonInteraction.customId.startsWith('badFeedback') ? 'Bad' : 'Good';
-			const questionId = buttonInteraction.customId.split('_')[1]; // Extract question ID from custom ID
-			if (questionId) {
-				await Log.findOneAndUpdate({ questionId: questionId }, { feedback: feedbackValue });}
-		});
+		// const collector = interaction.channel.createMessageComponentCollector({ time: null });
+		// collector.on('collect', async (buttonInteraction) => {
+		// 	const feedbackValue = buttonInteraction.customId.startsWith('badFeedback') ? 'Bad' : 'Good';
+		// 	const questionId = buttonInteraction.customId.split('_')[1]; // Extract question ID from custom ID
+		// 	if (questionId) {
+		// 		await Log.findOneAndUpdate({ questionId: questionId }, { feedback: feedbackValue });}
+		// });
 	},
 	
 };

@@ -1,7 +1,7 @@
-import mongoose from 'mongoose';
-const URI = process.env.ATLAS_URI;
+const mongoose = require('mongoose');
+const { ATLAS_URI } = require('../config.json');
 
-mongoose.connect(URI, {})
+mongoose.connect(ATLAS_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
@@ -15,14 +15,6 @@ const logSchema = new mongoose.Schema({
   sources: [String]
 });
 
-
-const fileSchema = new mongoose.Schema({
-  SharedID: mongoose.Schema.Types.ObjectId, // Change to ObjectId type
-  filename: String,
-  content: String,
-})
-
 const Logs = mongoose.model('logs', logSchema);
-const File = mongoose.model('File', fileSchema);
 
-export { File, Logs};
+module.exports = { mongoose, Logs};
