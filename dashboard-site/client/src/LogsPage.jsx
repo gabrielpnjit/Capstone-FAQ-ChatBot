@@ -19,6 +19,7 @@ const LOGS = () => {
       }
 
       const logs = await response.json();
+      console.log(logs);
       setMongoData(logs);
     } catch (error) {
       console.error('Error fetching data from MongoDB:', error);
@@ -37,32 +38,41 @@ const LOGS = () => {
         <div className="overflow-x-auto">
           <table className="min-w-full">
             <thead>
+              <button onClick={fetchMongoDBLogs} className="text-white bg-red-500 hover:bg-red-700 font-medium py-1 px-0.5 rounded inline-flex items-center">
+                  Refresh Logs
+              </button>
               <tr>
-                <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Question</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Question</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Answer</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Feedback</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Time</th>
+                <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Message Link</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Sources</th>
-                <button onClick={fetchMongoDBLogs} className="text-white bg-red-500 hover:bg-red-700 font-medium py-1 px-0.5 rounded inline-flex items-center">
-                  Refresh Logs
-                </button>
               </tr>
             </thead>
             <tbody>
               {mongoData.map((log, index) => (
                 <tr key={index} className={isBadFeedback(log.feedback) ? 'bg-red-200' : 'bg-green-200'}>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
+                    {log.questionId}
+                  </td>
+                  <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
                     {log.question}
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
-                    {log.Answer}
+                    {log.answer}
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
                     {log.feedback}
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
                     {log.timestamp}
+                  </td>
+                  <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
+                    <a href={log.messageLink} target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 text-center text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:ring cursor-pointer">
+                      View
+                    </a>
                   </td>
                   <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900 border border-gray-300">
                     {log.sources}
