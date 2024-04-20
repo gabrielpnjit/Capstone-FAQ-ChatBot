@@ -7,6 +7,7 @@ import {
 import App from "./App";
 import LOGS from "./LogsPage"
 import MongoFiles from "./FilesPage"
+import UploadFile from "./UploadsPage"
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/upload",
-    element: <App />,
+    element: <UploadFile />,
   },
   {
     path: "/about",

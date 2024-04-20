@@ -8,7 +8,8 @@ const logSchema = new mongoose.Schema({
 	question: String,
 	Answer: String,
 	feedback: String,
-	timestamp: String
+	timestamp: String,
+	sources: [String]
 });
 
 const Log = mongoose.model('Log', logSchema);
@@ -69,7 +70,8 @@ module.exports = {
 				questionId: new mongoose.Types.ObjectId(), // Generate a unique ID
 				question: question,
 				Answer: data.output.answer,
-				timestamp:time
+				timestamp:time,
+				sources: sources
 			});
 			
 			await log.save();
