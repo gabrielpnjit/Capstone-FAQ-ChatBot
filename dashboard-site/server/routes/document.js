@@ -74,7 +74,6 @@ router.post("/", upload.single('file'), async (req, res) => {
     // load documents
     // only handling one file at a time of types pdf, txt, csv
     const buffer = req.file.buffer;
-    //console.log(req.file)
     const blob = new Blob([buffer], { source: req.file.originalname }); // loaders can only handle blobs, not buffers
     const extension = path.extname(req.file.originalname).toLowerCase();
     let loader;
@@ -98,22 +97,20 @@ router.post("/", upload.single('file'), async (req, res) => {
         default:
             console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
     }
-   const SharingID= new mongoose.Types.ObjectId();// Generate a unique ID
-    // docs is an array and i cant upload that so we have to join
-    const mongotext = docs.map(doc => doc.pageContent).join('\n');
+   const _id= new mongoose.Types.ObjectId();// Generate a unique ID to share no duplicate in mongodb anymore
+    const mongotext = docs.map(doc => doc.pageContent).join('\n');    // docs is an array and i cant upload that so we have to join
     const newFile = new File({
-      SharedID: SharingID,
+      _id: _id,
       filename: req.file.originalname,
       content: mongotext
      });
     await newFile.save();
     console.log("File saved to MongoDB:");
-
+     const id=_id.toString();
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
         docs[i].metadata.source = req.file.originalname;
     }
-    //console.log(docs)
     // split
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkOverlap: 200,
@@ -140,17 +137,28 @@ router.post("/", upload.single('file'), async (req, res) => {
   }
 });
 
-// DELETES ALL FROM INDEX
-router.delete("/delete", async (req, res) => {
+// Delete All
+router.delete("/deleteAll", async (req, res) => {
   try {
-    await pcIndex.delete1({ deleteAll: true, namespace, });
-    res.send(result).status(200);
-    console.log("Successful")
+    await File.deleteMany({}); 
+    await pcIndex.namespace('').deleteAll();
+    res.status(200).send("File deleted successfully");
   } catch (err) {
     console.error(err);
-    res.status(500).send("Error deleting vectors");
-    console.log("Error")
+    res.status(500).send("Error deleting file");
   }
 });
-
+// Delete specific file by ID
+router.delete("/delete/:id", async (req, res) => {
+  try {
+    const fileId = req.params.id;
+    await File.findByIdAndDelete(fileId);
+    //SINGULAR DELETION SHOULD BE HERE---------------------------------PINECONE IMPLEMENT DELETE
+    //await pcIndex.namespace('').deleteAll();
+    res.status(200).send("File deleted successfully");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error deleting file");
+  }
+});
 export default router;
