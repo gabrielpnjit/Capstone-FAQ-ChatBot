@@ -70,7 +70,8 @@ router.post("/", upload.single('file'), async (req, res) => {
     // pinecone db connection and index
     const pinecone = pc;
     const pineconeIndex = pcIndex;
-
+    const { documentName, sourceLocation } = req.body;
+    const SourceLink=sourceLocation||req.file.originalname
     // load documents
     // only handling one file at a time of types pdf, txt, csv
     const buffer = req.file.buffer;
@@ -101,15 +102,16 @@ router.post("/", upload.single('file'), async (req, res) => {
     const mongotext = docs.map(doc => doc.pageContent).join('\n');    // docs is an array and i cant upload that so we have to join
     const newFile = new File({
       _id: _id,
-      filename: req.file.originalname,
-      content: mongotext
+      filename: documentName || req.file.originalname, // Eh, this is for mongodb just gonna leave it in here
+      content: mongotext,
+      source: SourceLink
      });
     await newFile.save();
     console.log("File saved to MongoDB:");
      const id=_id.toString();
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
-        docs[i].metadata.source = req.file.originalname;
+        docs[i].metadata.source = SourceLink;
     }
     // split
     const textSplitter = new RecursiveCharacterTextSplitter({

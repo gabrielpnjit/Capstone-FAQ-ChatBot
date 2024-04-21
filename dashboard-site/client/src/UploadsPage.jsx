@@ -15,10 +15,13 @@ const UploadFile = () => {
     }
   };
 
-  const handleConfirmUpload = () => {
+  const handleConfirmUpload = (documentName, sourceLocation) => {
     if (selectedFile) {
+      setShowConfirmation(false);//so they cant spam the uplaod button
       const formData = new FormData();
       formData.append('file', selectedFile);
+      formData.append('documentName',documentName);
+      formData.append('sourceLocation',sourceLocation)
 
       fetch('http://localhost:5050/document', {
         method: 'POST',
@@ -35,7 +38,7 @@ const UploadFile = () => {
       .catch(error => console.error('Error:', error))
       .finally(() => {
         setSelectedFile(null);
-        setShowConfirmation(false);
+       // setShowConfirmation(false);
       });
     }
   };
@@ -61,24 +64,32 @@ const UploadFile = () => {
             style={{ display: 'none' }}
             ref={fileInputRef}
           />
-          <button className="bg-grey text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3"
-          onClick={triggerFileInput}>Select File</button>
+          <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          onClick={triggerFileInput}>
+            Select File
+          </button>
 
-          {/* Confirmation box */}
-          {showConfirmation && (
-            <div className="confirmation-box border border-gray-300 rounded-md bg-white shadow-md p-4">
-              <div className="mb-4">
-                <p className="text-lg font-semibold">Selected File:</p>
-                <p className="text-gray-600">{selectedFile.name}</p>
-              </div>
-              <div className="flex justify-between">
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
-                onClick={handleConfirmUpload}>Upload</button>
-                <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400"
-                onClick={handleCancelUpload}>Cancel</button>
-              </div>
+                  {showConfirmation && (
+          <div className="confirmation-box border border-gray-300 rounded-md bg-white shadow-md p-4">
+            <div className="mb-4">
+              <p className="text-lg font-semibold">Selected File:</p>
+              <p className="text-gray-600">{selectedFile.name}</p>
             </div>
-          )}
+            <div className="mb-4">
+              <label htmlFor="documentName" className="block text-sm font-medium text-gray-700">Document Name:</label>
+              <input type="text" id="documentName" name="documentName" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="sourceLocation" className="block text-sm font-medium text-gray-700">Source Location:</label>
+              <input type="text" id="sourceLocation" name="sourceLocation" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
+            </div>
+            <div className="flex justify-between">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                onClick={() => handleConfirmUpload(document.getElementById('documentName').value, document.getElementById('sourceLocation').value)}>Upload</button>
+              <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400" onClick={handleCancelUpload}>Cancel</button>
+            </div>
+          </div>
+        )}
 
           {/* Success message */}
           {showSuccessMessage && (
