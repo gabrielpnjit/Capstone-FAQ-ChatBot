@@ -21,7 +21,7 @@ const App = () => {
           </div>        
         </div> {/* Gray panel */}
         <div className="flex-grow p-6 bg-white rounded-lg shadow-lg">
-          INSERT GIF OF BOT IN ACTION HERE, just put bot-action.gif in the directory
+          {/*INSERT GIF OF BOT IN ACTION HERE, just put bot-action.gif in the directory*/}
           <img src="bot-action.gif"></img>
         </div> {/* White panel with shadow */}
       </div>
