@@ -101,7 +101,7 @@ router.post("/", upload.single('file'), async (req, res) => {
     const SharedID= new mongoose.Types.ObjectId;
     const mongotext = docs.map(doc => doc.pageContent).join('\n');    // docs is an array and i cant upload that so we have to join
     const newFile = new File({
-      SharedID:SharedID,
+      SharedID: SharedID,
       filename: documentName || req.file.originalname, // Eh, this is for mongodb just gonna leave it in here
       content: mongotext,
       source: SourceLink
@@ -111,7 +111,10 @@ router.post("/", upload.single('file'), async (req, res) => {
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
         docs[i].metadata.source = SourceLink;
+        docs[i].metadata.sourceName = documentName || req.file.originalname;
     }
+
+    // console.log(docs)
     // split
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkOverlap: 200,
@@ -136,7 +139,7 @@ router.post("/", upload.single('file'), async (req, res) => {
     res.status(500).send("Error uploading document to Pinecone Database");
   }
 });
-// Delete All
+// Delete All Files
 router.delete("/deleteAll", async (req, res) => {
   try {
     await File.deleteMany({}); 
@@ -145,6 +148,17 @@ router.delete("/deleteAll", async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).send("Error deleting file");
+  }
+});
+
+// Delete All Logs
+router.delete("/deleteAllLogs", async (req, res) => {
+  try {
+    await Logs.deleteMany({}); 
+    res.status(200).send("Logs purged");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error purging logs");
   }
 });
 

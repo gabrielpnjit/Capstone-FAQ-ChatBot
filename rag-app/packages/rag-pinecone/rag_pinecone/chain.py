@@ -1,5 +1,7 @@
 import os
 
+from langchain.retrievers import ContextualCompressionRetriever
+from langchain_cohere import CohereRerank
 from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.output_parsers import StrOutputParser
@@ -44,7 +46,19 @@ PINECONE_INDEX_NAME = os.environ.get("PINECONE_INDEX", "test") # change "test" t
 vectorstore = PineconeVectorStore.from_existing_index(
     PINECONE_INDEX_NAME, OpenAIEmbeddings()
 )
-retriever = vectorstore.as_retriever()
+
+search_args = {
+    'k': 20,
+    # 'fetch_k': 20,
+    # 'lambda_mult': 0.7 # 1 for minimum diversity and 0 for maximum
+}
+retriever = vectorstore.as_retriever(search_type = "similarity", search_kwargs = search_args)
+
+# Re-rank
+compressor = CohereRerank(top_n = "8")
+compression_retriever = ContextualCompressionRetriever(
+    base_compressor=compressor, base_retriever=retriever
+)
 
 # RAG prompt
 today = datetime.date.today()
@@ -78,7 +92,7 @@ chain_from_pinecone = (
 )
 
 chain = RunnableParallel(
-    {"context": retriever, "question": RunnablePassthrough()}
+    {"context": compression_retriever, "question": RunnablePassthrough()}
 ).assign(answer=chain_from_pinecone, context=lambda x: x["context"])
 
 # Add typing for input

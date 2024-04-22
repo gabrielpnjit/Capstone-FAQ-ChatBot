@@ -33,20 +33,39 @@ module.exports = {
 		.then(async data => {
 			const sources_contexts = data.output.context;
 			let sources = [];
+			let sourceData
 			// get unique sources
+			console.log(`Source Count: ${sources_contexts.length}`)
 			for (let i = 0; i < sources_contexts.length; i++) {
 				let curr_source = sources_contexts[i];
 				if (sources.length <= 0) {
-					sources.push(curr_source.metadata.source);
-				} else {
+					sourceData = {
+						source: curr_source.metadata.source,
+						sourceName: curr_source.metadata.sourceName,
+					}
+					sources.push(sourceData);
+				} 
+				else {
+					let unique = true;
 					for (let j = 0; j < sources.length; j++) {
-						if (curr_source.metadata.source != sources[j]) {
-							sources.push(curr_source.metadata.source);
+						if (curr_source.metadata.source == sources[j].source) {
+							// console.log(`Source1: ${curr_source.metadata.source}`)
+							// console.log(`Source2: ${sources[j].source}`)
+							unique = false;
+							break;
 						}
+					}
+					if (unique) {
+						console.log(curr_source.metadata.source)
+						sourceData = {
+							source: curr_source.metadata.source,
+							sourceName: curr_source.metadata.sourceName,
+						}
+						sources.push(sourceData);
 					}
 				}
 			}
-			
+			console.log(sources)
 			// Build the button row
 			const row = new ActionRowBuilder()
 				.addComponents(
@@ -61,8 +80,12 @@ module.exports = {
 						.setEmoji('👎')
 						.setStyle(ButtonStyle.Danger),
 				);
+			let sourcesFormatted = [];
+			for (let i = 0; i < sources.length; i++) {
+				sourcesFormatted.push(`[${sources[i].sourceName}](<${sources[i].source}>)`)
+			}
 
-			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sources}`, components: [row] })
+			await interaction.editReply({ content: `${data.output.answer}\n\nSources: ${sourcesFormatted}`, components: [row] })
 			.then(async message => {
 				// Save question and reply to the database
 				const time = new Date().toString()
@@ -74,7 +97,7 @@ module.exports = {
 					feedback: "None Given",
 					timestamp: time,
 					messageLink: messageLinkUrl,
-					sources: sources
+					sources: JSON.stringify(sources)
 				});
 				await log.save();
 			});
