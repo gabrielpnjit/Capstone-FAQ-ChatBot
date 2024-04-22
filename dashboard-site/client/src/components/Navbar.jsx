@@ -10,7 +10,9 @@ export default function Navbar() {
         </NavLink>
         <div className="flex items-center space-x-5">
           <NavLink className="text-md text-white hover:text-gray-200 font-medium" to="/about">
+          <button className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">
             About
+          </button>
           </NavLink>
           <NavLink to="/checklogs">
             <button className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-200 h-9 rounded-md px-3">

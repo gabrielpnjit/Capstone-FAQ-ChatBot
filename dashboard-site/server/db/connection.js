@@ -21,6 +21,7 @@ const fileSchema = new mongoose.Schema({
   filename: String,
   content: String,
   source:String,
+  SplittextID:[String]
   
 })
 

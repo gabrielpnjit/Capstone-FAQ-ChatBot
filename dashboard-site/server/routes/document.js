@@ -98,17 +98,15 @@ router.post("/", upload.single('file'), async (req, res) => {
         default:
             console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
     }
-   const _id= new mongoose.Types.ObjectId();// Generate a unique ID to share no duplicate in mongodb anymore
     const mongotext = docs.map(doc => doc.pageContent).join('\n');    // docs is an array and i cant upload that so we have to join
     const newFile = new File({
-      _id: _id,
       filename: documentName || req.file.originalname, // Eh, this is for mongodb just gonna leave it in here
       content: mongotext,
       source: SourceLink
      });
     await newFile.save();
     console.log("File saved to MongoDB:");
-     const id=_id.toString();
+    let splitIDs=[];
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
         docs[i].metadata.source = SourceLink;
@@ -120,7 +118,10 @@ router.post("/", upload.single('file'), async (req, res) => {
     });
 
     const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname})
-
+    for (const split in allSplits){
+      splitIDs.append(split.ID)
+    }
+    console.log(splitIDs)
     // add to pinecone vector db
     let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(), {
       pineconeIndex,
@@ -138,7 +139,7 @@ router.post("/", upload.single('file'), async (req, res) => {
     res.status(500).send("Error uploading document to Pinecone Database");
   }
 });
-
+/*
 // Delete All
 router.delete("/deleteAll", async (req, res) => {
   try {
@@ -150,6 +151,7 @@ router.delete("/deleteAll", async (req, res) => {
     res.status(500).send("Error deleting file");
   }
 });
+*/
 // Delete specific file by ID
 router.delete("/delete/:id", async (req, res) => {
   try {
