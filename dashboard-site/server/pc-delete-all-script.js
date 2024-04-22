@@ -5,5 +5,5 @@ try {
     console.log("Successful")
   } catch (err) {
     console.error(err);
-    console.log("Error")
+    console.log("Error, Pinecone index may already be empty!")
 }
