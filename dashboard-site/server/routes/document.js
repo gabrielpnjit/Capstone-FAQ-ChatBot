@@ -114,7 +114,7 @@ router.post("/", upload.single('file'), async (req, res) => {
         docs[i].metadata.sourceName = documentName || req.file.originalname;
     }
 
-    console.log(docs)
+    // console.log(docs)
     // split
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkOverlap: 200,
