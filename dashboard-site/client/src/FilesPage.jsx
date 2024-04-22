@@ -35,8 +35,12 @@ const MongoFiles = () => {
       if (!response.ok) {
         throw new Error('Failed to delete file');
       }
-
-      // Remove the deleted file from the state
+      response=await fetch(`http://localhost:5050/document/reupload`),{
+        method:'POST'
+      }
+      if (!response.ok) {
+        throw new Error('Failed to reupload');
+      }
       setMongoData(mongoData.filter(file => file._id !== fileId));// Basically refreshes without running a GET
     } catch (error) {
       console.error('Error deleting file:', error);

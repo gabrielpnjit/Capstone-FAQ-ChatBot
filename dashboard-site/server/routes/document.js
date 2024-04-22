@@ -98,8 +98,10 @@ router.post("/", upload.single('file'), async (req, res) => {
         default:
             console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
     }
+    const SharedID= new mongoose.Types.ObjectId;
     const mongotext = docs.map(doc => doc.pageContent).join('\n');    // docs is an array and i cant upload that so we have to join
     const newFile = new File({
+      SharedID:SharedID,
       filename: documentName || req.file.originalname, // Eh, this is for mongodb just gonna leave it in here
       content: mongotext,
       source: SourceLink
@@ -116,16 +118,13 @@ router.post("/", upload.single('file'), async (req, res) => {
         chunkOverlap: 200,
         chunkSize: 500
     });
-
     const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname})
-    for (const split in allSplits){
-      splitIDs.append(split.ID)
-    }
-    console.log(splitIDs)
     // add to pinecone vector db
-    let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(), {
+    const pineSharedID=SharedID.toString();
+    let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(),{
       pineconeIndex,
       maxConcurrency: 5, // Maximum number of batch requests to allow at once. Each batch is 1000 vectors.
+      ids: pineSharedID,
     }).then(res => {
       console.log("Successfully Uploaded to Pinecone DB!")
     }).catch(err => {
@@ -139,7 +138,39 @@ router.post("/", upload.single('file'), async (req, res) => {
     res.status(500).send("Error uploading document to Pinecone Database");
   }
 });
-/*
+
+// Re-upload documents from MongoDB to Pinecone after clearing the database
+// This is truely cursed 
+router.post("/reupload", async (req, res) => {
+  try {
+    // Fetch all documents from MongoDB
+    const files = await File.find();
+    
+    for (const file of files) {
+
+      const { content, source } = file;
+      
+      // Create a new document object 
+      const doc = { metadata: { source }, content };
+      
+      const textSplitter = new RecursiveCharacterTextSplitter({
+        chunkOverlap: 200,
+        chunkSize: 500
+      });
+      const splits = await textSplitter.splitDocuments([doc], { chunkHeader: file.filename });
+      
+      await PineconeStore.fromDocuments(splits, new OpenAIEmbeddings(), {
+        pineconeIndex,
+        maxConcurrency: 5,
+      });
+    }
+    res.status(200).send("Successfully Delete/reupload");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error delete/reupload");
+  }
+});
+
 // Delete All
 router.delete("/deleteAll", async (req, res) => {
   try {
@@ -151,18 +182,19 @@ router.delete("/deleteAll", async (req, res) => {
     res.status(500).send("Error deleting file");
   }
 });
-*/
+
+
 // Delete specific file by ID
 router.delete("/delete/:id", async (req, res) => {
   try {
     const fileId = req.params.id;
-    await File.findByIdAndDelete(fileId);
-    //SINGULAR DELETION SHOULD BE HERE---------------------------------PINECONE IMPLEMENT DELETE
-    //await pcIndex.namespace('').deleteAll();
+    await File.findByIdAndDelete(fileId)
+    await pcIndex.namespace('').deleteAll();
     res.status(200).send("File deleted successfully");
   } catch (err) {
     console.error(err);
     res.status(500).send("Error deleting file");
   }
+  
 });
 export default router;
