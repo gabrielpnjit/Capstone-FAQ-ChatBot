@@ -108,7 +108,6 @@ router.post("/", upload.single('file'), async (req, res) => {
      });
     await newFile.save();
     console.log("File saved to MongoDB:");
-    let splitIDs=[];
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
         docs[i].metadata.source = SourceLink;
@@ -124,7 +123,6 @@ router.post("/", upload.single('file'), async (req, res) => {
     let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(),{
       pineconeIndex,
       maxConcurrency: 5, // Maximum number of batch requests to allow at once. Each batch is 1000 vectors.
-      ids: pineSharedID,
     }).then(res => {
       console.log("Successfully Uploaded to Pinecone DB!")
     }).catch(err => {
@@ -138,39 +136,6 @@ router.post("/", upload.single('file'), async (req, res) => {
     res.status(500).send("Error uploading document to Pinecone Database");
   }
 });
-
-// Re-upload documents from MongoDB to Pinecone after clearing the database
-// This is truely cursed 
-router.post("/reupload", async (req, res) => {
-  try {
-    // Fetch all documents from MongoDB
-    const files = await File.find();
-    
-    for (const file of files) {
-
-      const { content, source } = file;
-      
-      // Create a new document object 
-      const doc = { metadata: { source }, content };
-      
-      const textSplitter = new RecursiveCharacterTextSplitter({
-        chunkOverlap: 200,
-        chunkSize: 500
-      });
-      const splits = await textSplitter.splitDocuments([doc], { chunkHeader: file.filename });
-      
-      await PineconeStore.fromDocuments(splits, new OpenAIEmbeddings(), {
-        pineconeIndex,
-        maxConcurrency: 5,
-      });
-    }
-    res.status(200).send("Successfully Delete/reupload");
-  } catch (err) {
-    console.error(err);
-    res.status(500).send("Error delete/reupload");
-  }
-});
-
 // Delete All
 router.delete("/deleteAll", async (req, res) => {
   try {
@@ -183,6 +148,38 @@ router.delete("/deleteAll", async (req, res) => {
   }
 });
 
+/*
+// Re-upload documents from MongoDB to Pinecone after clearing the database
+// this is truely cursed 
+router.post("/reupload", async (req, res) => {
+  try {
+    const pinecone = pc;
+    const pineconeIndex = pcIndex;
+    // Fetch all documents from MongoDB
+    const files = await File.find();
+    for (const file of files) { // For every item in the database
+
+      const { content, source } = file; // Get the resources
+      
+      const doc = { metadata: { source }, content };    // Create a new document object 
+      const textSplitter = new RecursiveCharacterTextSplitter({
+        chunkOverlap: 200,
+        chunkSize: 500
+      });
+      console.log(doc,"\n\n\n\n\n\n")
+      const splits = await textSplitter.splitDocuments([doc], { chunkHeader: file.filename });
+      console.log(splits)
+      await PineconeStore.fromDocuments(splits, new OpenAIEmbeddings(), {
+        pineconeIndex,
+        maxConcurrency: 5,
+      });
+    }
+    res.status(200).send("Successfully Delete/reupload");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error delete/reupload");
+  }
+});
 
 // Delete specific file by ID
 router.delete("/delete/:id", async (req, res) => {
@@ -197,4 +194,5 @@ router.delete("/delete/:id", async (req, res) => {
   }
   
 });
+*/
 export default router;
