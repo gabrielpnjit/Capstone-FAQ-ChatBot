@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="w-full p-6">
-      <Navbar />
+    <div className="bg-gray-800 min-h-screen">
+    <Navbar />
+    <div className="bg-gray-800">
       
       <div className="flex justify-center items-center mx-4 space-x-4">
         <div className="p-6 w-96 bg-gray-300 rounded-lg w">
@@ -62,6 +63,7 @@ const App = () => {
 </h2>
         </div>
       </div>
+    </div>
     </div>
   );
 };
