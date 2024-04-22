@@ -32,9 +32,9 @@ const App = () => {
           <h2 className="text-lg">
             Gabriel Pascual<br></br>
             Zachary Gonzalez<br></br>
-            Myerthra<br></br>
-            Neel<br></br>
-            Arij<br></br>
+            Mythreya Vangapandu<br></br>
+            Neel Patil<br></br>
+            Arij Qureshi<br></br>
 
 </h2>
         </div>
