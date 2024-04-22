@@ -70,11 +70,11 @@ router.post("/", upload.single('file'), async (req, res) => {
     // pinecone db connection and index
     const pinecone = pc;
     const pineconeIndex = pcIndex;
-
+    const { documentName, sourceLocation } = req.body;
+    const SourceLink=sourceLocation||req.file.originalname
     // load documents
     // only handling one file at a time of types pdf, txt, csv
     const buffer = req.file.buffer;
-    //console.log(req.file)
     const blob = new Blob([buffer], { source: req.file.originalname }); // loaders can only handle blobs, not buffers
     const extension = path.extname(req.file.originalname).toLowerCase();
     let loader;
@@ -98,32 +98,29 @@ router.post("/", upload.single('file'), async (req, res) => {
         default:
             console.log("ERROR: Invalid file type! Only accepting pdf, txt, csv files");
     }
-   const SharingID= new mongoose.Types.ObjectId();// Generate a unique ID
-    // docs is an array and i cant upload that so we have to join
-    const mongotext = docs.map(doc => doc.pageContent).join('\n');
+    const SharedID= new mongoose.Types.ObjectId;
+    const mongotext = docs.map(doc => doc.pageContent).join('\n');    // docs is an array and i cant upload that so we have to join
     const newFile = new File({
-      SharedID: SharingID,
-      filename: req.file.originalname,
-      content: mongotext
+      SharedID:SharedID,
+      filename: documentName || req.file.originalname, // Eh, this is for mongodb just gonna leave it in here
+      content: mongotext,
+      source: SourceLink
      });
     await newFile.save();
     console.log("File saved to MongoDB:");
-
     // const pages = await loader.loadAndSplit() // i don't think this is needed
     for (let i = 0; i < docs.length; i++) {
-        docs[i].metadata.source = req.file.originalname;
+        docs[i].metadata.source = SourceLink;
     }
-    //console.log(docs)
     // split
     const textSplitter = new RecursiveCharacterTextSplitter({
         chunkOverlap: 200,
         chunkSize: 500
     });
-
     const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname})
-
     // add to pinecone vector db
-    let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(), {
+    const pineSharedID=SharedID.toString();
+    let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(),{
       pineconeIndex,
       maxConcurrency: 5, // Maximum number of batch requests to allow at once. Each batch is 1000 vectors.
     }).then(res => {
@@ -139,18 +136,63 @@ router.post("/", upload.single('file'), async (req, res) => {
     res.status(500).send("Error uploading document to Pinecone Database");
   }
 });
-
-// DELETES ALL FROM INDEX
-router.delete("/delete", async (req, res) => {
+// Delete All
+router.delete("/deleteAll", async (req, res) => {
   try {
-    await pcIndex.delete1({ deleteAll: true, namespace, });
-    res.send(result).status(200);
-    console.log("Successful")
+    await File.deleteMany({}); 
+    await pcIndex.namespace('').deleteAll();
+    res.status(200).send("File deleted successfully");
   } catch (err) {
     console.error(err);
-    res.status(500).send("Error deleting vectors");
-    console.log("Error")
+    res.status(500).send("Error deleting file");
   }
 });
 
+/*
+// Re-upload documents from MongoDB to Pinecone after clearing the database
+// this is truely cursed 
+router.post("/reupload", async (req, res) => {
+  try {
+    const pinecone = pc;
+    const pineconeIndex = pcIndex;
+    // Fetch all documents from MongoDB
+    const files = await File.find();
+    for (const file of files) { // For every item in the database
+
+      const { content, source } = file; // Get the resources
+      
+      const doc = { metadata: { source }, content };    // Create a new document object 
+      const textSplitter = new RecursiveCharacterTextSplitter({
+        chunkOverlap: 200,
+        chunkSize: 500
+      });
+      console.log(doc,"\n\n\n\n\n\n")
+      const splits = await textSplitter.splitDocuments([doc], { chunkHeader: file.filename });
+      console.log(splits)
+      await PineconeStore.fromDocuments(splits, new OpenAIEmbeddings(), {
+        pineconeIndex,
+        maxConcurrency: 5,
+      });
+    }
+    res.status(200).send("Successfully Delete/reupload");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error delete/reupload");
+  }
+});
+
+// Delete specific file by ID
+router.delete("/delete/:id", async (req, res) => {
+  try {
+    const fileId = req.params.id;
+    await File.findByIdAndDelete(fileId)
+    await pcIndex.namespace('').deleteAll();
+    res.status(200).send("File deleted successfully");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error deleting file");
+  }
+  
+});
+*/
 export default router;

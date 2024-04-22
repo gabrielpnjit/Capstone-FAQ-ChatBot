@@ -20,6 +20,9 @@ const fileSchema = new mongoose.Schema({
   SharedID: mongoose.Schema.Types.ObjectId, // Change to ObjectId type
   filename: String,
   content: String,
+  source:String,
+  SplittextID:[String]
+  
 })
 
 const Logs = mongoose.model('logs', logSchema);
