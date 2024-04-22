@@ -18,7 +18,7 @@ Below is how to setup the entire project
 ## Langchain RAG-Pinecone Setup
 \*Requires Python Version 3.11+
 ### 1. pip install:
-- `$ pip install --upgrade langchain langchain-cli langchain-pinecone langchain-openai`
+- `$ pip install --upgrade langchain langchain-cli langchain-pinecone langchain-openai langchain-cohere`
 - Navigate to "rag-app" directory and execute `$ pip install .`
 ### 2. Set Environment Variables
 The following commands are used in a Linux/Unix Shell:
