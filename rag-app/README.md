@@ -1,7 +1,7 @@
 # Langchain RAG-Pinecone Setup
 \*Requires Python Version 3.11+
 ## 1. pip install:
-- `$ pip install --upgrade langchain langchain-cli langchain-pinecone langchain-openai`
+- `$ pip install --upgrade langchain langchain-cli langchain-pinecone langchain-openai langchain-cohere`
 - Navigate to "rag-app" directory and execute `$ pip install .`
 ## 2. Set Environment Variables
 The following commands are used in a Linux/Unix Shell:
@@ -13,13 +13,15 @@ The following commands are used in a Linux/Unix Shell:
 	- Your Pinecone environment, found in the [Pinecone console](https://app.pinecone.io/), e.g. us-west1-gcp, us-east-1-aws, etc.
 - `$ export PINECONE_INDEX=[PINECONE INDEX NAME HERE]`
 	- [Indexes Tab](https://app.pinecone.io/)
-
+- `$ COHERE_API_KEY=[COHERE API KEY HERE]`
+	- [Cohere API Key](https://dashboard.cohere.com/api-keys)
 If using Microsoft PowerShell:
 ```powershell
 $Env:OPENAI_API_KEY = '[KEY HERE]'
 $Env:PINECONE_API_KEY = '[KEY HERE]'
 $Env:PINECONE_ENVIRONMENT = '[PINECONE ENVIRONMENT HERE]'
 $Env:PINECONE_INDEX = '[PINECONE INDEX NAME HERE]'
+$Env:COHERE_API_KEY = '[COHERE API KEY HERE]'
 ```
 ## 3. Pinecone Documents:
 - Go to rag-app\\packages\\rag-pinecone\\rag_pinecone\\chain.py
