@@ -38,9 +38,7 @@ const LOGS = () => {
         <div className="overflow-x-auto">
           <table className="min-w-full">
             <thead>
-              <button onClick={fetchMongoDBLogs} className="text-white bg-red-500 hover:bg-red-700 font-medium py-1 px-0.5 rounded inline-flex items-center">
-                  Refresh Logs
-              </button>
+              
               <tr>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">ID</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Question</th>
@@ -48,7 +46,12 @@ const LOGS = () => {
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Feedback</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Time</th>
                 <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Message Link</th>
-                <th className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Sources</th>
+                <th className="px-6 py-3 bg-gray-50 flex justify-between items-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                  <span>Sources</span>
+                  <button onClick={fetchMongoDBLogs} className="text-white bg-red-500 hover:bg-red-700 font-medium py-1 px-2 rounded inline-flex items-center">
+                    Refresh Logs
+                  </button>
+                </th>
               </tr>
             </thead>
             <tbody>
