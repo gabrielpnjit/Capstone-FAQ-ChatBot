@@ -44,7 +44,13 @@ PINECONE_INDEX_NAME = os.environ.get("PINECONE_INDEX", "test") # change "test" t
 vectorstore = PineconeVectorStore.from_existing_index(
     PINECONE_INDEX_NAME, OpenAIEmbeddings()
 )
-retriever = vectorstore.as_retriever()
+
+search_args = {
+    'k': 6,
+    # 'fetch_k': 20,
+    # 'lambda_mult': 0.7 # 1 for minimum diversity and 0 for maximum
+}
+retriever = vectorstore.as_retriever(search_type = "similarity", search_kwargs = search_args)
 
 # RAG prompt
 today = datetime.date.today()
