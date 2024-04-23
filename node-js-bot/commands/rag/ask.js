@@ -97,7 +97,7 @@ module.exports = {
 					feedback: "None Given",
 					timestamp: time,
 					messageLink: messageLinkUrl,
-					sources: JSON.stringify(sources)
+					sources: sourcesFormatted
 				});
 				await log.save();
 			});
