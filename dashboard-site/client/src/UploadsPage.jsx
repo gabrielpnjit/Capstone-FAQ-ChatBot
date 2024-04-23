@@ -18,6 +18,7 @@ const UploadFile = () => {
 
   const handleConfirmUpload = (documentName, sourceLocation) => {
     if (selectedFile) {
+      if(sourceLocation&&documentName){
       setShowConfirmation(false);//so they cant spam the uplaod button
       const formData = new FormData();
       formData.append('file', selectedFile);
@@ -45,6 +46,7 @@ const UploadFile = () => {
         setSelectedFile(null);
        // setShowConfirmation(false);
       });
+    }
     }
   };
 
@@ -89,42 +91,44 @@ const UploadFile = () => {
           </button>
     )}
             {showConfirmation && (
-          <div className="confirmation-box border border-gray-300 rounded-md bg-white shadow-md p-4">
-            <div className="mb-4">
-              <p className="text-lg font-semibold">Selected File:</p>
-              <p className="text-gray-600">{selectedFile.name}</p>
-            </div>
-            <div className="mb-4">
-              <label htmlFor="documentName" className="block text-sm font-medium text-gray-700">Document Name:</label>
-              <input type="text" id="documentName" name="documentName" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="sourceLocation" className="block text-sm font-medium text-gray-700">Source Location:</label>
-              <input type="text" id="sourceLocation" name="sourceLocation" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
-            </div>
-            <div className="flex justify-between">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+              <div className="confirmation-box border border-gray-300 rounded-md bg-white shadow-md p-4">
+                <div className="mb-4">
+                  <p className="text-lg font-semibold">Selected File:</p>
+                  <p className="text-gray-600">{selectedFile.name}</p>
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="Title" className="block text-xxs font-medium text-black-700">_______________Required Info_______________</label>
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="documentName" className="block text-sm font-medium text-gray-700">Document Name:</label>
+                  <input type="text" id="documentName" name="documentName" className="mt-1 p-2 border border-gray-300 rounded-md w-full" required />
+                </div>
+                <div className="mb-4">
+                  <label htmlFor="sourceLocation" className="block text-sm font-medium text-gray-700">Source Location:</label>
+                  <input type="text" id="sourceLocation" name="sourceLocation" className="mt-1 p-2 border border-gray-300 rounded-md w-full" required />
+                </div>
+                <div className="flex justify-between">
+                  <button className={`bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 ${!selectedFile}`}
                 onClick={() => handleConfirmUpload(document.getElementById('documentName').value, document.getElementById('sourceLocation').value)}>Upload</button>
-              <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400" onClick={handleCancelUpload}>Cancel</button>
-            </div>
+                  <button className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400" onClick={handleCancelUpload}>Cancel</button>
+                </div>
+              </div>
+            )}
+            {/* working message */}
+            {showWorkingMessage && (
+              <div className="bg-green-200 text-green-800 px-4 py-2 rounded-md mt-4">
+                Currently Processing!
+              </div>
+            )}
+            {/* Success message */}
+            {showSuccessMessage && (
+              <div className="bg-green-200 text-green-800 px-4 py-2 rounded-md mt-4">
+                File uploaded successfully!
+              </div>
+            )}
           </div>
-          )}
-          {/* working message */}
-          {showWorkingMessage && (
-            <div className="bg-green-200 text-green-800 px-4 py-2 rounded-md mt-4">
-              Currently Processing!
-            </div>
-          )}  
-          {/* Success message */}
-          {showSuccessMessage && (
-            <div className="bg-green-200 text-green-800 px-4 py-2 rounded-md mt-4">
-              File uploaded successfully!
-            </div>
-          )}
         </div>
       </div>
-  
-    </div>
     </div>
   );
 };
