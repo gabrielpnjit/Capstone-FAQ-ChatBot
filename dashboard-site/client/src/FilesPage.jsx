@@ -69,9 +69,9 @@ const MongoFiles = () => {
   return (
     <div className="bg-gray-800 min-h-screen">
     <Navbar />
-        <div className="bg-gray-800 rounded-lg">
+        <div className="bg-gray-800">
             <div className="mx-4">
-                <table className="w-full">
+                <table className="w-full rounded-lg overflow-hidden">
                     <thead>
                         <tr>
                             <th className="w-1/4 px-4 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Filename</th>
