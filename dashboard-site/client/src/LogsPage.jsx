@@ -92,23 +92,24 @@ const LOGS = () => {
             {filterMode === 'all' ? 'Swap to Bad Logs' : (filterMode === 'bad' ? 'Swap to Good Logs' : 'Swap to All Logs')}
           </button>
         </div>
-        <div className="flex justify-center items-center mx-4 space-x-4">
-          <div className="overflow-x-auto">
-            <table className="min-w-full border-collapse">
+        <div className="flex pt-6 justify-center items-center mx-4 space-x-4">
+          <div className="overflow-x-auto rounded-lg">
+            <table className="min-w-full border-collapse rounded-lg">
               <thead>
 
                 <tr>
-                  <th className="px-1 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                  <th className="px-1 py-1 pl-4 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">ID</th>
                   <th className="px-6 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Question</th>
                   <th className="px-6 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Answer</th>
                   <th className="px-2 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Feedback</th>
                   <th className="px-1 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Time</th>
                   <th className="px-1 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Message Link</th>
                   <th className="px-1 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Sources</th>
-                  <th className="px-1 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"> <button onClick={() => deleteAllLogs()} className="text-red-500 hover:text-red-700 flex items-center justify-center border-input bg-slate-400 h-11 rounded-md px-3">
-                <svg className="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4 a1 1 0 00-1 1v3M4 7h16"></path></svg>
-                PURGE ALL
-              </button>
+                  <th className="px-1 py-1 bg-gray-100 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider"> 
+                  <button onClick={() => deleteAllLogs()} className="text-red-500 hover:text-red-700 flex items-center justify-center bg-slate-400 h-11 rounded-md px-3 text-sm">
+                    <svg className="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4 a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    PURGE ALL
+                  </button>
               </th>
                 </tr>
               </thead>
@@ -140,9 +141,9 @@ const LOGS = () => {
                     </td>
                     <td>
                     { 
-                 <button onClick={() => deleteFile(log._id)} className="text-red-500 hover:text-red-700">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4 a1 1 0 00-1 1v3M4 7h16"></path></svg>
-                  Delete Entry
+                  <button onClick={() => deleteFile(log._id)} className="text-red-500 hover:text-red-700 flex items-center">
+                    <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4 a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                    <span className="text-xs">Delete Entry</span>
                   </button>
                   }
                   </td>

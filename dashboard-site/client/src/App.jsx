@@ -22,7 +22,7 @@ const App = () => {
         </div> {/* Gray panel */}
         <div className="flex-grow p-6 bg-white rounded-lg shadow-lg">
           {/*INSERT GIF OF BOT IN ACTION HERE, just put bot-action.gif in the directory*/}
-          <img src="bot-action.gif"></img>
+          <img src="bot-action.gif" alt="bot in action"/>
         </div> {/* White panel with shadow */}
       </div>
       <div className="flex justify-center items-center mx-4 space-x-4 mt-8">
