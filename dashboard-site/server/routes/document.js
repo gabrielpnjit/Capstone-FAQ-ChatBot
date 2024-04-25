@@ -106,7 +106,7 @@ router.post("/", upload.single('file'), async (req, res) => {
       filename: req.file.originalname,
       content: mongotext
      });
-    await newFile.save();
+    await newFile.save()
     console.log("File saved to MongoDB:");
 
     // const pages = await loader.loadAndSplit() // i don't think this is needed
