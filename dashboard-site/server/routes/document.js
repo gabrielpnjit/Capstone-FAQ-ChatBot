@@ -1,5 +1,4 @@
 import express from "express";
-
 import multer from "multer";
 import { Blob } from 'buffer';
 import { pc, pcIndex } from "../db/connection-pinecone.js";
@@ -30,9 +29,9 @@ router.get("/test", async (req, res) => {
   try {
     await pcIndex.namespace('').deleteAll();
     res.send(result).status(200);
-    console.log("Successful")
+    console.log("Successful");
   } catch (err) {
-    console.log("Error deleting vectors")
+    console.log("Error deleting vectors");
     console.error(err);
     res.status(500).send("Error deleting vectors");
   }
@@ -47,7 +46,7 @@ router.get('/viewFiles', async(req,res)=>{
     console.error('Error fetching data from MongoDB:', err);
     res.status(500).send('Internal Server Error');
 }
-})
+});
 
 router.get('/viewLogs', async(req,res)=>{
   try {
@@ -58,7 +57,7 @@ router.get('/viewLogs', async(req,res)=>{
     console.error('Error fetching data from MongoDB:', err);
     res.status(500).send('Internal Server Error');
 }
-})
+});
 
 // Upload document
 router.post("/", upload.single('file'), async (req, res) => {
@@ -71,7 +70,7 @@ router.post("/", upload.single('file'), async (req, res) => {
     const pinecone = pc;
     const pineconeIndex = pcIndex;
     const { documentName, sourceLocation } = req.body;
-    const SourceLink=sourceLocation||req.file.originalname
+    const SourceLink=sourceLocation||req.file.originalname;
     // load documents
     // only handling one file at a time of types pdf, txt, csv
     const buffer = req.file.buffer;
@@ -120,17 +119,17 @@ router.post("/", upload.single('file'), async (req, res) => {
         chunkOverlap: 200,
         chunkSize: 500
     });
-    const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname})
+    const allSplits = await textSplitter.splitDocuments(docs, { chunkHeader: req.file.originalname});
     // add to pinecone vector db
     const pineSharedID=SharedID.toString();
     let result = await PineconeStore.fromDocuments(allSplits, new OpenAIEmbeddings(),{
       pineconeIndex,
       maxConcurrency: 5, // Maximum number of batch requests to allow at once. Each batch is 1000 vectors.
     }).then(res => {
-      console.log("Successfully Uploaded to Pinecone DB!")
+      console.log("Successfully Uploaded to Pinecone DB!");
     }).catch(err => {
-      console.log("Error uploading to pinecone DB!")
-      console.log(err)
+      console.log("Error uploading to pinecone DB!");
+      console.log(err);
     })
 
     res.send(result).status(204);
