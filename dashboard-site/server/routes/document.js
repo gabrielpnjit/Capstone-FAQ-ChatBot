@@ -161,6 +161,17 @@ router.delete("/delete/:id", async (req, res) => {
   }
   
 });
+
+router.delete("/deleteAllLogs", async (req, res) => {
+  try {
+    await Logs.deleteMany({}); 
+    console.log("Delete all")
+    res.status(200).send("File deleted successfully");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error deleting file");
+  }
+});
 /*
 // Re-upload documents from MongoDB to Pinecone after clearing the database
 // this is truely cursed 
