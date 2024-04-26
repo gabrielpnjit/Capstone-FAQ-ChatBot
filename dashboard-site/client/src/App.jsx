@@ -5,8 +5,8 @@ const App = () => {
   return (
     <div className="bg-gray-800 min-h-screen">
     <Navbar />
-    <div className="bg-red-800 grid grid-cols-3 gap-1">
-      <div className="p-6 col-span-1 bg-yellow-300 rounded-lg">
+    <div className="bg-gray-800 grid grid-cols-3 gap-4">
+      <div className="p-6 col-span-1 bg-gray-300 rounded-lg">
         <div className="text-left">
           <h5 className="font-sans-serif text-2xl font-semibold">
             Leverage the power of LLMs to answer your Capstone questions!
@@ -18,11 +18,11 @@ const App = () => {
           </h4>
         </div>        
       </div> 
-      <div className="p-6 col-span-2 bg-white rounded-lg shadow-lg">
+      <div className="p-6 col-span-2 bg-gray-300 rounded-lg shadow-lg">
         <img src="bot-action.gif" alt="bot in action"/>
       </div> 
     
-      <div className="p-6 bg-black rounded-lg">
+      <div className="p-6 bg-gray-300 rounded-lg">
         <h3 className="font-semibold text-lg">Meet the Team</h3>
         <h2 className="text-lg">
           Gabriel Pascual<br></br>
@@ -32,7 +32,7 @@ const App = () => {
           Arij Qureshi<br></br>
         </h2>
       </div>
-      <div className="p-6 bg-purple-300 rounded-lg">
+      <div className="p-6 bg-gray-300 rounded-lg">
         <h3 className="font-semibold text-lg">Goals</h3>
         <h2 className="text-lg">
           Reduce Moderator Workloads in discord.<br></br>
@@ -41,7 +41,7 @@ const App = () => {
           Adaptable knowledge base<br></br>
         </h2>
       </div>
-      <div className="p-6 bg-pink-300 rounded-lg">
+      <div className="p-6 bg-gray-300 rounded-lg">
         <h3 className="font-semibold text-lg">Details</h3>
         <h2 className="text-lg"> 
           Mern Stack Website.<br></br>
