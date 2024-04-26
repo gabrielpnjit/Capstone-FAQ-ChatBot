@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="p-4 rounded-md flex justify-between items-center mb-6 bg-blue-500">
+      <nav className="p-4 rounded-md flex justify-between items-center bg-blue-500">
         <NavLink to="/" className="text-xl text-white hover:text-gray-200 font-mono">
           Capstone FAQ Bot Dashboard
         </NavLink>
