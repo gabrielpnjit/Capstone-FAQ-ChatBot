@@ -16,7 +16,6 @@ export default function Navbar() {
         </NavLink>
         <div className="flex items-center space-x-5">
           <button onClick={toggleOverlay} className="bg-white text-black inline-flex items-center justify-center whitespace-nowrap text-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input hover:bg-slate-400 h-9 rounded-md px-3">
-
             Guide
           </button>
           <NavLink to="/checklogs">
@@ -40,7 +39,7 @@ export default function Navbar() {
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-6 rounded-md shadow-lg">
             <h2 className="text-xl font-semibold mb-4">Guide</h2>
-            <p className="text-lg">GUIDE GUIDE GUIDE<br></br> GUIDE GUIDE GUIDE</p>
+            <p className="text-lg">For Uploads you must provide a document name and URL<br></br> <br></br>File Manager Allows you to view the knowledge base and Purge the Documents<br></br> <br></br>View logs allows monitoring of the bot and its responses, along with a filter to validate or rectify errors </p>
             <button onClick={toggleOverlay} className="mt-4 text-blue-500 hover:text-blue-700">Close</button>
           </div>
         </div>

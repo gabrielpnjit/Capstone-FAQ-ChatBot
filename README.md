@@ -32,6 +32,7 @@ The following commands are used in a Linux/Unix Shell:
 	- [Indexes Tab](https://app.pinecone.io/)
 - `$ COHERE_API_KEY=[COHERE API KEY HERE]`
 	- [Cohere API Key](https://dashboard.cohere.com/api-keys)
+
 If using Microsoft PowerShell:
 ```powershell
 $Env:OPENAI_API_KEY = '[KEY HERE]'

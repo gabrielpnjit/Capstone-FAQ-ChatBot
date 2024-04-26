@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import botActionGif from './bot-action.gif';
 
 const App = () => {
   return (
@@ -12,14 +13,14 @@ const App = () => {
             Leverage the power of LLMs to answer your Capstone questions!
           </h5>
           <h4 className="pt-6">
-            Use /ask and ask a question to get immediate answers!<br></br>
+            Use `/ask` and ask a question to get immediate answers!<br></br>
             Reduce Repeat Questions taking up time.<br></br>
             Uses an AI to respond with reliable results.<br></br>
           </h4>
         </div>        
       </div> 
       <div className="p-6 col-span-2 bg-gray-300 rounded-lg shadow-lg">
-        <img src="bot-action.gif" alt="bot in action"/>
+        <img src={botActionGif} alt="bot in action"/>
       </div> 
     
       <div className="p-6 bg-gray-300 rounded-lg">
