@@ -17,7 +17,7 @@ const App = () => {
               To start asking the bot questions use`/ask` and ask a question to get immediate answers!
               The bot will respond with an answer and provide the sources that it found the answer from.<br></br><br/>
               Provide the bot feedback by selecting the `Good` or `Bad` buttons provided by the message.<br/>
-              View the chat logs, as well as other details under the "View Logs" Tab of this website,<br/><br/>
+              View the chat logs, as well as other details under the "View Logs" Tab of this website.<br/><br/>
               Reduce asking questions you've already asked to avoid taking up time.<br></br><br></br>
               If you're interested in learning more about the project, visit the GitHub <a  style={{color: "#3B81F6"}}href="https://github.com/gabrielpnjit/Capstone-FAQ-ChatBot">here.</a><br/><br/>
               
@@ -41,19 +41,19 @@ const App = () => {
       <div className="p-6 bg-gray-300 rounded-lg">
         <h3 className="font-semibold text-3xl">Goals</h3>
         <h2 className="text-xl">
-          -Reduce Moderator Workloads in discord.<br></br>
-          -Provide answers for students.<br></br>
-          -Streamline the learning process.<br></br>
+          -Reduce Moderator Workloads in discord<br></br>
+          -Provide answers for students<br></br>
+          -Streamline the learning process<br></br>
           -Adaptable knowledge base<br></br>
         </h2>
       </div>
       <div className="p-6 bg-gray-300 rounded-lg">
         <h3 className="font-semibold text-3xl">Details</h3>
         <h2 className="text-xl"> 
-          -Mern Stack Website.<br></br>
-          -Pinecone Vectore Database.<br></br>
-          -Langserve Embedding API.<br></br>
-          -Node JS Discord Bot.<br></br>
+          -MERN Stack Website<br></br>
+          -Pinecone Vectore Database<br></br>
+          -Langserve Embedding API<br></br>
+          -Node JS Discord Bot<br></br>
         </h2>
       </div>
     </div>
