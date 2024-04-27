@@ -90,7 +90,9 @@ const MongoFiles = () => {
                             <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                                 <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{file.filename}</td>
                                 <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{file.content.slice(0, 100)}{file.content.length > 100 ? '...' : ''}</td>
-                                <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">{file.source}</td>
+                                <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
+                                  <a href={file.source} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{file.source}</a>
+                                </td>
                                 <td className="px-4 py-4 whitespace-no-wrap text-sm leading-5 text-center">
                                     {/* Button for delete functionality can be uncommented here */}
                                 </td>
