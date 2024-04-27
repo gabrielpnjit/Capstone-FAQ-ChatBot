@@ -42,7 +42,7 @@ const App = () => {
         <h2 className="text-xl">
           -Reduce moderator workloads in Discord<br></br>
           -Provide answers for students<br></br>
-          -Adaptable knowledge base<br></br>
+          -Manage knowledge base<br></br>
           -View bot logs<br></br>
         </h2>
       </div>
